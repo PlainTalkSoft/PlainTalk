@@ -1,4 +1,9 @@
 \ copyright © 2006, 2017 the osmosian order (4700)
+\ copyright © 2023 the plaintalk contributors (v0.1.0)
+
+The major version is 0.
+The minor version is 1.
+The patch version is 0.
 
 To add a button to the dialog given a string:
 If the string is blank, void the button; exit.
@@ -701,6 +706,7 @@ If the command's handler is "handle find", handle find; exit.
 If the command's handler is "handle find next", handle find next; exit.
 If the command's handler is "handle flip", handle flip; exit.
 If the command's handler is "handle get size", handle get size; exit.
+If the command's handler is "handle go to", handle go to; exit.
 If the command's handler is "handle grayscale", handle grayscale given yes; exit.
 If the command's handler is "handle group", handle group; exit.
 If the command's handler is "handle grid given no", handle grid given no; exit.
@@ -878,6 +884,7 @@ Handle the command given the submenu.
 To handle a command (g):
 Create a submenu.
 If the current tab's mode is "finder", add "Get Size" and "handle get size" to the submenu.
+If the current tab's mode is "finder", add "Go To..." and "G" and "handle go to" to the submenu.
 If the current tab's mode is "writer", add "Grayscale" and "handle grayscale" to the submenu.
 If the current tab's mode is "writer", add "Grid..." and "grid..." to the submenu.
 If the current tab's mode is "writer", add "Group" and "G" and "handle group" to the submenu.
@@ -1152,7 +1159,8 @@ If the event's key is the c-key, handle copy; exit.
 If the event's key is the d-key, handle duplicate; exit.
 If the event's key is the e-key, handle enlarge; exit.
 If the event's key is the f-key, handle find; exit.
-If the event's key is the g-key, handle group; exit.
+If the event's key is the g-key and the current tab's mode is "finder", handle go to; exit.
+If the event's key is the g-key and the current tab's mode is "writer", handle group; exit.
 If the event's key is the i-key, handle indent; exit.
 If the event's key is the j-key, handle rotate shape; exit.
 If the event's key is the l-key, handle list; exit.
@@ -1482,6 +1490,21 @@ To handle get size:
 If the current tab's mode is "finder", handle get size given the current tab's node; exit.
 Cluck.
 
+To handle go to:
+If the current tab's mode is not "finder", cluck; exit.
+Ask "Directory?".
+If the answer is blank, exit.
+If the answer is not in the file system, show error "I cannot find '" then the answer then "'."; exit.
+Show status "Going...".
+Put the answer into a path.
+Extract a directory from the path.
+Open the current tab's node given the directory.
+Extract a designator from the path.
+Find a nodette given the current tab's node's nodettes and the designator.
+If the nodette is nil, show error "I cannot find '" then the path then "'."; exit.
+Select the nodette.
+Handle open (finder).
+
 To handle grayscale given a flag:
 If the current tab's mode is "writer", handle grayscale given the current tab's node's page and the flag; exit.
 Cluck.
@@ -1779,7 +1802,7 @@ If the current tab's mode is "writer", handle uppercase given the current tab's 
 Cluck.
 
 To handle version:
-Show status the module's name.
+Show status "PlainTalk version " then the major version then "."  then the minor version then "." then the patch version.
 
 To handle yank given a number:
 If the current tab's mode is "writer", handle yank given the current tab's node's page and the number; exit.
