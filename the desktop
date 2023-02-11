@@ -1,8 +1,8 @@
 \ copyright © 2006, 2017 the osmosian order (4700)
-\ copyright © 2023 the plaintalk contributors (v0.1.0)
+\ copyright © 2023 the plaintalk contributors (v0.2.0)
 
 The major version is 0.
-The minor version is 1.
+The minor version is 2.
 The patch version is 0.
 
 To add a button to the dialog given a string:
@@ -1501,7 +1501,8 @@ Extract a directory from the path.
 Open the current tab's node given the directory.
 Extract a designator from the path.
 Find a nodette given the current tab's node's nodettes and the designator.
-If the nodette is nil, show error "I cannot find '" then the path then "'."; exit.
+If the nodette is nil, append "\" to the designator.
+Find the nodette given the current tab's node's nodettes and the designator.
 Select the nodette.
 Handle open (finder).
 
@@ -1861,8 +1862,12 @@ Put the screen's bottom into the switch's bottom.
 Adjust the tabs.
 
 To initialize some tabs:
+Put the screen's pixel width into a width.
+Divide the width by 200 giving a quotient and a remainder.
+If the remainder is greater than or equal to 100, bump the quotient.
+Loop.
 Add 1 to a count.
-If the count is greater than 10, break.
+If the count is greater than the quotient, break.
 Create a tab.
 Append the tab to the tabs.
 Repeat.

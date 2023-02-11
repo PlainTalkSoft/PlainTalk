@@ -1,14 +1,14 @@
 ream cal-3024
   page 12240 15840 1 1440
     text -1 0 0 -1 0 0 2160 5040 10080 5400 0 "title" "osmosian" 360 "center" 0 0 0 yes
-       "Plain English Programming"
+       "PlainTalk Programming"
     end
     text -1 0 0 -1 0 0 2160 11880 10080 13680 0 "" "osmosian" 360 "center" 0 0 0 yes
-       "Copyright ©  2006, 2015"
-       "Copyright © 2013 Earldridge Jazzed Pineda"
-       "The Osmosian Order of Plain English Programmers"
+       "Copyright ©  2023"
+       " The PlainTalk contributors"
+       "Based on the work of the Osmosian Order of Plain English Programmers"
        ""
-       "www.osmosian.com"
+       "www.github.com/PlainTalkSoft/PlainTalk"
     end
   end
   page 12240 15840 1 1440
@@ -251,7 +251,7 @@ ream cal-3024
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
        "6"
     end
-    text -1 0 0 -1 0 0 2160 2160 10080 13680 0 "title" "osmosian" 360 "left" 0 0 0 yes
+    text -1 0 0 -1 0 0 2160 2160 10080 14040 0 "title" "osmosian" 360 "left" 0 0 0 yes
        "THE FINDER"
        ""
        "My finder shows you the kluge's file system as it actually is. No gaudy window frames. No silly little pictures. Just the directories and what's in them."
@@ -268,7 +268,7 @@ ream cal-3024
        ""
        "There are commands under ""N"" to make New directories, New documents (for the writer), and New text files (for the compiler). Rename is under ""R"". The Cut, Copy, Paste, and Duplicate commands are right where you'd expect them to be, and operate in the expected way."
        ""
-       "When you open a directory, with the Open command or by double-clicking, the display changes to show the contents of that directory."
+       "When you open a directory, with the Open command or by double-clicking, the display changes to show the contents of that directory. You can also open directories by using the Go To command."
        ""
        "When you open a text file, my editor takes over."
        ""
