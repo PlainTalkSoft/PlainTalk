@@ -1,4 +1,5 @@
 \ copyright © 2006, 2017 the osmosian order (4700)
+\ copyright © 2023 the plaintalk contributors (v0.3.0)
 
 \ here are the text rules:
 \   in a non-wrapped text, the rows end with a return byte.
@@ -8670,6 +8671,15 @@ Move the polygon given the difference.
 To move a polygon up some twips:
 Move the polygon given 0 and - the twips.
 
+To move a rider (command line rules):
+Skip any leading noise in the rider's source.
+Position the rider's token on the rider's source.
+Loop.
+If the rider's source starts with """", move the rider (quoted string rules); repeat.
+If the rider's source's first's target is noise, break.
+Bump the rider.
+Repeat.
+
 To move a rider (index lexicon rules):
 Skip any leading noise in the rider's source.
 Position the rider's token on the rider's source.
@@ -9965,6 +9975,10 @@ To put a color into another color:
 Put the color's hue into the other color's hue.
 Put the color's saturation into the other color's saturation.
 Put the color's lightness into the other color's lightness.
+
+To put the command line to a string:
+Call "kernel32.dll" "GetCommandLineA" returning a pchar.
+Convert the pchar into the string.
 
 To put a date/time into another date/time:
 Put the date/time's year into the other date/time's year.

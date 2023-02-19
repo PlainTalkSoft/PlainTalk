@@ -17,21 +17,22 @@ ream cal-3024
        ""
     end
     text -1 0 0 -1 0 0 4320 6120 7200 7560 0 "" "osmosian" 360 "left" 0 0 0 yes
-       "Overview"
+       "Features"
        "A Sample Program"
        "Gray Matter Glossary"
        "Index"
     end
     text -1 0 0 -1 0 0 7200 6120 7920 7560 0 "" "osmosian" 360 "right" 0 0 0 yes
-       "4"
-       "13"
-       "55"
-       "119"
+       "3"
+       "14"
+       "56"
+       "120"
     end
   end
   page 12240 15840 1 1440
     text -1 0 0 -1 0 0 2160 6120 10080 6480 0 "title" "osmosian" 360 "center" 0 0 0 yes
-       "Overview"
+       "Features"
+       ""
     end
   end
   page 12240 15840 1 1440
@@ -72,6 +73,20 @@ ream cal-3024
   page 12240 15840 1 1440
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
        "5"
+    end
+    text -1 0 0 -1 0 0 2160 2160 10080 13680 0 "title" "osmosian" 360 "left" 0 0 0 yes
+       "USING THE COMMAND LINE"
+       ""
+       "PlainTalk provides a way of using its program via the command line."
+       ""
+       "If you specify a path to a file, PlainTalk will open that file for you. You can also drag files to the PlainTalk executable icon, and it is the same thing."
+       ""
+       ""
+    end
+  end
+  page 12240 15840 1 1440
+    text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
+       "6"
     end
     text -1 0 0 -1 0 0 2160 2160 10080 13680 0 "title" "osmosian" 360 "left" 0 0 0 yes
        "THE DESKTOP"
@@ -249,7 +264,7 @@ ream cal-3024
   end
   page 12240 15840 1 1440
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
-       "6"
+       "7"
     end
     text -1 0 0 -1 0 0 2160 2160 10080 14040 0 "title" "osmosian" 360 "left" 0 0 0 yes
        "THE FINDER"
@@ -372,7 +387,7 @@ ream cal-3024
   end
   page 12240 15840 1 1440
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
-       "7"
+       "8"
     end
     text -1 0 0 -1 0 0 2160 2160 10080 13680 0 "title" "osmosian" 360 "left" 0 0 0 yes
        "THE EDITOR"
@@ -539,7 +554,7 @@ ream cal-3024
   end
   page 12240 15840 1 1440
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
-       "8"
+       "9"
     end
     text -1 0 0 -1 0 0 2160 2160 10080 13680 0 "title" "osmosian" 360 "left" 0 0 0 yes
        "THE WRITER"
@@ -765,7 +780,7 @@ ream cal-3024
   end
   page 12240 15840 1 1440
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
-       "9"
+       "10"
     end
     text -1 0 0 -1 0 0 2160 2160 10080 13680 0 "title" "osmosian" 360 "left" 0 0 0 yes
        "THE COMPILER"
@@ -790,7 +805,7 @@ ream cal-3024
   end
   page 12240 15840 1 1440
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
-       "10"
+       "11"
     end
     text -1 0 0 -1 0 0 2160 2160 10080 13680 0 "title" "osmosian" 360 "left" 0 0 0 yes
        "THE NOODLE"
@@ -948,7 +963,7 @@ ream cal-3024
   end
   page 12240 15840 1 1440
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
-       "11"
+       "12"
     end
     text -1 0 0 -1 0 0 2160 2160 10080 13680 0 "title" "osmosian" 360 "left" 0 0 0 yes
        "HOW I WORK"
@@ -984,7 +999,7 @@ ream cal-3024
   end
   page 12240 15840 1 1440
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
-       "12"
+       "13"
     end
     text -1 0 0 -1 0 0 2160 2160 10080 13680 0 "title" "osmosian" 360 "left" 0 0 0 yes
        "THE RULES"
@@ -1050,7 +1065,7 @@ ream cal-3024
     polygon 0 0 0 -1 0 0 2 2160 4320 2160 9720
     polygon 0 0 0 0 0 1000 73 2636 6871 2674 6834 2736 6767 2822 6688 2925 6610 3045 6544 3178 6504 3316 6491 3456 6504 3588 6544 3707 6610 3812 6688 3895 6767 3958 6834 3995 6871 4024 6892 4059 6898 4115 6898 4210 6898 4332 6908 4475 6937 4626 6995 4777 7096 4917 7227 5030 7384 5106 7561 5130 7753 5108 7944 5041 8120 4936 8272 4790 8383 4628 8463 4475 8516 4348 8548 4273 8569 4229 8584 4197 8606 4160 8646 4097 8712 4006 8792 3882 8869 3726 8936 3531 8975 3318 8989 3114 8975 2938 8936 2812 8869 2728 8792 2674 8712 2641 8646 2623 8606 2607 8584 2585 8569 2548 8548 2485 8516 2400 8466 2297 8396 2176 8306 2044 8186 1917 8046 1817 7884 1760 7708 1766 7517 1822 7328 1917 7161 2037 7030 2170 6951 2302 6911 2421 6898 2516 6898 2572 6898 2607 6892 2636 6871
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
-       "14"
+       "15"
     end
     polygon 0 0 0 -1 0 0 2 2520 3960 9720 3960
     group
@@ -1123,7 +1138,7 @@ ream cal-3024
   end
   page 12240 15840 1 1440
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
-       "15"
+       "16"
     end
     text -1 0 0 -1 0 0 2160 2160 10080 13680 0 "title" "osmosian" 360 "left" 0 0 0 yes
        "THE PROJECT DIRECTORY"
@@ -1337,7 +1352,7 @@ ream cal-3024
   end
   page 12240 15840 1 1440
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
-       "16"
+       "17"
     end
     text -1 0 0 -1 0 0 2160 2160 10080 13680 0 "title" "osmosian" 360 "left" 0 0 0 yes
        "THE ""RUN"" ROUTINE"
@@ -1422,7 +1437,7 @@ ream cal-3024
   end
   page 12240 15840 1 1440
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
-       "17"
+       "18"
     end
     text -1 0 0 -1 0 0 2160 2160 10080 13680 0 "title" "osmosian" 360 "left" 0 0 0 yes
        "THE BASIC STRUCTURE"
@@ -1517,7 +1532,7 @@ ream cal-3024
   end
   page 12240 15840 1 1440
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
-       "18"
+       "19"
     end
     text -1 0 0 -1 0 0 2160 2160 10080 13680 0 "title" "osmosian" 360 "left" 0 0 0 yes
        "COMMENTS"
@@ -1639,7 +1654,7 @@ ream cal-3024
   end
   page 12240 15840 1 1440
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
-       "19"
+       "20"
     end
     text -1 0 0 -1 0 0 2160 2160 10080 13680 0 "title" "osmosian" 360 "left" 0 0 0 yes
        "REMARKS"
@@ -1785,7 +1800,7 @@ ream cal-3024
   end
   page 12240 15840 1 1440
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
-       "20"
+       "21"
     end
     text -1 0 0 -1 0 0 2160 2160 10080 13680 0 "title" "osmosian" 360 "left" 0 0 0 yes
        "THE EVENT LOOP"
@@ -1869,7 +1884,7 @@ ream cal-3024
   end
   page 12240 15840 1 1440
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
-       "21"
+       "22"
     end
     text -1 0 0 -1 0 0 2160 2160 10080 13680 0 "title" "osmosian" 360 "left" 0 0 0 yes
        "ETERNAL LOOPS"
@@ -1912,7 +1927,7 @@ ream cal-3024
   end
   page 12240 15840 1 1440
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
-       "22"
+       "23"
     end
     text -1 0 0 -1 0 0 2160 2160 10080 13680 0 "title" "osmosian" 360 "left" 0 0 0 yes
        "THE EVENT DISPATCHER"
@@ -2011,7 +2026,7 @@ ream cal-3024
   end
   page 12240 15840 1 1440
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
-       "23"
+       "24"
     end
     text -1 0 0 -1 0 0 2160 2160 10080 13680 0 "title" "osmosian" 360 "left" 0 0 0 yes
        "QUITTING"
@@ -2153,7 +2168,7 @@ ream cal-3024
   end
   page 12240 15840 1 1440
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
-       "24"
+       "25"
     end
     text -1 0 0 -1 0 0 2160 2160 10080 13680 0 "title" "osmosian" 360 "left" 0 0 0 yes
        "AVOIDING FLICKER"
@@ -2200,7 +2215,7 @@ ream cal-3024
   end
   page 12240 15840 1 1440
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
-       "25"
+       "26"
     end
     text -1 0 0 -1 0 0 2160 2160 10080 13680 0 "title" "osmosian" 360 "left" 0 0 0 yes
        "THE REFRESH EVENT"
@@ -2284,7 +2299,7 @@ ream cal-3024
   end
   page 12240 15840 1 1440
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
-       "26"
+       "27"
     end
     text -1 0 0 -1 0 0 2160 2160 10080 13680 0 "title" "osmosian" 360 "left" 0 0 0 yes
        "THE BACKGROUND"
@@ -2465,7 +2480,7 @@ ream cal-3024
   end
   page 12240 15840 1 1440
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
-       "27"
+       "28"
     end
     text -1 0 0 -1 0 0 2160 2160 10080 13680 0 "title" "osmosian" 360 "left" 0 0 0 yes
        "MEMORY LEAKS"
@@ -2490,7 +2505,7 @@ ream cal-3024
   end
   page 12240 15840 1 1440
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
-       "28"
+       "29"
     end
     text -1 0 0 -1 0 0 2160 2160 10080 13680 0 "title" "osmosian" 360 "left" 0 0 0 yes
        "DAB, DAB, DAB"
@@ -2590,7 +2605,7 @@ ream cal-3024
   end
   page 12240 15840 1 1440
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
-       "29"
+       "30"
     end
     text -1 0 0 -1 0 0 2160 2160 10080 13680 0 "title" "osmosian" 360 "left" 0 0 0 yes
        "THE STATUS"
@@ -2729,7 +2744,7 @@ ream cal-3024
   end
   page 12240 15840 1 1440
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
-       "30"
+       "31"
     end
     text -1 0 0 -1 0 0 2160 2160 10080 13680 0 "title" "osmosian" 360 "left" 0 0 0 yes
        "THE STATUS API"
@@ -2867,7 +2882,7 @@ ream cal-3024
   end
   page 12240 15840 1 1440
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
-       "31"
+       "32"
     end
     text -1 0 0 -1 0 0 2160 2160 10080 13680 0 "title" "osmosian" 360 "left" 0 0 0 yes
        "HELLO, WORLD!"
@@ -2981,7 +2996,7 @@ ream cal-3024
   end
   page 12240 15840 1 1440
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
-       "32"
+       "33"
     end
     text -1 0 0 -1 0 0 2160 2160 10080 13680 0 "title" "osmosian" 360 "left" 0 0 0 yes
        "BUTTONS"
@@ -3067,7 +3082,7 @@ ream cal-3024
   end
   page 12240 15840 1 1440
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
-       "33"
+       "34"
     end
     text -1 0 0 -1 0 0 2160 2160 10080 13680 0 "title" "osmosian" 360 "left" 0 0 0 yes
        "WORKING WITH BUTTONS"
@@ -3154,7 +3169,7 @@ ream cal-3024
   end
   page 12240 15840 1 1440
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
-       "34"
+       "35"
     end
     text -1 0 0 -1 0 0 2160 2160 10080 13680 0 "title" "osmosian" 360 "left" 0 0 0 yes
        "WORKING WITH OUR BUTTONS"
@@ -3297,7 +3312,7 @@ ream cal-3024
   end
   page 12240 15840 1 1440
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
-       "35"
+       "36"
     end
     text -1 0 0 -1 0 0 2160 2160 10080 13680 0 "title" "osmosian" 360 "left" 0 0 0 yes
        "MAKING OUR BUTTONS WORK"
@@ -3404,7 +3419,7 @@ ream cal-3024
   end
   page 12240 15840 1 1440
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
-       "36"
+       "37"
     end
     text -1 0 0 -1 0 0 2160 2160 10080 13680 0 "title" "osmosian" 360 "left" 0 0 0 yes
        "TEXT"
@@ -3496,7 +3511,7 @@ ream cal-3024
   end
   page 12240 15840 1 1440
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
-       "37"
+       "38"
     end
     text -1 0 0 -1 0 0 2160 2160 10080 13680 0 "title" "osmosian" 360 "left" 0 0 0 yes
        "MAKING TEXT WORK"
@@ -3595,7 +3610,7 @@ ream cal-3024
   end
   page 12240 15840 1 1440
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
-       "38"
+       "39"
     end
     text -1 0 0 -1 0 0 2160 2160 10080 13680 0 "title" "osmosian" 360 "left" 0 0 0 yes
        "DISPATCHING KEY PRESSES"
@@ -3687,7 +3702,7 @@ ream cal-3024
   end
   page 12240 15840 1 1440
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
-       "39"
+       "40"
     end
     text -1 0 0 -1 0 0 2160 2160 10080 13680 0 "title" "osmosian" 360 "left" 0 0 0 yes
        "HANDLING KEY PRESSES"
@@ -3784,7 +3799,7 @@ ream cal-3024
   end
   page 12240 15840 1 1440
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
-       "40"
+       "41"
     end
     text -1 0 0 -1 0 0 2160 2160 10080 13680 0 "title" "osmosian" 360 "left" 0 0 0 yes
        "THE MAGIC"
@@ -3808,7 +3823,7 @@ ream cal-3024
   end
   page 12240 15840 1 1440
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
-       "41"
+       "42"
     end
     text -1 0 0 -1 0 0 2160 2160 10080 13680 0 "title" "osmosian" 360 "left" 0 0 0 yes
        "WORKS"
@@ -3894,7 +3909,7 @@ ream cal-3024
   end
   page 12240 15840 1 1440
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
-       "42"
+       "43"
     end
     text -1 0 0 -1 0 0 2160 2160 10080 13680 0 "title" "osmosian" 360 "left" 0 0 0 yes
        "THE CURRENT WORK"
@@ -3986,7 +4001,7 @@ ream cal-3024
   end
   page 12240 15840 1 1440
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
-       "43"
+       "44"
     end
     text -1 0 0 -1 0 0 2160 2160 10080 13680 0 "title" "osmosian" 360 "left" 0 0 0 yes
        "WORKING WITH WORKS"
@@ -4077,7 +4092,7 @@ ream cal-3024
   end
   page 12240 15840 1 1440
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
-       "44"
+       "45"
     end
     text -1 0 0 -1 0 0 2160 2160 10080 13680 0 "title" "osmosian" 360 "left" 0 0 0 yes
        "MAKING WORKS WORK"
@@ -4215,7 +4230,7 @@ ream cal-3024
   end
   page 12240 15840 1 1440
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
-       "45"
+       "46"
     end
     text -1 0 0 -1 0 0 2160 2160 10080 13680 0 "title" "osmosian" 360 "left" 0 0 0 yes
        "HELLO, GOOGLEY!"
@@ -4307,7 +4322,7 @@ ream cal-3024
   end
   page 12240 15840 1 1440
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
-       "46"
+       "47"
     end
     text -1 0 0 -1 0 0 2160 2160 10080 13680 0 "title" "osmosian" 360 "left" 0 0 0 yes
        "RIDERS"
@@ -4330,7 +4345,7 @@ ream cal-3024
   end
   page 12240 15840 1 1440
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
-       "47"
+       "48"
     end
     text -1 0 0 -1 0 0 2160 2160 10080 13680 0 "title" "osmosian" 360 "left" 0 0 0 yes
        "WORKS IN PROGRESS"
@@ -4428,7 +4443,7 @@ ream cal-3024
   end
   page 12240 15840 1 1440
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
-       "48"
+       "49"
     end
     text -1 0 0 -1 0 0 2160 2160 10080 13680 0 "title" "osmosian" 360 "left" 0 0 0 yes
        "MOVING OUR RIDERS"
@@ -4532,7 +4547,7 @@ ream cal-3024
   end
   page 12240 15840 1 1440
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
-       "49"
+       "50"
     end
     text -1 0 0 -1 0 0 2160 2160 10080 13680 0 "title" "osmosian" 360 "left" 0 0 0 yes
        "PREPARING TO PAINT"
@@ -4621,7 +4636,7 @@ ream cal-3024
   end
   page 12240 15840 1 1440
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
-       "50"
+       "51"
     end
     text -1 0 0 -1 0 0 2160 2160 10080 13680 0 "title" "osmosian" 360 "left" 0 0 0 yes
        "PAINTING"
@@ -4725,7 +4740,7 @@ ream cal-3024
   end
   page 12240 15840 1 1440
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
-       "51"
+       "52"
     end
     text -1 0 0 -1 0 0 2160 2160 10080 13680 0 "title" "osmosian" 360 "left" 0 0 0 yes
        "PAGING"
@@ -4822,7 +4837,7 @@ ream cal-3024
   end
   page 12240 15840 1 1440
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
-       "52"
+       "53"
     end
     text -1 0 0 -1 0 0 2160 2160 10080 13680 0 "title" "osmosian" 360 "left" 0 0 0 yes
        "HOME, END, PAGE UP, AND PAGE DOWN"
@@ -4929,7 +4944,7 @@ ream cal-3024
   end
   page 12240 15840 1 1440
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
-       "53"
+       "54"
     end
     text -1 0 0 -1 0 0 2160 2160 10080 13680 0 "title" "osmosian" 360 "left" 0 0 0 yes
        "PRINTING"
@@ -5102,7 +5117,7 @@ ream cal-3024
        "Then use the following Gray Matter Glossary to guide you on your journey as you create your very own programs. In Plain English."
     end
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
-       "54"
+       "55"
     end
     polygon 0 0 0 -1 0 0 2 10080 5400 10080 10440
     polygon 0 0 0 -1 0 0 2 2160 5400 2160 10440
@@ -5167,7 +5182,7 @@ ream cal-3024
   end
   page 12240 15840 1 1440
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
-       "56"
+       "57"
     end
     text -1 0 0 -1 0 0 2160 2160 10080 13680 0 "title" "osmosian" 360 "left" 0 0 0 yes
        "OVERVIEW"
@@ -5220,7 +5235,7 @@ ream cal-3024
        ""
     end
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
-       "57"
+       "58"
     end
   end
   page 12240 15840 1 1440
@@ -5256,7 +5271,7 @@ ream cal-3024
        "I have global variables with names like ""the comma byte"" for each of these, so you don't have to work directly with the numbers. You can find them all by searching for the phrase ""is a byte equal to"" in my noodle."
     end
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
-       "58"
+       "59"
     end
     group
       text -1 0 0 -1 0 0 2160 11640 2640 11880 0 "" "osmosian" 240 "center" 0 0 0 yes
@@ -7106,7 +7121,7 @@ ream cal-3024
        "I would know enough to use ""CONVERT a ratio TO a string"" before handling the THEN operator with a call to ""APPEND a string TO another string"". Sweet. Blessed be the creators, who teach my bits to twiddle!"
     end
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
-       "59"
+       "60"
     end
   end
   page 12240 15840 1 1440
@@ -7137,7 +7152,7 @@ ream cal-3024
        "But if you do understand what I'm saying, I'm pretty sure you'll also enjoy the ""Kluge"" topic several pages hence, and the part about ""nibble literals"" on the ""Literals"" page. Not to mention some of my ""Possessives"", and all three of my ""Special Imperatives"". Plus all the low-level routines in my noodle that use the INTEL statement and/or the EAX register."
     end
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
-       "60"
+       "61"
     end
   end
   page 12240 15840 1 1440
@@ -7169,7 +7184,7 @@ ream cal-3024
        "I can, of course, DRAW a box. And I've got functions in my noodle to get a box's WIDTH, HEIGHT, and CENTER, among other things. I can even tell if a box IS INSIDE or IS TOUCHING another box. And whether or not a certain spot IS IN a box or IS ON the edge of a box. Not to mention all the other ""Graphic Transformations"" you can read about elsewhere in this glossary."
     end
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
-       "61"
+       "62"
     end
     rectangle 0 0 0 -1 0 0 3600 7200 5760 8640 0
     text -1 0 0 -1 0 0 2880 7740 3420 8100 0 "" "osmosian" 360 "right" 0 0 0 yes
@@ -7216,7 +7231,7 @@ ream cal-3024
        "Records. The last of my built-in types is the record. The prototype record occupies zero bits in memory, but you can define records of any length by adding ""fields"" to the prototype record. These fields can be based on any of the primitive types, including other records that you have defined."
     end
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
-       "62"
+       "63"
     end
   end
   page 12240 15840 1 1440
@@ -7250,7 +7265,7 @@ ream cal-3024
        "Hues range from 0 to 3600. I use multiples of 300 for my palette, starting with red at 0. Saturation and lightness can be anything from 0 to 1000."
     end
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
-       "63"
+       "64"
     end
     text -1 0 0 -1 0 0 2160 9360 3120 9720 0 "" "osmosian" 360 "center" 0 0 0 yes
        "lightest"
@@ -7433,7 +7448,7 @@ ream cal-3024
        ""
     end
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
-       "64"
+       "65"
     end
     text -1 0 0 -1 0 0 2160 4680 10080 5040 0 "" "osmosian" 360 "left" 2100 1000 625 yes
        "\ this is a comment that ends at the next carriage return"
@@ -7462,7 +7477,7 @@ ream cal-3024
        "Lastly, remember: I don't support nested conditionals. They're always unnecessary and almost always unclear. There are none in my code, and I'm the most advanced compiler alive today. In fact, each of my conditionals fits on a single line. Think about it."
     end
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
-       "65"
+       "66"
     end
   end
   page 12240 15840 1 1440
@@ -7495,7 +7510,7 @@ ream cal-3024
        "The console remembers everything it displays, and automatically scrolls upward when the bottom of the screen is reached. You can use HOME, END, PAGE UP, PAGE DOWN, and the right mouse button to manually scroll."
     end
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
-       "66"
+       "67"
     end
     group
       polygon 0 0 0 -1 0 0 9 2160 4320 2160 4230 2166 4144 2182 4072 2216 4016 2272 3982 2346 3964 2430 3960 2520 3960
@@ -7534,7 +7549,7 @@ ream cal-3024
        "I offer my own existence as proof of the sufficiency of these techniques. And I am confident that all future bugs — except, perhaps, for an unexpected ""h-mobius loop"" — will be rooted out in the same manner."
     end
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
-       "67"
+       "68"
     end
   end
   page 12240 15840 1 1440
@@ -7562,7 +7577,7 @@ ream cal-3024
        ""
     end
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
-       "68"
+       "69"
     end
   end
   page 12240 15840 1 1440
@@ -7595,7 +7610,7 @@ ream cal-3024
        "Some of these work with just one data type, of course, but others work with many. And if you've read the ""Decider"" topic, you know that I know how to make the negatives of these, too. But please don't try to memorize them. That's not at all the idea. Just say what you want to say in your program, and if I don't understand, add to my collection and make me smarter."
     end
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
-       "69"
+       "70"
     end
     text -1 0 0 -1 0 0 2160 4320 5760 11520 0 "" "osmosian" 360 "left" 0 0 0 yes
        "IS"
@@ -7676,7 +7691,7 @@ ream cal-3024
        "You can also prevent drawing in certain areas of the canvas with masking tape. See the ""Masking"" topic to find out how."
     end
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
-       "70"
+       "71"
     end
   end
   page 12240 15840 1 1440
@@ -7706,7 +7721,7 @@ ream cal-3024
        "I can, of course, DRAW an ellipse. And I've got functions to get an ellipse's WIDTH, HEIGHT, and CENTER, among other things. I can even tell if a spot IS IN an ellipse or IS ON the edge of an ellipse. Not to mention all the usual ""Graphic Transformations"" you can read about elsewhere in this glossary."
     end
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
-       "71"
+       "72"
     end
     text -1 0 0 -1 0 0 2880 7740 3420 8100 0 "" "osmosian" 360 "right" 0 0 0 yes
        "LEFT"
@@ -7885,7 +7900,7 @@ ream cal-3024
        ""
     end
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
-       "72"
+       "73"
     end
   end
   page 12240 15840 1 1440
@@ -7922,7 +7937,7 @@ ream cal-3024
        "Somewhere. Usually in one of your event handlers. This routine sets things up so the next event you ""deque"" is nil, thus ending your event handling loop."
     end
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
-       "73"
+       "74"
     end
     polygon 0 0 0 -1 0 0 2 2160 3600 2160 10440
     polygon 0 0 0 -1 0 0 2 10080 3600 10080 10440
@@ -8014,7 +8029,7 @@ ream cal-3024
        ""
     end
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
-       "74"
+       "75"
     end
   end
   page 12240 15840 1 1440
@@ -8045,7 +8060,7 @@ ream cal-3024
        "The last field is like the first, where MATE is assumed to be a type defined elsewhere. The (REFERENCE) tag tells me that MATE is not actually ""part of"" the person, and should not be automatically destroyed when the person is."
     end
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
-       "75"
+       "76"
     end
   end
   page 12240 15840 1 1440
@@ -8081,7 +8096,7 @@ ream cal-3024
        "If anything goes wrong, ""the i/o error"" will contain a cryptic description of the problem suitable for display to the user. You don't have to clear it before a call, but you should check it afterward to make sure it's blank."
     end
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
-       "76"
+       "77"
     end
   end
   page 12240 15840 1 1440
@@ -8116,7 +8131,7 @@ ream cal-3024
        "Note that counts and sizes, including the ""size"" in the ""item"" record, are limited to 2147483647, which is the largest number I know."
     end
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
-       "77"
+       "78"
     end
     polygon 0 0 0 -1 0 0 2 2160 3960 2160 6840
     polygon 0 0 0 -1 0 0 2 10080 3960 10080 6840
@@ -8199,7 +8214,7 @@ ream cal-3024
        "If your fonts don't look right, you've probably got a bad font name. Remember, a font name is not necessarily the name of the file in the ""font"" folder on your disk. Rather, it is the ""typeface name"" displayed in the sample box when you double-click on one of those font files."
     end
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
-       "78"
+       "79"
     end
   end
   page 12240 15840 1 1440
@@ -8229,7 +8244,7 @@ ream cal-3024
        "See the topic on ""Possessives"" for further information."
     end
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
-       "79"
+       "80"
     end
   end
   page 12240 15840 1 1440
@@ -8261,7 +8276,7 @@ ream cal-3024
        "But they do answer the age-old ""which came first"" question. The chicken did."
     end
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
-       "80"
+       "81"
     end
   end
   page 12240 15840 1 1440
@@ -8299,7 +8314,7 @@ ream cal-3024
        ""
     end
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
-       "81"
+       "82"
     end
   end
   page 12240 15840 1 1440
@@ -8333,7 +8348,7 @@ ream cal-3024
        ""
     end
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
-       "82"
+       "83"
     end
   end
   page 12240 15840 1 1440
@@ -8366,7 +8381,7 @@ ream cal-3024
        "See the ""Drawing"" topic for more information. But do feel free to use ""the screen's box"" and all of its fields when initializing your stuff."
     end
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
-       "83"
+       "84"
     end
   end
   page 12240 15840 1 1440
@@ -8400,7 +8415,7 @@ ream cal-3024
        "Remember? I know I'll never forget. We parsed the string and dabbed the canvas and refreshed the screen and it was... Art!"
     end
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
-       "84"
+       "85"
     end
   end
   page 12240 15840 1 1440
@@ -8438,7 +8453,7 @@ ream cal-3024
        "And that's all I have to say about keywords."
     end
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
-       "85"
+       "86"
     end
   end
   page 12240 15840 1 1440
@@ -8468,7 +8483,7 @@ ream cal-3024
        "If you're working at this ridiculously low level, you'll want to check out ""Bits"", ""Special Imperatives"", and my noodle for more information and examples."
     end
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
-       "86"
+       "87"
     end
   end
   page 12240 15840 1 1440
@@ -8506,7 +8521,7 @@ ream cal-3024
        ""
     end
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
-       "87"
+       "88"
     end
     text -1 0 0 -1 0 0 2160 7200 3600 7560 0 "" "osmosian" 360 "left" 0 0 0 yes
        "START SPOT"
@@ -8547,7 +8562,7 @@ ream cal-3024
        "If you find a bug in me, write my creators and they will send you something desirable like a blank t-shirt. If you can figure out how to make me simpler without making me slower, they will send you a monogrammed t-shirt. And If you can come up with a way to make me smaller, faster, and more powerful all at once, I'm pretty sure they will send you an embroidered wife-beater."
     end
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
-       "88"
+       "89"
     end
     text -1 0 0 -1 0 0 2160 8280 10080 9720 0 "" "osmosian" 180 "left" 0 0 0 yes
        "/routine/create [picture]/yes/no/no/no//4/0/00470A48/"
@@ -8594,7 +8609,7 @@ ream cal-3024
        ""
     end
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
-       "89"
+       "90"
     end
   end
   page 12240 15840 1 1440
@@ -8620,7 +8635,7 @@ ream cal-3024
        "See also the ""Loops"" page, where a local variable and a decider lets us make ""counted loops"" without adding any new keywords to my compiler."
     end
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
-       "90"
+       "91"
     end
   end
   page 12240 15840 1 1440
@@ -8651,7 +8666,7 @@ ream cal-3024
        "Note that you can LOOP, REPEAT, and BREAK in a decider, but you cannot EXIT because it leaves me in doubt. And you must take care not to ""fall out of"" a decider, as well. To exit a decider, either SAY YES or SAY NO."
     end
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
-       "91"
+       "92"
     end
     polygon 0 0 0 -1 0 0 2 2160 3600 2160 8280
     polygon 0 0 0 -1 0 0 2 10080 3600 10080 8280
@@ -8753,7 +8768,7 @@ ream cal-3024
        "Note that if you're drawing your heart out and nothing is showing up, it's probably because you've got masking tape where you don't want it, or you've forgotten to REFRESH THE SCREEN as described in the ""Drawing"" topic."
     end
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
-       "92"
+       "93"
     end
   end
   page 12240 15840 1 1440
@@ -8781,7 +8796,7 @@ ream cal-3024
        "A good example can be found in my writer where a ""page"" is defined as a thing with some ""shapes"" on it. You'll find routines there that create both pages and shapes, but you will not find any routines to destroy them. Those are mine. And when I'm asked to destroy a page, I dump the shapes on it at the same time. Except, of course, for the ""edit shape"", which is a reference."
     end
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
-       "93"
+       "94"
     end
   end
   page 12240 15840 1 1440
@@ -8811,7 +8826,7 @@ ream cal-3024
        "Local variable names follow the parameter pattern. I create a local whenever I see a name with an indefinite article in front of it in the body of a routine."
     end
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
-       "94"
+       "95"
     end
   end
   page 12240 15840 1 1440
@@ -8840,7 +8855,7 @@ ream cal-3024
        "the same, so you don't get confused. I'll also put the word ""original"" on the front of the real parameter's name so you can still get to it, if you need to."
     end
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
-       "95"
+       "96"
     end
   end
   page 12240 15840 1 1440
@@ -8870,7 +8885,7 @@ ream cal-3024
        ""
     end
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
-       "96"
+       "97"
     end
     picture -1 0 0 2160 6120 3960 7920 2160 6120 4065 8025 no no 0 "FFD8FFE000104A4649460001020200C800C80000FFFE01021863E90605000000070000000F00000015000000200000002000000020000000050000000600000008000000150000002000000020000000200000002000000007000000080000001200000020000000200000002000000020000000200000000F000000150000002000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000020000000FFC0000B080080008001011100FFDB0084000503030403030504040405050506070D0807070707100B0C090D131014131210121215171E1915161C1612121A231A1C1F20212221141925272420271E212120010505050706070F08080F201512151520202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020FFC400D20000010501010101010100000000000000000102030405060708090A0B100002010303020403050504040000017D01020300041105122131410613516107227114328191A1082342B1C11552D1F02433627282090A161718191A25262728292A3435363738393A434445464748494A535455565758595A636465666768696A737475767778797A838485868788898A92939495969798999AA2A3A4A5A6A7A8A9AAB2B3B4B5B6B7B8B9BAC2C3C4C5C6C7C8C9CAD2D3D4D5D6D7D8D9DAE1E2E3E4E5E6E7E8E9EAF1F2F3F4F5F6F7F8F9FAFFDA0008010100003F004F8E3FB47F8FBC13F1EB5ED1F4EBADBA4D87D9647867F3BC8D3D03C2124BBF20163096632810B2BB8BA89252FB7ECCB98FFB507C4BB368A39B50D4CEA7A848FA64424B216D7134B04CA0431DB245731C574561915D5C2B799AA459430C313D03F683F145A5B59C1A578B74CB3D0A6927BA8DD1574D85AD6D6ECC313DB24AFE6411F9050882286E159ACD576CED25E46BCFC9FB557C5C314F25FEB3FBD6D36369EE574E7B682DDFEC497764CA5E6893CE778E725766C9433055BA8FCA893AD8FE38FC60D5A6D6ED6D2E66B5B0B692E9A18E452B716D7488D701EE65CBADBC0925CC7BE22D225BFD9E0B6B968D247964B9AAFC74F1EE99AF4CFAB78BB4CD1E38E48F50BCD3352BEFB1CB39B7B8D3DA5090B28B8B48DD1AE4448559E6B78F26D8CAED2CB775EF8FBF116CB59D4849A8C3A1EA17315C32DAFDAE2BF3636B6D1DE493B889A38D64922922BC857600B23DB5B79922C6A1EF79FD67F68FF88EDA85C402EAF74FFB46B7717338B9CDAC31DBC33C90A2A4B20125BA093ECB0896681209251B6544F2EEBED3CFA7ED39F10F59845CA4F0E99AA5FC52DDC9A859C3225979A1E194E56D5653706DED0C2F21948654812365C2CD1DE437FF00B4DFC4DB7780C9A95EC76F7F7222B48EEEF65B559A2B9B68E6D9E7BC31A2EC796179A50E855658C5A1B684962695FB557C56BCC6A169A8DEEA135DFD8D2292D17E796497C8865B58E055B8863B976B295E2322A0D8D72E222668D5290FDAD3E23CB1CDA7E9DE23B2BD493ECFA5897EDA6CE2C8B9B829B5EE25F39A1781F6BDCFEE2652B0179559374C788FF6CEF883ACE97773691ABFD9E59F4D68EE836A0AAD1445A5B75017CA8BFD247990CE1ED883B8BB30318586DBD4FE0E7ED39E2EF14FC5CBFB1D6A79B47F0FD8DF4AFAB7F69C2CB34F2F94F1416505B856314EF282C2D9199996DC01BE459E4B8E1A4FDABBE24EB3A5EB369ACEB5A29D39B7A6B573F65B7BDB3B1576BC88DA431F9416E1E45303C4BE74AADE416793CB33797E8DF02FF68AF897E3EF88BA3787B59921BA92F249EE6E21B3B0096D0DBC32DCC7230B85122C901F32358E7473996C842C0095A76F2CF8E90EDFDA5B5CB886F7EC3FD9FB2EDA57B4DB6B69124CF3195B1224F659B810A9688F9B399E59A2CFDA228A4E4B518E082C43DEE9935B68F1C9F65D4DEE6CEEE69608EDC5979D657122CF1CB218BCAB08555E38A0F3EEE60861548A410F871E3D6F50D52D757F1668B6D7BA9FFC4AEF359BA3650CD6AF24FA6C3757092C5233DCE51AE1599991248BED12EF6692741D37833C150EABAE68D7F0E9DF67BDD52E627D36DEDACE31752333497F12C2D0A5B98B6028266D91B285B5F2E786D6E84917B6F803E00AEB7A726ABAB69D0EADA7C32349069105A42F62C96F71E725B2A3C90159DA5B8BD0E64861092878B6C36EAD0DCFACD8FC3CD33C09637B67E1F9E6B086C6C4DEB25AE8F2451BCE443B24F2EC4429707759B34910569184BB018E3711BE2EA7F0DB489DAFAD7FB274CBA82391619B4FB0B3B66B79668E64FB15B5F9480B3462DA681510C0CB6F1F99233BBAC32AF01E27F829A36B7A4DA5B693A9CCCB258DF3F9D676BF6A26DAE223025C916F2CAC81EDAD206812048A1905B4B6E4442E5614F19F10697169FE2959BC411699E1FD7ACEFADE59A3D3F7DE08620F6F2CF244D1462711DA0B5B98425B4AAB0A5AC91F9B1BAE6F7CFDF5093C1F632596A3A643A13C925BDBEA2F3E96972F21B7162C614D85609644264924B59D1002409DE5984663E66E747BAD3EC751B1BE961B57D3E28EC27793432B1C2E44B72D6F2CA631247742588C20952580917CC58939E8219FFE298BABE13FD82DA3F26DAE52CE6FB5FF00655B5C3C92116B2B4A8577C573247F6232CA64DB76F379663565CBD5265BABE49750B6D33516824B82B68DA9C2B0DBBDB98F36FE7899E7B8B516B1471C5FBD42598AC4CC55BCCF4DF811E118B4C6F16E97AAD8436F7507836F109BCB175B8492E668ED6E6E2269204D82DD03C2EB2C8B1AC8B31F352279648FCE74EF14DFDB5C5B084E8B751EA3BE048ADEF96CAD8CF3C904973E746DB0DB2344C2D5DA1FB3A324642C8C8926FF0046FD911348BCF8E1E1BBB134CD70F1343124115B4325CBC505B66358D1834023FDF48F705F3731C6E9B4B3C91BCDFB53F836F355F8FBAD3C30D95CDC49E75BC76774B3852E218A42FF006AC2AB7970DD25C132BAA40B1346DFB98E1F371B446BFD6F5387535BCFB44F7BE2429A3DC8BA5FB5449229B96D934A6E9D5D12E242B0DB79B3ADCDC06919A64B7494F04E917F7BAFDFDEDA6A1E5476DB6E2E3C8D597616B782536766B711C923C76D15CDA609374ACD6E915C011A40668FEA6FD9F7E0EE9D67A5C3A9EA7A1F9975796C6D64B2BBD36EB4D8AC74C2D76A96DE4CA1C4AEC5BF7D09728C7CB998C92059E7F72B386FE6FB15DDECBF66996D8ADCD95BC8B2C0646D8490ED1ABB6C2AC14FC808725973B76CF716515D4D6D2BB4C1ADA432A08E674524A326182901C618FCAD9190AD8CA8238CD4A2BA8749B386E2CB53B3BDD26C58C2501D455088A1496EA0B868269649E3496648D645579CF9A1A3653BD798F104925C5D6A115EE970EA70A5F006C6EAE51888A5BA9E1451F6E930A6602F20016045945E410C7288E1332F01F13B4F6F12E951DD5AEB5A9EA53D94497B67750CB3486E201A8A3C52798B342E6499EDE511450AC51CEF736AB0964B359E2F9CBC5FA7496B7D733695A54326A306AEB6AB15A58A2C7A9198C910B5824B05858C17366D6AE9BE28C4E16E9A26425D25E1A34B38ACE0BED323FB7D969BE64AB7B268D034F6FE54AE6213DB89991A195EE2D4349386C13E5A17588ABF5B6BE1FD4F48D274BF0FC8D0B6AC6C674D915FC7712471CD16A014799E7C5F67B5083CF2632F0347726799DD1A288CC97961A547120B8B287408EE4A2CA2F5A5B7B945B9D39831022481FF00D1D6DCBA7D9AE272E923CF003B3C9E9BE1CC10F847E1678ECCDA57F655E1B680DA195638B6DDDBC122DD0B9498CE5363A3C062C279BFDA8B1C888973088BCB3C6D73A848DA9C0B7D0C96E249EE1E3BFB8965B9B88E69A1952F835CA26E92647806F852391E284B3C6AA58B7B07EC9DAA587FC2DED06E20BFBD845F7C97324FA9B3CF1D8832476D6B2C8995D8935AE9E8A4FD9D98CFE57952C52263D4FE2EC0B6BF1C35AD42C134C964B0BEB5D52E6D24684C9717504169736DBA769634B5060B1BF01A50CD146B74DF30BB892BC9B5AB1D1BC3F0C2FA5EB1A66AB79A758CB6165A9C56798EFBCA7FB0C53CB2CAD8FB11170917EF1C40F20B9467960B6B6B6934FE1B69134F17876D6D5BED165777315CE97F6A8A4592482D2CAE651F6716CAC3CECA5C6F36E1DED64D40163737455A0FA7FEC9A669ACFA74D670E8DA6C11486D5E7BA9123D36D609AED2E6784CB3C52400412A442486355885CC215E68557CBEB74DD7351D4F60782F7ED36573135E5BDA9B51B3CEDD8B69C19A421E08A486590AB2EFC2B4658318E8B3BEBF83EC535EDEEB3721AE48B996DF4C58A0122ECB53088595A7585E5669D5F2E0042CD3795B4362E9BE018ECFC3C91CFA55EC12E9B6D10365A6FD8A2FB64C960D03496F324713C6E524108901B723ECE814451921F1A78A1B2BB9661AF68A8F6D72F713DED8DD46B0E9ADE54D1CF70206B79A3B4FDE1D5643248E59A5852292675731C7E73E2E9D9756D1ED75B7852DDA486EEFADE65995121797495CCE6E62492422C23D4A379662ECF14379B8C6A25821F9B3C7177FF09345A4A5FDAFF686A57DA6D8F976CB6FF69BB9AE67B29963DA0CF1CE375C0FB49DB100F2DE348FF685FB3B4FCCF867FB56FF0053B1BBB4FB697B9FB05BE9D78FBAFA5B6BD0AD6D0666B7C4F6FB764F2C50A866220847972A857AF46D55B4ED7F46D3350D34C2FA75A49645D6E6D62FB141BA4954E204952DBCC592F85E3A4ACD0426F12D5DE109E5DCF3FA82E9DA89B3B8B8F127DAADEF6E60476D46E6E8B6A36AFAADE1923F3669E01323148E779364116E4F99EDE6044DD37C28853C2DF0D3C5B711CBB248FECBA5E9FAD59C9732D9C9314BDBB376B1DB468647822314A4CFBA5B6D864003C696E7C9A59FEC76F1DB433E8B6E349B9596459E6FB55BC57891C8AC208BCD992E12E05BC25E4F2CC7BFCB5CC7160BFB37ECAAD0DAFC7AD2D2D6F2C90699F69D2EC9E5BA8EF3CD851E156105B2199E377335C4AD247308879B2BAB18A196393A0FDA49353D73E35F88B41B49A68629EFA5B3865B78A30527BAD334F508F2EE79503A5BC9848E1F32711CB0466432B88B92D5FC4DAAC76E35F6B5BD80CBBFC496F15D48DFBB8846CD6A3F7C11CC319B89A3378AF04B35D5FB49119E58433C3F04BC6B75E17F8B3FD9D6C268353B78934DB6B69A731DC48CF24423B7B9965114D3C904915A5B8B58C430B796E4BC30F9CF27D656977A4691636DAA69777A658D82492DD584F25ADB4566840B8B7B79A32F05B89634B25677F2E6575B7B388234A921925F4082FF0043B5B15F3AE753B3B4D022333DCEA0F730461104B0B34B34B81300124625D9C63CB94FDE8DCDDBC9AD34AD596ECE91334977124135F5BDB09080B2858A27DB9908DD3C8C0ED28804ACC5072786F10F8CADADFC27AB4225D17599355D377453DCB4B2595F4CD6AABB92D58B34966ED259C616D5A62F25D6CDBBF73379C78CBE29F87654BCBA97C670886C6C6F2EED6F9669AF6EA710C29035CC66174B4845C36215789E22AC668A3749EE6516DCCFC4BF1845789AA6936B26996B716F7DA9CC20B9BB778DAE0427ED92AC2635DF6B1B35D6644B7FDE8D36E62732B6A1229F0CF89D696905D5EDE259CD71A735F49AC5FD949742EE4484DD5E7D84DC98A746904DE7AABCECD332C72C0F1DC117091570175A0368F7DF607F0EC3A95F6977D3412C714D328B94B5324972D716C76DC460A320DE3C80A90BE5778764ECF42B9D3B51B1BD95AFA6B88AC748BA8AF6F74FB88A379A2845A5B88E292E11E78E39614550F2B44B9B9922862255ADEE7A0D67C29E2186EEE0B9CDCCDA95C190192EACE0BD2D1493482EA4123C8F081FDA96DE65CB41328793CC94086E23B6D9F065E6AB3FC18F196AD2EA1F6B7B7B911E9FAC9567D41B115CEA62479559DB79985ABB416F3FEE248CCD326D59BCEF26BFB7D54DBC1AB691A6DE84B1C4DA35DE9D7EC1AC2431C77B24312F9B31686D819D8942B246D3079995888EBDB3F6584934AF895A3410594DA559C915E4D74916BC9159B4ADA95B45885BCD919ED7F756D1C6C996B89D5A26924883ECEEBE33416161F1B6EE4BDD2AF75796EB5B13C36962AD772CAB1D969A6485614249F36D61D4619230BB489AD8DC058DA0907928F0E5869FE07D2FFD074592DC5B235FCC11AF2D2591639A1323456B1A99B02D6F54DCABE218A1BB9234799A2BABAF33F095FCDA47D80E9B6DAC9BAB9B694E91A6DC092413CF2F936CD25AED431CDE6C91CD1C90C916C6863688BBC854AFD8B6DF1DBC37E17B4B4D7259266BC78A3B99FCB86FEE656820B59274891DE52D761ACE689D7788E385A47B9B8114B22C2780B8FDABB4ED1A6B676F0DCDA6AC321DBABDE5FC577711928D14B716CCBB92FE4D96F2D9C372E8427948659985C488BD07C20F8D97FF0011B5FBCF0BD9585E9D427B696293FB3352552F34506970C9BEE639656F24B4775FE9B2EF97CB2A2094C9F2579C7C6CD53E21D8EBD7703EA70DBC97721BF291EB7224664170B12CF2B4174638648AEAE0460DC6238469B044B3CE11BCCF33D2F41D675C9A36B61A9DBC17317D9216BB40FA940B324423B685D1E337064D3D14429379514CA678E14DF8CF4DA1F82B5F92EADA480C379A45EC88DE5DBDBBDB4370EF756B7124E6D18B4691C8AB1471A0B790BAAD96EB457B8B72DD6CF617EFE1886E3C43E22FB3982DACEE2E6F52752F049138B896E92E5549F38BC906C9D1582A5D5C32A5C4B7904B7FCCDD781EDB50B34D257C2FFF0013493526B4B8D3EC44B15A0BFB496DEDE2B2963598A1F9EF9A27B96953313C122CA6769E29717C1F25CE91E27B2F10D8DCFDBACB4DD973A6CBA85BC5713136C961209269911DD618904523DBDBB4D3411452C4422B3CC7A6F274AD1F4B86C6CEF6CAFED574DB8DD717368B74ED6F66D6CC3C9B58A448E5856417737CA66825B81379DE6C76E6F6BA0B3BABAD761BAD2EE0C3AADEB496E25D261BB22E278247B488C46E77A6F370D7702FDB142C6FF6ED6244575910CBB4E746F1A431E9169A6CDAB697A84968B7961671790F7106FD5AE90226C69ADA0962B0D31C471AB4C2D61B78D3CD291EEEE7E0EC3B7E27680EB7BFD9C64CDCC56B05A6C8EEADA486EC204712796B0931A8544698BC7636C1034166B793733F1EB46B3BEF897E2188DADECB636DA969EAF6D6F610480A23C57132DBDBF9722CD334DA846BBA440F249A985DC90C573E7799699E2D9A48995EEBCBB5B4B932CCBA5CD24D1C30595958BCB0DACC8B1B49E5CD6B65C47248E63B7DC6E608C3DDDC72716836F378867D36213369FAA493491C76496AD2EA170C27B6564B6675B570862BC92116824DAD325BACFE63A489EA7AC7C2AF1678A3C09A0D8784F4BB2B79F51B65B0B8B48A2885BC10C92C2BBE2692179AEACE232F98F2427CA579EDA7579E68E6B8939FD3BE03EBBAACD16A71E93E206D575B927865BD361793CEC1D24B6732B453B450C8F999E659EE322E0AC4F1C36E2495FD9BE067C1893E1D5F49AC0B29B42D46FE216BA7DBC52A45325BB9B6592E23845BC971246935E5C902ECFC8B1DA0B840516487A6F8BBA1B5D78CAD03DDCD6B08BE4B285A49E69640269E0226412488CC05E5EDA0C5B9091C7093E6ACF15A2DBF3FE14F865E15F174A6F3C3FAA7D82D9B72469A35BC77474DB79AF649208D2585B0712DE5CBAC90ABC10CD650E5C9B1769F4F51F065D141A8F876D6186ED62FB4C565656A6E1ECAF1A1B28EDE331B5A4691089258596DA7F2C31D3EC666316DB8917C9BC57AC45E1B6687C397B0D99B791A5D36E0DBBDD4515ADBCD388E6001CC82282CBC3739DBE63F911ACFE5CA8F3097CB2D56CFC557161A75A697E7D9436D6F6B06D960BA9921924B74119482DAE0C4EA3519D4CAA910965D92797F6A89A3786DB58B7D4F51B4B8D7EF668A1D4AC63D3135086DED623F6896DE4DC23788C5108208AED20681EEA3DA1A0322F971FD9A3B976DABEBD7373A9DB695379FAA4915E5C599D26E2E63BB9CD9DB496AC1A5B791652B7334719DF1891C5FAAB5C4E972F32F5B63F69D3ADED6E63BEFF848A5B7B9BA369E66B714B23DCC71B4CD7724EB3796CEB25D4723F97362D20B99A48DDEE3ED17104D2892C21934F824D4D21B2BEB8B3B6860D212EB7DC170DE59820541E5C4356B8805BCB1C1BE7BB8526511B496F69E81FB3C6A7A04FF001234EF0CC3A943E21D42E64FB76B13D9C69730DE4D6D1BC62F2E248D54922E6291D1E472A566B393C97B89A4B88AEFED05696977F1175D8EEC4D6D0DDC96BA70992D05EC4D2492E98E8A21085269CB2249F676569DE0B2915B31CD6ED6DE27E28F1247E28D4274D13E7D42F711C90C93595FC7108E7B9B95466376C1E18E581BCE9E51E4CD1C82E668848B1CB3E9FC399646BA7D6965F106A76824BE9ADEEAE6FD20B7B81F6AFB4190CA7CB95E497EC813ED92C6A57F7930117F65935EB3F087C6315B78560B58AE61964F3127796EF4A716F76D125B98E63010A488A5B981ADE2B785259A3974A895D043288FD9AEBE20DA782E19A4D46FE6B2B1D2E25864B7BD9848AF1ABDE4509F3E768E48A495A08F335C930390A91BBB3990F25F083C55FF000B0FEDDADBAD93E92DADDB4CBA75A47E6C2D13F9924575144237DC86F25C994AC32F9B6D3492BC7E59B5867F8B1E24D22DBC3A2EA3D561B89058DB3A6A465B679750106DBFB6BDFDC46D88D12DB50915C8081A3976DB5C8658CF8647E3CD0EEBC4B60344B69BC273E9D630C26E23B1B981EDEEB4BB6B88A5775704B982D2FC4AF0BCB231360D6E7CD4962964D9D73C437B6FA75CE892E9F0DD47A7C4E91D9C5696ED78218EE2EAD6DE1DB87672D712C96652156B75794A8896D176DFF27F127C3DAADF7F6AD84E9657AA2E6EAC205967658E371FDA718BB7322480B996C6F0E653B208E5691A569E79EF22F39B6D722D4FC4D7372B7735EADCC81A56B995EFD2DEDE5BC596379D64B916F1405EF2394C5713CFFE956C16665123E6E78AEE9A69B54D4F334314B15CC96F24B7734A521B94D5A58944F33ACB8951D5C077B769830636B745B735336DA16A7A96B93AD8E992D8C37D7D7D7EB15BD9C70C312DF5A968E1489DDC47E500233F6A855DA5686194B6EFB4759E2DFB4DADC5C69F7DF6D8E1977DA4CD7BE5359DB5B5C4896B1C437FD86133068E6982B47987FB3ED2222116B38867D6750926492669E6D22F5229218FCFB149D74A2B0C0D2DA35BA46E25222497ED85514456C96F16D8941D3DB67F6627BAB5F8D3A2A5E41A9E9F25B58E161D6A52AB6491DDDC59A34A4ADBF9F3AA3AD8C436CA14DC920A887ECEBD37ED0CF69AA7C44F10EA534136A514316A96A24B5942CBF654D3ECCB431CDB4F96375BEAC00DCABBA2BB1B67225B69BCB7C592797777D67E25D5F45D524BDD4A269E1B9D53CBB45B48E29A68E645DED2885A63348254DF757514BBB740F760DD69E93A12DF6BD3C9E24D0A192786259638E7D12117128371676480C4AF72EA2374B50B0A46122924BD8424896ED69341A47896E6DBC5E6D2CB59B2D7EFAE765ADB5DCB7B13CD3480AB47B9E09BCC1FE9115ECCE9045248D2BC4C92CF34D6B769EA7E3A957C53A4C4905EEA773A54F2348F02792AF7733C4EF3ED82DE73CCE935AC4EF1790B3CB322C0CB1EA8F2AED5FF00C2F935EF056837B7BA9CCC2CA2B8D56DB52B16430DB189A5824B9FED3BA41E519D27B5BA79921C3B594D710A177563F3CFC51D23C47E1BD42DB4BF13368B77631DCF9525D6A9118E0091CF179AB0ADBA845DA24B7B79A3B579E78858BC68EB0A2A9ECFE1169137847C31610A37F675EDEEB7636D3585BC5259CAF3ABC60EF172ADE7CC9716B1ADB826341746FF0021AD619B37747F104D71109745D7AC8CB3660B5BCB4D4649A686E6E2CB5230BAB869266792EB51BF7447DB72915922B23DC4D1A3F4D697FE15F1D69F19BE165A49BEB9B59AEED5B4F8D2D6C6CA482C1937279922227D9B4E86ED63647552C8ACEF05ADF572575F0EE2D9FDB2BE2298EB36FA44D731CB7DBEDA6B7D45A19079F821A217ACF0C42795BCB5816DAE4F993CF6D35D41A7AF2F87F43FB55A5B59FF0067F879AE56CAE6DEDED6F0CBA7589FED1B42515838F96C1AF6E5942965BA176D3BA3C6B6D2F8CEABE30BCBBD4E7D43C47637BE727990EB52CD3CF0CB6F7122EA06E6D5DD6DF36F34EF2CCD1C5162DC0DA26498ACACBDD7C0EF01AFC4AD7B53B7B6D4FC3FA35DD844897578B042F1457135C1804692436C96EE1DE4BA3E417962B882786DD47EEFCD8767C49F0335CD0AC7519E48617D2EEA27467B3D52DAEEEA1B5022B4960912670AB059C91C72482496758192D9239A32B35D54FF00B2D5BFD93E29E9D713C1F67BE8F09730C90FD9C5A5E99A65955EC6D620BE7159EF218965903450C3713B22C4238D6E7ED1979F6DF8DBE24B37D42C9263A95A5A3C97EBE7DBDADAFD8A030B5CA96212CD2F678646DFE5C5BDB7347784797070D2EB171A94325EADEEA7A5B5F4571A83CB15BDD4660959C496575347099A4426087ED2EC67569059A4F225C1811EF0F07C57B6B325F58C30E856897D0CE93C5616F73690CB6C92BCD791A479678ED63B590C32B5C48D3BDB5C00B37DA6E962EE754D1E6D2BC49E1AB9D3ADBECBBB769F2E9A7509037DA12658A2B257170111C3D95AE9F0DC08F7BB5A5CDD9C7D9A39474FABDE69561E0B1A2D8EA1A2DD7D9AE5E248E255852F6DA0B26104B134CCCAC9E49113BB212B6F35B3DC3DC59C65EF3C97C45F11F556F13D845696F65AB192E669A2FB5233CDAAA4A8CB630AC3335C5EECB84B65F30B157962BA8A0764805BBD4371A178DBC41E21B6B15F13EA6FA85C445EDCC3AFC7A95FED40DA834C890BC334D388AD2D628DE48DE298A46C92A462D8AE9E99F0BBC7D67A35C4FA1DDEB3A95E1D120952D2C7CE99628D6D2230CB0625662EF75A7E5268E548F6E9AA51654B8B681F9FB9D0FC452EB3A8BA3CD70CB1472BDBBEAD0CF6CB6F711CA4C2A512DD208DA0B6B586478A58BFD16296588496A731C30F87AFF48792DB4D97CB922DD159C7796EB0DC585DC56D1E1A3314B1C76F720C50DCDD499FF45486259A795DA486598788350F0DB24D26A93369DE546236896548AD6D966B4BC876079A19622E96328B779673733C16F6EA2384794E333546BBFDCCBA8DE595DDC49BE5B459EEAC64B49671F6080794D7044296D1CF1327EE6DF618AD9E112CB0ABC90F25A869FA759B5ADC41243069D149791C73BC114CF3698D3085278926820FB549BA5B80AFBBCCCC5F76DC420D6A7857C49AAD8EA717F61FFA2EB096D749650E99334F2DAC574B1B5A5BD93FDAFCC0E2E266CA45FBD40F2F9BE7A99621EB3E02F893ADDB6F9B469359D46396D9E38E2B19E6B72D6B6FF655B2D3E131BCB1A7FA3DD491E3CFF3926BD62564B98ADBCFF79F849E218AFF00C64B73AE69FA9EAFABDA451DA47AC5BDA389554CF731C8F7200F316392528FE4B13142CFE5AC48D617122789FED3B3FDABE2AF8F34EB79F6DF5BF9D7D08F3B3FBB1A3DAC5326C8E5F3C6E8E566CA22C6DE4FEF84D12B35A719A9C7AAD978B352BABFB6F2A7B3D49AF6E9EF676B64B031DD5C44F721D5DA48F3259D92CB25B9B99A674F2C5D89A6D8FBFE0FF87575757D6DA4A68F35C5CDE58B699149A8315BBC131C091CEF1932A97F2B6490C6E12DECADAFA2569275B831FA3EADA1586ABE139754B4BEBDBBBC4F2B545BF3A7B4722C4F6B7646AA49658ADD1EE7519AEE1192524570F2C2914BF61E63E20CB7FE2CF166A86E22CE953DCDEB462FA35923FB3BDD23CC2EF749048D33C76DB630C552D23B10A5924B69EE2CA1F0C7C3BD4EE0EAD2EAAD369B79731635682F6E2389E612D84A5E7B991A3DC925AD9EA0AB3DCB2448D2DCAB18E6962D977EE769168C6D85BCD0CD20D56FA1875BB77B0FB0DBBDCDD5DC721335BC7B1333C0A015BA99A648FECD1BC72BDCBC7352D7F4F8AE349B9B6B4921BED51E2B582222074BB9AE648AC1E34DB2C1F6859F659BCAC8F7426891629249A20639AD73161B0B1BDB6B8BF97C8F2F528A78E0D4246926654D416EDF75BC5199A3B9B832C574CA16DD44B26996DE5BE590E2EBDE079B4DD2F4F96F87F676AC3769D2DF5F3496B3308DAF98B0BA3108F621826BF6B96CC8F2BC774635F2A0B49B8CBEFB35EEB92469F6DB1D4353B65F32187CD5B98D226B465C39F366B775BD6790ED6677BD7B98DBED525AC715E664BF0FAEA5166B0D843F616B1B25BAB9584C865805FDCC964814ACFE6C7222456E9BDE78C8B3C24776C6C0CBE59E2DB5FECFB7B8D4EFE4BD85357D35F51BD8E44DCB7335D4693F966669D659BCB7934D956232DC90AE67902B79905635C5FDE49A98B0D485EEA9341F6B9757D36FB4F9E6BB7BA454B9B99674693316E78842F343224BE4DB333AA9255F6748D2E6D3EDCDE6B961F6CB9D3B6457F2BE992492C515946B2BC12CB7FF00B885C4925959ED58DCE2308158384BBFA03F662B2BF87C77A0E92EBB62B0D362B62F02AEDB79E389279248CFD99A3B849239C46268DA348D6EA7219E4BB8EE2EFCE7F6A1F1545A1FC74F1099F519AEA012472CB61745D3ED2A26B462047F3C5E61FB3F96167B7113416B04B89DDD1DB8CB14BAD02EAC74BBB9A1D1F51D3E49A1B7BC788DBBC727DAADACCDEDBC372D6B0C64471328721A712C1349298CAA4907590DFC3069724905B68B696BA869AD71F62BA11DBD9DAC970D1CB6714A1D1220F2CD1C73B3B47897EC6882382C104CFEE7A769F61E20D4352D512E2F5CB6A42D1C659CA033C6B1DBF9F23968EFA48747D35313BC124135E6F3279AF1449C978B5ED3C2DE21BBF115B4136BD14715C5D4B1CB28B79CC318B9B95457458DD249674D5AE65561135B5C5A47B109B6823B9F4D94DD4D7375A09BF9A5BCB693FB112EADEC8D834FA84F677064BB8D007FB2CFE73CD21B88519FC9B96792068162BA38B26A5A678B5349DB04D241A9C97BE248ECDED649C2C3750C6D0C0D6C1A3498BA4B34EE2DFE6912D2F6DC7DA1DEE6496EDECBE28FECEBABA9AF753D3F5A86C6EECE49350DA0C3035C4B289EEA7F3F759C6FE5E1E681638C8B3B8584BFFC4BD927874DB99350BAB7D213EC563379303CED6D169EDA44B24F243621220D1F9531B3B8B781955D6E9EDBCBE6D6558639F17FB56DB5BF0F7D8A1B2F2F49D53E5934DD26296E268AD56C3CF6D1E3990A2CFBD46A8218C66258AE619A2922C5B24B98BE108BC633436B06AB0DD6ABA85F097CFB189E7B5CB25CB5D4DE50059ED52E35D0E9E60C5C42F12BC62DF7DDBE65EE9BF698CDE5BA5EC90DC664304D6DE70F26E2E6E85A49E786944DE6C6D2438F2E412C91DC3A9BA17A61D4BCFF00E24F86AFE18B55BAB48EF6399BED4D7905A6D8B7C8B65A9C73CB74DE7ABCCE0DACD1A9F3240BE4DDEF17265135F6D7C0EF8956DF0E7C21E21B2D26D7ED5AC35C892DE0B2BA96F563DA25365650C76F7523ADB0D47CE4690B1F316E6DF72B2DDEF8E978EB5ED12FA0BAB3B4B6D175EB88EDA4B6F0ECB3E9D0DE4F746DF529EDEDA1B442407858C904A121411B969D433436BF613ED9F077E046BFA1F8CA4D7668E1B0D3ADB579F64B2CCE752BE7867BA896F676922C3992279548392EB7F2C8B2208ADA28FC67F68A96E9BE3C788B4E82F619B50BBBE8606825CB46EB2258C6628A28A7FB4C626B79A28A630C6F34A2D584644724D1C3E6764F75A7B5C5FBC10A4B6B145ABA45672982DE27B69AEB7DC07B65B68240D74A618E54998C71DD88A1F3A40A23B906A96FA222DD452C33D8E9D21D32C6F5C5A931AC50CA970A4191219C08FCD9FECB6ECF14CF7F18B89A762A92FD01F0EECB50D258EBFABB42B756124971179B34B22C11A4D1C6973793C65648016B7BA579648D64F3B50D45A4B658A2B80FD6F873C3DE7DFDA7877494FECA49ED96C95567F26E2144B18ADC5C41084926B1B98E0732092E1D9F65CDAC323B34A8B69078C3C2B14FE1974D2B4ED33C3D2C56335C428A1E13A79B8B388C173248DB64860B796DE4659661088C58C71A5B3491DBB47CFF008DF46FF846F53975AB6B5BDB4B08FCDD4D2386C3ECEF6B6B02DADCA98A29234FF556F656C09689624B84D3E062F9BC69B99D47E23EBBE0995A136FA2C37B67E6DB349A8222DA4B3C17AAD0969DDBE6F33518F5208F36F9C456FE6136ED25C5E57A06873DCCF61A2DADACF7AB62BA6ADDE8F736D344AD0C6D7D30B09D1259563866B8B7610C71E218F75C794619E14786D385BABFBAFEC1FB4FDA66B78C787E6BE1705CC85565B692EE5BAB5F3B6BE59E082E61C9F399EC1199FCD935192D7A7F0CD969D69AB437976DA6585DE8FABC4F75A6DACD15CAC5199526784142EAF25B48D696090451B484C1684A26FB396D2E78A7C33ACA182DEE2DF537D512245B7B5BAB70C9ACDD3D84B1491B9759A292748AE440ACCCE8224334F3DE0B69638B93F17E8F61A969FA8C3AAE8FE5BCB6D73A54D70F68D018479025895FCF725B22E26D51D2765904D35B99260B6773341E33E36D2BFB035CBBD5750BDB2B9D356E519E1B89760696CD95DA06898797F698A3B8B7B58A2FB2189619DBCC86DDA29923F5FF00D917C2F75A978F75CF145DC536A37BE168AE2DEFADA2B9304B79A9EE91126F266659649191EF099EECA7CD7463448D6038FB02C2FED354B1B7BEB0B986EAD2E6259A09E170F1CA8C32ACAC3820820823820D7C4DFB426A9227C7BF13697692C31DDCF7D18B758821924B892CF4DB784CB1AC8EF711AACD3AF926DA5DD1CB72881BCC91E0F1FBC5BFB97885AD9EB2E65FB39D22D2EED57508428B6B330C3125E00D7173231B1497C945558949449607544F40F859F0EE6F1178BEEF5CBED3AF6F6DA2B6B97848924B9BFD7619CDD799BA44811D617B7B98DE69A589AE76BDB792AA6E208EBDE747D4EC7C46926AFAFEA50DFC2D158497B7D771D8E278E186286F7CE84ADCB470347A83BEF84AC1B24660D0C72FDAAEBBAD0AC7ECD672E8D7537DA3ED9CEB160DA77DA602D34B0DBCC668488E43E7C91DEB24F14315B3079A578CE373DCB78F171E1FD4AD1AC9ED6F33AA46B6765F6FB3B79A692D91DA078ADD09DE27BA2276914FFA44B232491861173FAE7834335B69B69A3C36D2258C768E0C17F72B6D72D344F238B8F2B32832DD4770678DADE679ACD59E5C248D6FC369FF000F6C2379E5B7B3BDBD315CF942CCE84D2C93AB5B3AD941710451C6B16F570CEB3DC22C306C876DA4178F047E817FA6FDB3501ADC697A2E6D2E6DB5FBC8A1B6F36EAE2269E58E06F24343344E968B2A381089640B1C25EE4452432F25A67C2F6F07F8A3C3F622C619C2C91585B5B5EDD4C2192E2DF4DB39D00B958509265D2ED0AB2C4D10582EB792F225BC7DD5C6A13786AC019A6BDBB963B6BB9E63A86B525B194DA5F26DB992491E2F261FDEBC937956ED198CAA2968D618E5E32EA7B65BB4F0E3DBEF8A1D35923B59F49959E6B578ADC4312DB6207394B4FB44D6D088629123B8B7482E248E578B85D4F4B8ACE6B8D1DE29AEAECC935A96877EA7711CA12D2D0B3AAC7B6EC191B59BC64540D3797788FE5EFBD86BCCFE2769122C2D25F4D36973BC969A3DC5E4CE935D4724CF2C1285B837112280D6DAB47705B6C73CCCF33652E236B5FA67F655D3E2F0A7C23D0E4B9D4F4CB1B19A2170F696DAA3CD0C3717D2ACD05B94981784A452DAAA2093E76B872CACC5647F46BBF1E5B27892C743B16B2BD9B51F33EC862965707ECF37977BE634713245E5064037B0DF23796761193F207ED17E1ED4AFFE36F882CB4496F63B6FB4CC971656B6F760344F6568ADE56C9520926326A776EB093197927747690DD246FC669DA5EA5A9FDA618C594F75A87DAB51996CEE2EE44BE9FF00D23CD4DE93196E92476874D59DA6542F733A42B3C8EF39F72F04782A1D1A5B38341D3BCFB586D9E4D35B4DB38E591218AF5ADA0BB3184114935CA436934334A444F22CD712968ECEDD23EB6C258AF52DEEAEA585A232283F63BF74BE134B0F90888F2619243F646B0FB45E18AE1E592E151ED8AA4526CE9115BF8852CB4A82E61BAB879229E5B8D1EF2D5D8C66185AE2681D668F649236A723C975141148D0BB008ACF6EED765B8D406AD26BB7D69347ABD8D8DC476B733194C3F6892511C36A8646B48DC34ED346B1853E7AC3672C92A37924D2B9D36D174E68F4FB79A41A6C57E9686DF4E173E5CF1DC5C3C67CD16F765A4796DD6696432349E7DADB16843CC626875F934A8DE493ED3A2DCE8F777334B652DEDBAB594914B6D7134F727CC48EDA440B7ECCCB0BA4B2C36F3334F3159225E834ABD8A1D2747BFD475785574C8927BAB9D477DD9B5BA92237174F71BE189AD0ADB33AA3B185145D1530A811C679FD69E197C7761A2C5A3D958EBAF7315C3DADB18DACC48B14B324B2892281EEB173793DC2C61C06FB04D2A324D1C91352D2F5786F343993425FECE867B64B98ACEDA58EDFCB59D6FED2CFE685ACD1B708AD208CA4F32B7970EC2004BC687C7F7324D74FAEC37D0DFC17912BCD3A5C2220B682EBED163791CE502B470497B672195219218E25BA13B5C388C5725E245BF1A1DA7866DACF5992C34FB6B4D2E2D22FED563F32C76CD6B6A0CB20CC335E89BC8924448597ED68037FA05DA9E1BC11E1BF0BF8D3C5BE11D2F53934CB6D39A24B6B8B805AC5241750BF976B1AA08E68C5D483589E38C1850C5776A5B70115AD7BCFC47F8B7A278074885B4B9ECB4E4B0DBA641A7D86A10F9F15BB5D359C9308B71B5B7489E285A39AE32808781C42CE6BC7FF00669F89775E28F8A2350D4AEE69B52D4AC6D619AF22B937AD610FEE9A1B0495A294B990C7348D1A9468E133C93CD34D13341B5F1FBE1478F7C4BE3CF10CDA668933585DC97325BDE241E684B6974BB5B79DC796FE6644B6F0AEC4D9294F302C57892491478BA1FC18F89D71ACDC5F4DE0C9ACEECD8C82E1ECDAD6D0A4DE5CB2C56B1C85C958E02608ED9A332AA39825924FF434B48BD1EFBE13F89B4BD2F568747F0AF9F75F66921B4749ADE047915A4B849141766813CEB5B3B78A3899248EDDADD8CE648105AF4D61E04D75750E748BDD362B6B9B882CAEACEF5166B2B279E28E186DA3591615451696F70C1A30A225584C5712493B9E9B48D0BC4263325F45B2E3ED28D750FF006A5D089FFD256E15A097CD6212312CD1B2B451F9E63552B142156A1F0DF83F59B747B8F2F4CD22E2D623696422B3091E21844301F2A191716A19AEA45B691E5204C8DE644CBB10F127816EBC43AB5B5C5E5BC2F6F7524F6D7F6AD9BB8CC0D2C0E097678DE38DE2B311BC11868DA4B8CC892AA316A5A868FE36B7D66D75B82C6197518AC6F04922DC477400318922B740E2018F3DCAED5111952DA1796E10A089F4E3F09EBA2CE0B579F7FF0067F991E9B7335FA5CCF0F992BC627DF2DAB1F3A1B538424B6F32C89297FF005CD8DF107C17E23D4B43BF8EC92F6E62BBF3C4BA55B5F997ED4AAB7B2468F2DD3F971A492496D94585D46D10B896DFEE5287C15E23D2FC49278822D0FED572774D7460B936F25E959A332282D70ED13BB451C91624F2E48156D6E16310C4EB37897C0DE22D76188DF69F36B13E9DABDADD40F7B7F093235ABC6D6B241B6354803B3C8F71279665004D14692A184A70DE18F857F10F4FB7B5793C3D656FA9C9A6DB5B4DA8CAB69753437223B166B96694BB36DBA9AFAEDE352A2496C6261B5A591E7E16E7E03F8F56E61B9B0D0A6B57B5B14D2365F7FA5C76F34967A65BC2DB065258D53F753C912AAB0B5B9790C9130B2AC0D47E0E7C5CB6FB341A4F87B59874EB0FB2C96C92DF3A79696FF6732095A18CDC4BE53C2C8C62911EE365ABDB47E5DAC6A9D37ECD3F04BE287807C77A3CB7FA15EE976763B60B99A6BB8EE0451989DE581DB7A9684BB3491C76EAD1892E95E59247B531D7FFD9"
     picture -1 0 0 4320 6120 6120 7920 4320 6120 6225 8025 no yes 0 "FFD8FFE000104A46494600010201012C012C0000FFFE0102E0C7EC04020000000200000005000000070000000B0000000B0000000B000000020000000200000002000000070000000B0000000B0000000B0000000B0000000200000002000000060000000B0000000B0000000B0000000B0000000B00000005000000070000000B0000000B0000000B0000000B0000000B0000000B0000000B0000000B0000000B0000000B0000000B0000000B0000000B0000000B0000000B0000000B0000000B0000000B0000000B0000000B0000000B0000000B0000000B0000000B0000000B0000000B0000000B0000000B0000000B0000000B0000000B0000000B0000000B0000000B0000000B0000000B0000000B0000000B000000FFC0000B080080008001011100FFDB0084000503030403030504040405050506070D0807070707100B0C090D131014131210121215171E1915161C1612121A231A1C1F20212221141925272420271E212120010505050706070F08080F201512151520202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020FFC400D20000010501010101010100000000000000000102030405060708090A0B100002010303020403050504040000017D01020300041105122131410613516107227114328191A1082342B1C11552D1F02433627282090A161718191A25262728292A3435363738393A434445464748494A535455565758595A636465666768696A737475767778797A838485868788898A92939495969798999AA2A3A4A5A6A7A8A9AAB2B3B4B5B6B7B8B9BAC2C3C4C5C6C7C8C9CAD2D3D4D5D6D7D8D9DAE1E2E3E4E5E6E7E8E9EAF1F2F3F4F5F6F7F8F9FAFFDA0008010100003F00DFF8A3F1CBC6DA3FC51D7EC746F114301B6916C34DB4F32391656B9CDAC6D6F1042F72219E332CC5639A54997ECC88A826964E1A7FDA1BE21DB5DC3A2DBF89F59B836BF63B5B4D36592D239EE8411069AEDEE0190AC2F108AEFED324AD0E5DA329750092452D7E35FC5695D2CBFB7EF6FCDE5B4D736F753CDFD996B340B6C1E6DAC4B4BFBD9A48A6C9103C16C124436904CCD0E9D97C71F88BB23D52DBC55A9DF32DF6992C4B3DA45878E785E47B8B887CC856106DEDEE8B46592089238E45331985F4627C6EF887A44C1E7D666B98745925B0115EDE491C092C4908B64B99C08DD833B40F3CD280CB33ADBCB1D94733994BEFDA0BC5DA46937D7577E3A9AEAC23921D424BB689ADE79A2115CADB155F2C2C325DC90C122C0142C70886478EE91EF1AA0D4BE3BF8CAC6EF57D00789EF6FF00578EE6E34A1629A98B79D42C507DBE5761194B5757927956466786130C8229561B729793D97ED2FE36D43516D46CBC5B35EAAC8F1E9133DAC71595E5B5A5B9379713AA212A1CC5F6A9222BF69893CA8E0C8BA6923A50FC72F8876B369EB6FE22D4EF1618B48B88F4D124971797F6F0A42D1472AC28E6D8DE19919E52D36F7BCB6B7DC4457052ED8FC69F1FDECDA6DB49E3F9B52B9D4757FEC986F6DEE2D916F24D939B7F261854C7E6453884491EF48D8B44259E7B6BA89E023FDA0FC7B78D61ACA78B618E09EFA1D405C22EDB674135C5BC933432382964E40B38E3768C79B1457134B68F26668343F8E9F10EE2E345D226F11F898DAE8DB5F538D22B47923DB24CD0C17934CD04A6685E0517018C3E6C11DC3E12389A79CB5F8F7F1316E12E753F185EE9F37EFAC2F5AEEF34E0BA1BC9207863923F263492F18085764AAA8AB1DD6648899CD94373FB45F8FDDAC346BAF1643E1D9164B98E5B49F53B677D2956681AD63B86936CF3DD2094A32BBC713158FCF6C457AA217FDA23E20CBF62D42DFC49E26532FD9EE7EC5258ABDEDD4F75B85B5BC29146F02B98A2650D32C6924722DC4766D2A87937FE0F7C7CF1B6ADF15346F0DCFF0011E1D42C1FC40DA7C565169F1DF2DCD98B6672329BA7430B04433BCF323990B8925482479399F8ABAF4937C70F106C335F29F14B3C325D3A5C92D0416B049650DBC2812E04E93981ED92512B816FF68F2442ECFC359E8D6D07862CB4DBE92CBEC56D6C64B88EDEF658B4F9911D04CF2346C4C96DE7C7199AE3E679E78A1B6B301620E34EDB478B5CBAB988D8C3AA5CEB3105BC26E1E4FED031DD2F9724B3DB8579A3470B0CD346B8BD9F6A4113CEA2E869EA0D0EA971296BCB2D4E3BCB6BE96E6F5AEA3B19662F23ADECC25045B47F699EE60885DEF118164F6CBF6B450B742DE5B476F6D712EA1A297FB3451ACD70B2C16BA747346B6F6B24714EC37BBDBC12C2209E48E3B8B66B29EE10AA5C3470EB1ACDD2EAD77119B53312491B1CCE744FB23472980DC4F3B42279A796EEDFE6BB611C2B3C766F720102DE0F12D4F5499B43992DAFF30C76D656012D353916110B2B4F2426097F78F9B85F31CA6224943100892323BAF0B5E45AB789A7B3D4566B4D67FB5DEC2EED75285E7BC68E7BC88ABDCC402FF69C904DBD8C0D1A48CFE51225891A28B32F7C73F69F2B54FED2C5B6A1F69B99E09B53C493DCA650C77A6DE08E697CDB43E56EC80F25D4D279A85EE114B8F1CCDAB5C0D3A3D6ACAE62D4EDAEEC51EEE492E6E63371225C83753DC793137EF9C465CFEEE378E6B848C4856593ACD37C62BE2EB1967B4B585AEEFA29B529B4E9EFE1963BBBC709122BAB312B0426D24BF9A4B818944512DC993114F21AFA2EB363ADC36F34379034496F6FAA6BF1436B1C97920C7F68379AC5924BBB630ECCC71870E6691D9EC5AE58D6EF34ED3EFAE354459B46B7B2BED46DB4DBEB8862825D1B61B191961B6216437AAD34EAD02EC8229EE0CB018951E45CCBCBBB3D0ACEF1243F61F0E695A90B0D474CB5D0A095EDB50F35DE276FB5A2C93C388AE1E31366654496D5CC6B299A41A3D574FB7B9B2D7ADB59D3EEA6B696E354733B4F790C5246CB7D7AF34CEB0A3CB398A068502CB27D9CDABC91C858CFD37C14D7FCBFDA1BC0FA6DE25EE9B2FDA62496DAEB59FB0C704912DDC5F679235DF36F88B88214B891A478D0236239D563DAF8BD2DFD9FC6AF1C5DDC45AC9BAB4D6ED6DADA2B48D44CD24B1BBD90B702494C979207B811CF2F16D12931A090C1045CCDBFCFF61B0FF892C3E7E9B71F2C7FBFB38FECDE74FF00BB8FE6F3F4EB6F2B2FC9F3EEBCD93FD3FCAD874EE1A44D1A6B94336ACF2C5A66A2B67756A934DA9DF348AF143730A4A44A6F626B199E2400C8B11669269AC65F3E0D76687ED77F143AA7F6F4CB732696971BA3D5D6FEECC46EACA3CDB82B342F3071B2458BCFB96FB44AB3149ADEDCD27C550D9EB96B6B67ADF937F35C8115E586A91DF5D453DCB4B04A903451BCF2DE4BF3F9F7A414C1062824D961BF93B20DE24F0EDAE962C21D585A58DA4FB2EAF66D4525BC6F292DED034651E29E68A2788450171E50811D11ED64B88A969A8DAEA4BE2659A6D4B50FB0CD7427F2A6B28A448A145BBB07589BE68E38408D22B50A041762492486388C6976EF4CBA866BFD1C69BA9EA46292CA29ED4C86FA0BA4D9BF4EB7DECD1B4F3BF98B6EB25A79405BC32BC226491C8E606EB586FB4E8AEA6BB8AD348682E94EA735D5A5946AF20789CC118560F78609A12AE60579220E642CCCB4EEFC48D2CD7F7ADAAC32DEB4965AA36F966B8B7BEB844C49E6C33C6FE74FBA677669088862E15772C882A0D06E66B5D72C2CB429317F25B471DBDCE916724F752DD9613C213CC2AD1CC26F2A12F0EDC043B44993E677561E22B4D42C6DF5BB5D461B48F4C894C7791E96228FC328E3FE3DED8162F3DD33C721873210A0BDC332CB24D2DB06CAEAD1AF2D21D03534BB862834F6D334DBF2F3582DDCC3CED3965995CC723159F65BC28F305BA9C4D23F93346D99FF00094C363A87F6CC86C9A6D2BF7BA6CBA3DF468EF079FF00672EB35DF9970AF1C51C51DBC4503C4812E00528C65E7D8C975318B49D374CBA65922D2A5D6A48923B42CC9343194F31238A11244036F997CDDF01977A1DF8F66FD9A3E1E6A7A7FED01E1BD5E79F53B292D6495D2DA1D1E386E16C22325879B71128611179C242EA03B8FDFCAEF18512BCDF14CBD87C5EF881A8E91637B6F6E9E24876DFDB3DB5BA4D708627D9733C5347B2D92E04218A18DD1EEA296E24F3A38A37E7EE258A513E952DB4C60824D56DAFAD8D9BC36AD6F1DFC138825630C53A88581B99A2B4897642176C703CB70EBA7ACCF729F68BC867B296FA3B9B8BAFB6EAF3456D1A6A379E624D25C1594C5225DC3F6578A25536CD19E6468ADEEDA7E3351D6DF52DD67A44FF006CB37B6961B48EC92DADECADF4EB8DB1451DCF9A1DADBC9BA5899966770D248655951D85CCD0EBDAA49A9C26086587EC17711B7D34B04D3AD6F63B974DA0C4D246D0C71DC417333ED796D23B95DAA8A8C59E6F0D69F0F8FB50B6D226B8D675686EEE6E2FEFAE14C72CF2DA79F9926D8CF398B51B978E1810031E4AC084CA2E3757B6F82BC0915C68261BD874C8EDE68A38A651A93A5AC56BF662675448AE07956B6C978F2BCECC8F3AE713CCBAA7C9B3FF00083C5A8EA971A85C5A4CB790DF5D6A315BFF00673BDE4576BA7457336D3884BDEDC4B32CD1C68B03F91E664C32DB5BA59F27ADFC0986EB4FBCD3A4B7BDD6F4AD2B4DB6648B4DD763B781ED160B8BA4BF12CA91DAAA07B88AD9662A7CD0BA84C22F30B94F38F147C0EF1D69FACDFEBD676DA9EB5224975A4EAB79A635CDBACB7C639207297172A4DC89650E8E1706498C902AA89206938CF1C7C3BD7FC2F7D63A6F8A9A6F0FADB491E990C1A9DC3DC8B720B35C3298636548D647F3BCB1F3ECBA89D44A1FCC68744D7EC27B886E2FB50B2D3E3372520B792D5B508B4BB48E4372628A09D1C37992B058C79A3244AB3109297A9AC3C23E25F15A5BDBBE8B0C311B15B1D392E679F36F2087ED71AC51EF66592EB12189597CB95E793CB504653A7B2F85326BD0B5DEAFAFCD75A5BC8F711C3A4DB2456E6E2E5CED9EDC36C8520F22DE699D9BC9D9F60960945B9547AF53D23E0EFF00C23519D41343FEC70B6C92BBBE9BE44F1581B9517A116EC02C9BE29904970A7CBB6BC812E8B453B35A77FF0007FC253697F11BC3DA6DCDA7D8255FB3CD77058432120416B39815DA666B98523574077B89163BAB78A5531DDA5BD9F837C6DD6B4E97E3C78FE5D46DF4CB3897C416E05EDD5D45AB3DB790921CC709CB4A64F2F6F92CC2088B88A50A446F152B3D7EEBC3FAB58B6A9653699A9C37DA72D834B31863B29925BA44904773242D30B3CB5B813991564B70AD72B08F265C6875093571A3D9E9BA6437CE915998134DD2D3585B0B57BF9A578638A521908B89E18BCB9C3BCA781388A50B2F33A86AB25C68D6B7F71AF4D36A33C57979736FA94C97D1DC4B3C8217963186F2A77404B0942B016E92AC84BC6AB73C2FA1AF8DA6BBB458E66D3BCAB18DAF20D2E18E58EE8208D218A2452D3C927EF912247469982CD29511B95F6DF01E9135E7F69DCCCD986FAE4B8BB96292E52776CD9411DA085520BA86C629278DD5144170F70968913092DD8FB3785ACEF35E8C4BA069F657689A9400C08D3CE6E4C3722EED04F761563F27CC7BFB9173C4D246F61248B3B4C629F4E6D32DF51D3AE1ECEFE13A7A6916D6F3EA3631DAC16AB6A970F2DA5EF9524B13DB5ADB3C578A86125DE19629229DE44DF1F411E9F729ABC13DEE8D7B6B21D6E4BE5D260B98ADE34BC8AD5DD92D24930D3BDCB3BC84C6608DA35944C237FB4C73F33A88B01A469B7715F595EEA76DA695B5782364B6D18457522DB2A5988730BCAFB60585D66912E2D2D879374D6AEEBC2F8DFC2FA4596837FA7E951431688D11B2B3B6B0B9B6B58D34F5B6B992DA512B333913ACB73B6E22664C3DE4D74ED12C9670FC9BE24D2F59F066B3A8D96B314DF65789F4A95F4DC5A4372D0C713223FEEC64A37D9A49627459770C48125248FA67E1ED97876FFC1B75E29D5DB4C36DA6D8DD691AC5F4D34D77682E658106A1752CF9CC92486E517740C26B8711410B24103CF3F73AB69B0B6A1733CFE1BBDB2D563CCD236A0235B9B99E69E2B4B68D5AD847E5A35C19AE8A16811EF409609CC68F70B9961A5DBE997D6F1E8B16A76D23EAEB6F637B69F65D3822C27282CA168D16290EF5867F3E3112DE5D4D6C8918BC9DE3D9F8356D16A3E32F0FCD6D770F917B14E5AE74F0F323ADA4F2ABDB5ACE14345A7B5C6D31C48E6248ACEDD641BEFF0069F39F8A5F026CEFBE2F78AFC4375637B1F95ADDB6B13BB5941FE8D64A48977291F662933166596652A3CB4F319B17CD6BC643FB2DDB69B1C9693C9657D7DA46E37722492C914D38B98E1F2E4084130B3E628A38099E422E8E44D08B21E73E2DF0DDD5BF8D75AF07A49E2DD46D2DBC4167A4CB2C24DE08DE25960480478517122857480EE88B246F88D37958F99975ED66E74992FED8EA76CB1DF5C7DA66B5710D9466EE20A6248A345488C8914AAC01C3A2850A04673E99F06EC2EACF5E874FD42D665D52C6C5A05B3BB8CDEBC6C2E2E14DBC910C7D92D5E668E39E1C35CCC64F2E256176CB5EE7E1BD2E29A6B9BC78A6D56C2E248224B6977DD5C6A32C693CF1C7B923923024B5134B70F11669BED37C562B84BCB47A9FC49FB50782BC197B0B3EA97BAC6A525B5DF95AB4B15D156913509242D0159427D8D9E22B1C7148E27548A19E58561DC74F4AFDA56D355D5B47B4D52CB53BF99B574D20DADDDB8864BDBC8A532411C914A04714F1AC91EF68500376B18792DE0589E58357F8870DD6916F6764DFDA32EA56D7735D5D58E811D99BB98DD43A859BC6A85A45DB1DD288D7CD8E5926D4ADC2C91DC34925BF89FC61F8E9E3DD651B525F174D62E2C6C2EEC5DAFBC8B989258462386DE35531CE4B5CB4B745504916CF2FCA8A748A6C5D3751F115AEBD29D3B55D4F59B39E49AD52082F6112DD5F3DC25DC91437A191AE2E93CA81FED71C6E5A78EDA209244F1799CCFC70F0F2DA5F699E244B28605D722794BE9B650C3A5B3C642491DA18895C45207848F98B794B307717036FB37ECC5E349358B19744B1BDF10349637C753D205B489717314F208ACA1B6334D0796678EC60B9D8BB0C2F14AECCD6E2DCBC7E9A9A7596A730B14826BE5D56496DAFA5B6BEB8BE92E03242CD6104ED2627171652C244B2BE5A3633B35A8D3A285292DEC46D21D6AEB5786CE3D4A21A84BA90DF6B3D92BDADCBCD7508861DEE5EC7ED53DBB04489AE26BF795229765BAF4DE018A49FC6BA35AEA90CD2BBC5697D268F6F60901B628BFE896EF19C88A3B58A5371240C4081DEC3CB32CD234B73A7F12B41D29FC777897BA6595F477DA95BDC3DADEC0B18BF658ADE392DA1F383249E604B657925DB6DE62D9C49B2E58DC458D79AB5CC771378863BCBDBDD4E3F3F537BF5315B46F72924367E559593C692C978B6D732C2A2559024F2456F3493B469E57C73F1B3C2327853C7BE25D0FF00B174CB05B0910C27CF48645822636C3CB87783894ED9423892631EC90BB82F2C9CCDB698DAB5D5C8B5D374C171AB441B4BD3EDA49A7915DAE9516181119D849C300B3924C793CB3464FA67C0AB88B50D32F112D214B71218AE6DE22F15BC31358C914D34CECCBE6492A6F089E6858E36D41C1B35FF00488FD03E2A4EDAFE9CFA6DEBEA62C52C6EAE35C8ACD6680C823B89EF7748DE5289A79A71711AA9564B510DDCCD6D0379B0DAF966AEAFE1CFB6B1B3FF00847B438EE74E5F267B5B6BC8A691717132DBC2C1C5E6C3705E29DE6C7D9596379185C2069FC27AF6A13B691E1AB8334524BA4426EAD77CB107B7F381DA62D91471C7F617B8999D6587725D5CC925D62578ABE92F869E007F895F0805D5A58FD8E2BAB69AC459E93616C27B5B7981BA2419A48D44D2C3737306F312221BC0D6F1C56ECF24FE01E1EF87AFE14D4E4BCF11BE2DEDFCB5B4D5AC45B69F67F6B89658ED4C17CAC1D5E44FB3CA84AA6EF3D6EE657860CCD37C3AF84F75A84D3C30EA90CDAFEA7631DB69B268BA61CC16D22496C44D1CA224CDD59F9B2C6BB7CD6016E2492DE359646E83E38782AC3C41E07BAD7ED34EB2B186CB4DB2BBB79E1B368921B1F2C4367199591E69936AAA248DE5B4EF78378885849145CFFECD3E0AB4D2BC5375E239CC3AF36891491EABA75ADB89E30923984431CC49827927559A2588090482E2258C82EF35A7B3497B2496234ABDBCD32EE2B5D22C2CAF24FED54024B7BA0659A495E295C0377135CCB72E37ED48DAE393676F2DED2D6F59D4C437DAA19A6B5D61E2B9BB57D6A78ECDD2E37C5358B5DB4F0AFD9E485ADA169501113CB36991EF36B2431C3D6FC3B361A87C56D26CAC2C6F6FAD175BBD4944AECC0C11AC97114F7682663E7433981163954BC523C93CEA9717B1E3A0F1D231F889E219A59A6D2DD6FA2806A52C535C4B6D0B69E045E42C4C1C09A767822DAA1837F682C53A4D728839FB2B9BF9ADF4DBED324B2D06FAEADB498345BABCB3598593B462C1AE61F28A473C319B99A255897C8692EA09043044C6E2E7E6CFDA47C26BE1AD674DF15F87F43D3344F0DEA163F62D2EC0DA42C4422368FCD0E41174586E63700BB239521DA336D3CDE41ADE913685A9CD63336FD9B5A29445246B3C4CA1A395048AAFB1D195D4B2825581C0CD7A9FECFBA868165E21BB1A8DF42347B4B1FB45EB5FE849343B184265F3809312C693C70058A5243A9730F9574D0AB7AFF8C3C35AECD6F1696D697BA97886FF00CBB336FABDF25DDE5FEAB1C79487ECCB857860856CFED13CC628A7FB35A5C6C911425C73F3F812CBC428D6134D0EB36F7920F2A7B94B807CB686295EEDA4D8D27DAAFDA68270F1A4F242FF0062B59032DC08853F09FC218AF2C748D3231349A0EAB143A83D97F653ABDF0600DBC862F9A7CF93697F3B7972E58C77305BF9497114D71F437C1D9BFB474F86D6E6CB45D50DD69B77A6DAE9F7D77F68FDDF916B38810451B47059E6591259367972FF00A2344A207B685798F1C7862DB4BF1BC2DA85D596A77C2E67796EB538E5B8BAB8866912DF71D3D4C6CC8CD03C523028270D6D140F244EBA751E12D11ECEE2DECAE20FED069F6584DA9EA4F6D7D14AD7323B5BDD01958E7B69A399E1F35BCB6B82F7BB3ECD752BC77799F10534CF157856F2179A18AEEEA27B7945E4524F711AEC68E4170F2B469208922668E57D933C96901BAF27FB32E5D78CF87BABDC787BC15A4695A8DC4C1DA2D36FA4B3FED8BAB89646B86B78ECD4790A419DE281B6C5832DB5B8B69AD95A6866DF765F122DCE9325D41AAE98DA7ADF5C6A17975712C2F612DD2443ED535D7911B122EA590472469E732054B78A5FB3EA3139A516A9169B753DEB4B322E9763349771CC1EF7538A3FB54F710ADC4B1C80C7740C573712DBEEF31647F303C2235974CECFE19C5247F153C3965770CD3ADBEAFF00646B35B04895E482D9E3977F58D42CF024D184658C1D3EE618DA6163655D9F8E34B8B5FF001E78B2CAC62992F64F1043A7C4EFBE2315C4FA5DBC82E2299232C48FB2DB8544127D9DD7ED92AC8B1C4B16345AFB4F347E24FB16A71DC6AF636FAACD716B34D14A56ED0AC31A491C8ED14775860CA5659A26B210C4666FECE64E7FC6BE1A87C47A45B697A9CFE6CA6E61BB96FA7D2A369EEB505BA920B8736E88616FB3CED721AD93744E660A1AE2E3518E587CFF0056F00DCEA5F698E48359FB6DAEA474A9D575B89596F2EFCA8E4B149836CBAD4677328B8B86778D2D8E5A15654B78786F015FDA7C39F10E97AFA5CC22C6D2C6F23835BDE2CE49E1C2A3BDAC09B2E2526696E21591D83491B101AD1A06920FAB3C3DA8E956D1C96BA8E937A74A5F2F499B4EB66596E6F238AE6582DEDAEBE7582284DE4B342238C471C8EED128FB1DABCB29AAEA3A0EAFA45A6950BD95EDBA5B2092DEC6E5E58E6967BA30A884DCA9DF727EDB11FB4B068AEE3B96374B1C37303D62F8AAD665D406A5711EF2D72B25FDEDDDE49632ACD24F1DC6654219A1DD082C115BCDB2B4B586E252F2C36A90F3369F1961F8476FA3E8BA13DED9DB456CE1D2CF538C5921B98E54B4857CD89A0B69A49152E0BCAF2C621B532A4D726E6679E1B8F88DAFDBF8A7C39E1DB2B38647114B73E4E9368EA4989C4512C7673DBB5C79169726F84709F35E278DAE05B88A18A06F469F4F8750D3E1B38EE330DEDB59C44DB98DCAC33C026788195DE27FB75CB10ACD2C914B34444F757236DA1E4BC45AD4496DACEA7A9DBCD05BC71497F2DBDBDD398EDEDAE2EEE5EEE18E2399269D9ADAED8DB4D1AC388DA4BB08B1C7696B99AEB43A66917F697779656DA8FEF0CD717B751CC609A3BA36376FE5390AF60D348EB0BDCC892BCD2DC1B82F05C5DBD73F657D7426B5B7BDD3F53B7B8D32C6D276B1D410A4FA6240915AD8C0C5E58C413C317F6ADE330308785DA7536EDB64B5A505CC82D2DEDAF6FB53582CAFAE647786E120921B8B4B547BEBB86DDD07953C50DA5C5BDAC4517C98E4B6764B47D8F73D6FC2159BFE17568EE2CEF60B83A9224DFD976B22D9C176B1DC2CD6C249405DF1DA087CBB7902FD9AD1EE62082E9773F73F104DD5CFC44F134335FE99E62DF0B17D42FAC8BDBC093E9F2E62C5C030116D6865BB704E06D9555B1A8C9143810F89BCFB8935AB5B5F2EF9EE5B5230EA127F696A02F209234D932A808B737016D3364088E092D6D22536F35CDBC9141702D344449D6C21B8D36D6282DB4D81AF45B45AB59DBC3742496554240B2B911DB411F9B2B9782C52E2733436B26696ADE1FBAD4F4CBDD1F4BBD9AE2F9EC65D367BAB184A6A17F08B198DC49B278D9E53338999ECB28D25DACD8313D9DC5D4D4FFE105B8B4D1ADC4FE169B48D42C22B5B79775C5D1679964966B0B8519170B1E4DBDBDBBED5B85856FAD3735C0B756B8E564B18ADE2BF9A086E247DB7F71650EA72E182DAAC8D1A095AE4B47A8465E329B269F519E488491DD2DDDA09AA5D5EC212E126BEB59E2960FECF17C42B5B5D3C2D35AF9F123B481FED6EAD305925B831C52E6496F74D6876912D034A1E6D304A644D15EEDA2026D552499AE20B3FB3CCCB3399AF0B47207750EABA8457523496CB72FC66BF0DA789B5697C652EAF358D8D9C5A7CF77A9C7722DCDD5A24A658A592493CABD9C5BF9F6A8C0149E616F62E14B5DC32DB527F0DDD7873C25AADB5F490C16F1D8ABDF58424986C92098E9E8DA9EAB30F3D8E12EED8DB58002558E458422CA7775B65E2CD774BB8BA8EC352BD6B87FB74106AB6D6C93B6FF312E45DDBC2B2AEEFB5DC46B224218248DAA5BC72830A598B99AFD34CCD83C3343A7E8CD6368F6E74E8A48A786D8D8178A48259990346B125B2A4F30494DC5A35CC8520D3BCA4E4EEEFFC4F71716363A9DB5EDCCD15CC93E9DA6E2F5B4C698C9E55CCB33BA069B7337952C0434B8B916EC92DE5DCF2C3CFDBC969A7DB3DC7F69C374D045385D42EEF038B880DDDABDFEA333F912A7992B34F67BC09E39D15A0569CC282EE0B996FEFEE1E0BE8B1245E4E9B05BDC46AE2286190B2DABC3249B152CAD962B892D5E568848DBEF2E0BAA407ADF8297365A97C6CF07EA5F6E86F74F124B11D62EAE2E22291B34EF6F1C171709135C497178D3991C0124AE97112C51DBA309BD03E2559447E2078BA499A64BA37CB7B3CB6333EEB68920B5865DAF215484C503595CF99B768B99ECD9DC45612483162D2EF75A9A38EE6299A5BF92DF4CD3967FB3DB5A40B0A1B57842B46A40CCD12153088A3792642824BA9B4A7A4F7F06AF6316B7A75CCDA7433C8F7D14B03DDDBB42A814AA7DAE4DAC4C91B4B71B18C33490CD757525CD9C7752C7599AAE8F7FAB7D934CB2D1FFB4DD2E51E2D2A2B452F7D711E56DED650EF0C6B67E640A678FCA57D96402AC4B6B25BE9B76E75DF0AEB7FD913AEA7E6DB41A6ABDADAB4F1DE5D5E4726D4D42F6296731C67CC2AAD32C891C6424D2CA491A8599C6F05F89BFE13CD0175A16BE5A5F5CDC08ED4C9F6964433BA2C4ED890CAF89C2B1642F235C12D0B35D18B57DF3696914C86FECE6B5496FAF2C5965BA1E6CA2D91E5BD54179398A408F35F3BCD23BA069AE6069A5863586FE1F165C4C74FD374E8C5EDE4B37DA343B8B7B0D524B69EEA6D460844A23FB5AEC08F76BF662B329950DADE4CEB35C0965B7E1BFB63C5DE26BEB7974CBDD33498A3BEB5D48EA50DBB5FC7347019678EED27BB2114F9A6EB622EC908178D7D2298A699A0B3F84F7FA7FD8AE67F13791A9E956C63B6D423B1559E2906C4323BDC36EFDD4305C4712930080DBC6E7C8686FCDAED681E07D1ED375DDA8FED6D323B6B1BCF32E9A795F5486D7FD212DEE1E589445666396D6DDBCC8E3882416F752792AD04571D069DADC9E1BD1AE8EABA8CD6D3D8C566D717975A8A2CB712DB48669EF6588C5B963FB63C6B11742CB3DBDC79A8F733CD677905FE8BFD9988D74AB2B2D42CEE6D86E9A6FF008F2FB379B06FCC53EC778EDAD5A242D37EE7CD919678A4B1BEBA7E66759A27D2B54D3ECEF67D3A7B9B8926792D648FEDA45B38B7532E23B68A136B70C163B98D238ED6CCCFE42C772F6F2E32DCA3585B1B092F6EBCFB68A7B21A3D9DCC9777490DF2C36D25AC84936FE5CE3EC76D2CE249C42D3EEC6EB7B66EB3E0F5FB4FFB41F832E23B9856717D3DF4D74AF3369F6C92DB8B6961822FF522012886C2DE58A561BEDCE7CC468234EEBE26DFD8786FE2978BEFA7B6B28E2D1B5B8351B56BD0CB6703258473AB954456F96FAE629D991D9BF79346024978B1DEF3F1456FA225A47AAC3359BA45B6E4EAB616B6F23AC50DBDD4C2E2CE2FDE318AD65B826356312589164BB66B87D84AF751EAD6715C410C7AB092CB498C4929FB53932DC875699551249C6A31BA0C4AAF3CCB7575BA044B69ECE0D3A5B0BBD1ADA6822D16EAC65D35E059BCB69112092D20824F21DE4431A345692C2CCEC1FECF02A992DE54D4AE6DF9FF001AF852D35B40DACA4D25A47249F6F578C5842A9042238E5916DA16918C1024B0C3B60401A0B9692DA0FB35DACF99F09BC397FE03D424F0D6AD6389A2B9498A5BA2CD2CB790CFE5CA4388C3C30A126D1678FCC996E89FB134A5E58DBB3B2D774AB7D2D6F9F53B236F6988AF2EA19D562B1D8D6AA66DF6E5A27DA91C737936D2FCA6E2DEDD65866B4D3B7D38566975CD22CF55B3B24BCB6D4A78A4D3D2D649A4B554682D9832A04496D94096D64F2F0B77231B3821090DB490967AA5FDFC70DC4F7F7B751CB6D05DDEA699A9AF97069F637335C19A69E2C3CB9B982E3CDBD895A533C8ED1054F263BFA561E08F1326A1A7D95FD85E9BD82E6CE4D566B496DD63178B3C90C6A5A23989E39FEC5696CB6F2C7188E3BA412DAB1BA1069DD25A69FA35A4B14DA6698B1496C6D04D10FB2D94CD22491CED3C0C8A91A49A85D2192254545BAFB546E81F4D828F0DC570CCF0787E1D4E1D3AD2C4E99A769E2C2EAD963BB8660F10BAFB3F9B2CB751A45334D047146F1CD2BDC5BAA877BD4D9B0D4ED26B6B7B8D0752D306D9164B69E68C416B0B5ADDF996DE7CAAB2068C0B526E1ED4242CB65047032DBD9CF245CCF8D7C3DA669D622E4D9426DADA292EA69FC416527DAACC30170F35CDB4E4ACDA8191024B968D256974A50C209DE193CFF5CB616D69A9699358C32DA5CC56FA9C36F736F7F770DEB5B5AACF1A413A3875B58EC58ED0E165896FD12507CB1730FA07ECBBE0FD67C5DF1A349F146A31CD6D636F7CCD04EF662D2E6FE38AD64789CA47233DB46B15DD92F95185B4688C6858B08D65ECFE235CC569F173C4F7F6B7D31B88AF9AE16E74DB87FB75CC462834F90C490A7CF3A35F49696D91B44B0B16789A2B9FB5F3F6FE5E811992CBEC44D8E9B696D6D0E89F6289608EDAE5EF23297136F64F32EB6DCA3CC9E5C9A744F71219A5466485258A1D665D2748961DE92259225CDFBD95AB35BC6C1E1B949B762C92C6DA292F2104CBB7EC104BFBE8E49A49B4DBF86FF64FA75B6B3A915B68A7821BA11DF6A3BA4DD736F218A140C6F1A1C4EB2C52230FB55C85D928BDD4222CD9EE7EC570D79F60B04B636ED776D756CB6D1C8764315E4B7719305A43FB866411B4822B88ED522375F635B5B587C31A6C5A46BBA2DF5FF8461B16B68ADE2B8B18F4B795EDEDD6C9CDCD825ADCBEF8CCCF32DAAA167F365BE79E419B9B1C43AE27F637F675C0D43FE122BDD1FEC23297DE6FF6BDEB7EF1E484C4A2649A632CF1DB48D196F9DEEE21235C4F776FCF8369657367E1D92FFC3F0DDDBDF4F2CB71A5D904586036665BBBE480828F0048DA52B868EFADAF123458FECF1C76FA7A4EABBEEED4FD8ACB4D90DC84FB15BC5F6B9E39228A5FECEB58E5CFCEE2CE187C8B98DD249CBC696CF13BDE5C99AE3C5515EE9D6D6D67A8E996AB3D896FB43976D32DD65B86B4B2B86438494142C97137950C50C6B0DA9450B258CF4B4FF1549AE5CE8779A4EA3E2DB31AAC915B596A901456B4964B3963967DE7F797126E92F17CB1106B8B98EEA5B59A279658ABA7F0CE9522783616B6D066B294787E2D52D858C2886D83C09288C5F48634B4B209219E27983917B6B712992792002E39FB6BCBCD2F53D46D2DF50B22F65F6A80CD1ACE96D62968B049682584334F04DF63B593CC5DEAE12D627532DF5995136B57125FC30E97F64F105C584F24B1456D6A52E2EE6D35DFC92866465B68E458E50D6D0DBEC8D52FADE244BA4BF908E1AEF44B0F197892C6DB5F83458A4D67CCBBD52FAD1D8B5C7D9E6DD27D8E525C97488CF1BDE4EEB6B2B47233B3BC06E5FDFF00E0FD8C2BE2FF000F7F6C689A2DA5BB7D9EEA4D3ADADE31159DC399E482286DDE39A5578AEE5D4D7623C4F01B4BA92471098618A1F88D3DD5FF00C40F13A879AEAD2E7576730C0A6E2DA271041660E444C33288CC587572F2A5D5BA24BE5496FA8F3315D5D469693A1D4F538E58B10B43766E635710DBCCD341708FB6E64372A6DDD2DF619AF9C4AD3DBCAF6622A5A73C9A85E69DA73EB70C50DD45044A0A24362049A5ABCD78D1CC56278E1895AE76AAA14B69ADECE45F2EE0C36A457FA66A1636971E24B99868DA849F6DB87D55E468B4EB522DEEA49362F9A84ECFB2CC2290C8B7171AADBACE6E65B566605FDD5ADF59DEDDDCE9969E20B49278561B873790D8EA3112F3CEA1B8967B606E994DC38851A669A6914B8BBD42186D2CE5B7934BD3AD36A69F6CDA4C317F604134914291C73C36D34721F2E5B95925FDEC7B1C4B7D7621716ECB65715D9EA70CD7B6FF00DA56D2DEEA1697B6D13CF2B492389CDE47035BB02D1FDA2684DB470DA0F395E3BA92D9CBDBBDC46905DF9FF8BF4BB0BBB39A7D587DA6C2EEE6196F2E0DC3799344658045685FCE11A59F9972D792C8D366591A2DF707CDB6BEB8CC1A62E9574F2EB3A6C26E2292CE5D65A6921DB7E90DD24083CA95A148F4F496584490B88466186DB644D6B7172B05CE91ABDB5BC3A75EB6B2F3AF9B6134B6B1412DCDD5E5DC77A93CD9B95579DEE10CEA154C736FB25B49516648A759FC3F15A5DF8A6EB5CB830EA97D6F124976ADAD8F11EA172DBE38638E49220A250C2E16DDA34630CE9730C2551E29EE6DFBFF000DD949A1D8BDC69ED0DDEAB6B62654B88664B98A59D406BBD5667B928864F34A5F4724929865812C4489048D66F581E21B3B6B6D623D2744D3FED36F0DCC91E97A1EA4D2DCDBCD6D1DDC490497C36ACEC89B4C46004967874DB5D93CD6D34698B2471CDFDA46D6DB59B8926FB5DBDE6C9ECA39A5126F11DE5DDC3388DE6974F764F3024B088A5BABD491DD2E1452F005E43A978AB5ABDB5B8FB4DCCBF60D261B0B0BD8E3B3BF89ACFECF696A972F1331476DA45B4EA4FEE235B98E70B7135B7BCFC28BC92D7E24786EC26585209EFAFE4B60D0A5A9BB9923992E2E08901796755FB3072C5AE145C794D26FB6BF371CCFC5CD3AEAF7E2678C445790C9AA25F3C36AB3E926486179ACECD77A725A40F1B59C324203966887517696175C9EA1656726A1A9DC3F85BCFD366D36289ADAF6282D2EAE6349C036B704308E0D91C4EB807CB88477330689B4C8AD2DAE59DA5FC1710B6ABA8EF96EB52827D5B302C565E734930BDB99ADDF6FC8FBA569F7625F26D678018633770E9F4F4CFED197C886E7FB664D525D36F5E6B67FB2A5C436FF002EF9350964D89243039BA33C7249141733AC224413B5E88EE7F64DFCBAE7F614DA5EB33DD25B7D9350D392F5639A7B19DB75B69CF79B228EC61B89041B6078E06112C91A430C87FD3F86F16F8999E6FEC4D235AD33C4978F141A5EA5ABE8FA24D3247712A359B43A746A23804925A1787CB0AB14B158C322B894858BDFFE27F85F4CD1F54D6E0F2B4CFECBB6B1BFB3B592FEE649858B369CB7578ECC1A47CCEA88B2AAEDB995279A5896331CD3DCF0DAED8C3AA6A17E16CAF639355D364FB4FF00C4CE34D4E5D2E69CB5DC1E5C4C00B937A597C968D0BDE5E790BBADADA459B32D22BD9F59134D0C33A5CEAF0CF3CDF60B7B9174268E3334C153902796491AEA28CB19D26D3AD607786E2190F3FAA68DF68F0DDE4464CEA325B5D42FF67BDFB44F1BDF43E6C723DCB304DEE2D2479EF1C2A4B6CF7582902D919FA683C1BF6FF3B43786F743D264B6BCD3D60DBFD9F6FA64526763CD25C0472F6D6FF6D9CC5BA29678268E4318FB5DF13D9CFA8EE965BEBA7B2D3ADDAE5F56B982CEE7CB9E3CDECD2C70E665DA5D6EA2BBBB5F3D7F726C6713FD961BA921B7F2CF13DD5D783BF688F04FD82C66D275697C3EB25D5B4DA798ADEE2EFCDB89ADE310BA0792D55D6D5628D54DC2470C5122ADCC4A8BEB5A1E99E13F88CC9E1CD5F4D87ECC62B486C350BD92D2731049964FB45C6E655BABA9A4B85C4AA264DF7BFEA9A0B8135FC179F0334CB3D2F525B4F12EB3F61BEFED6D62EEDAF35EB445B7927636B74BB98CA4BDBC4DE55CDCCAD308D5A4F291E59B3175BE11F853E34F0B7C48D2F52B85D305B8BE9239AE312CE8E44721578622B23C61E2694BC97171BC5D4F3323159644BCE7FE237C36F11EB5E37D7EDE7F065EEA5A65E6A56EAF994CB05C417522A9264E5F621B50B290A5E117513AAB2E9D68CD8CFE08F1636FD45BE1DDEC77537DB5731E8D15A881ED7C85B6BB648A794C690841690456DBAE0C3F699E193CC9003B3A07C12F1DDC5DB4F65A17F634B61F619ED9F59BB86DE0BDB9B68B7234B069EEC6587CF08521925C5A88A330978D9AD97B9D07F652F08D8D8C1A6EB57FA9EB7A45AD8CF616DA4C8EB0D9C714821566D9180C646FB3C52312DB4CFBE6548DC8DBD05A78021F87DA1DC58781BC13A2E9D0DADB490D9CDA75C471DF1565B70CCBE6C251A6611B1FDEB9576B7837B61D8C5F09F8CFF67BF8AFE006D43C3ADE1AF16EBA1EC61B2B496C6CA6B9B5FB3F9C67976343290A04F1E523910EE590C8C913ED15F59E97E18F1178E847ADB787B53D11B50BECCB67F6086C9F4C885FC57704EEA580B99C031CE036F58A59750DFE6122D0E2EA9F0EBC5B7DA7486E3E1CF88185EE91BA5D3ADAFB4B963174B712BC304ED732C8B284DD348D34893B4D25F3CACB1BC312478D7FF0B7C6D7893D85B787F538B519E46B249EEED239AD96E2587CE49242D336F81524BA13B92FFBD97CA5FB619AF5AF21B5F04F8D7ED1617BA3F857C4DA6DBADCDBCF13DC69B6BF698ADFCCB7317EE7734293308CA2A90C903DB44F2C70C22D3EC1B3E12F83DE26B2D2EDED67F01EB30186E5218C49AADBC6638919CC5B245B995D1095844921324B0C76D6490A4D2DBA5D24D63E08F1141637BABDE78175392DD243FDA16D6D0C36C25B38C4265B4B7B5576DC244B0820642AC8C91C30C66559A6BF3C368BF067E21DB7C47F14EBCDE1BD6479FF00F126B116569689FDA3662F156FEE66370C23937C6B2796979E7492FDA237DF2F92D30EE7C37F0EFC6D0B3DF41E19D4D9EEE431D9DDB4B1DBBAA79C0B4EE649C4F6C26864B85DFB65BA88DCCC768984D35F7B06896BE2CBAB787539A3BDB1BEB5B630C965A85E44E353658C981A47883470732BF9DE54218C88A159E28D7CDDAD13C3D368F710C865B2976DB1B596636F235CCD12484DB2BCEF2B3B7968F2062FB8BBB971B3254FFFD9"
@@ -8905,7 +8920,7 @@ ream cal-3024
        "Sweet! I love drawing sine waves and other trigonometric figures without using any real numbers. I just hope Master Leopold is watching."
     end
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
-       "97"
+       "98"
     end
     text -1 0 0 -1 0 0 2160 11340 3060 11700 0 "" "osmosian" 360 "right" 0 0 0 yes
        "VERTEX"
@@ -8970,7 +8985,7 @@ ream cal-3024
        "Note that the proper possessive of, say, JESUS, is JESUS', not JESUS'S."
     end
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
-       "98"
+       "99"
     end
   end
   page 12240 15840 1 1440
@@ -9005,7 +9020,7 @@ ream cal-3024
        "And that's all there is to it."
     end
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
-       "99"
+       "100"
     end
     polygon 0 0 0 -1 0 0 2 2160 5760 2160 9720
     polygon 0 0 0 -1 0 0 2 10080 5760 10080 9720
@@ -9093,7 +9108,7 @@ ream cal-3024
        "Phrases are typically used to specify one-of-a-kind globals in routine headers, like ""draw the bar"" in my desktop. Or to refer to a pseudo-variable that is not precisely defined in your code. Like ""the cursor"" in the example above, or ""the last byte"" in the ""delete the last byte of a string"" routine."
     end
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
-       "100"
+       "101"
     end
   end
   page 12240 15840 1 1440
@@ -9128,7 +9143,7 @@ ream cal-3024
        "And if you're not sure which one to use, flip a coin."
     end
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
-       "101"
+       "102"
     end
   end
   page 12240 15840 1 1440
@@ -9155,7 +9170,7 @@ ream cal-3024
        "The third record, ""polygon"", has nothing in it but a list of vertices. Because polygon is defined as a ""thing"", I take it to be a dynamic, rather than static, structure. This means you are responsible for allocating and deallocating the memory used by it. See the ""Memory Management"" topic and the page about ""Polygons"" for more information."
     end
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
-       "102"
+       "103"
     end
   end
   page 12240 15840 1 1440
@@ -9186,7 +9201,7 @@ ream cal-3024
        "You can also write up your own routines to MOVE a rider more than one byte at a time, like the ones in my noodle for ""spell checking"" and ""word wrapping"", not to mention the ones in my compiler for parsing your source code. Find ""to move a rider"" in these files, and you'll run into all of them."
     end
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
-       "103"
+       "104"
     end
   end
   page 12240 15840 1 1440
@@ -9219,7 +9234,7 @@ ream cal-3024
        "I can, of course, DRAW a roundy box. And I've got functions to get a roundy box's WIDTH, HEIGHT, and CENTER, among other things. I can even tell  whether or not a certain spot IS IN a roundy box or IS ON the edge of a roundy box. Not to mention all the usual ""Graphic Transformations""."
     end
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
-       "104"
+       "105"
     end
     rectangle 0 0 0 -1 0 0 3600 7200 5760 8640 360
     text -1 0 0 -1 0 0 2880 7740 3420 8100 0 "" "osmosian" 360 "right" 0 0 0 yes
@@ -9277,7 +9292,7 @@ ream cal-3024
        "Unlike procedures and deciders, functions are not usually called directly. Instead, the ""something's something"" is used as if it was a field in a record. Like a ""box's center"", which you won't find in the ""box"" record, because it is calculated by a function on demand."
     end
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
-       "105"
+       "106"
     end
   end
   page 12240 15840 1 1440
@@ -9308,7 +9323,7 @@ ream cal-3024
        "To silence the talking (but not the other sounds), set ""the silent flag""."
     end
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
-       "106"
+       "107"
     end
   end
   page 12240 15840 1 1440
@@ -9333,7 +9348,7 @@ ream cal-3024
        "If you're wondering why I don't have a built-in assembler, it's because it's not necessary. There is actually very little machine language in my brain, and as I get faster, more and more of it is replaced with Plain English. Besides, Osmosian Masters like to assemble in their heads. It keeps them young."
     end
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
-       "107"
+       "108"
     end
   end
   page 12240 15840 1 1440
@@ -9361,7 +9376,7 @@ ream cal-3024
        "I have routines in my noodle that will tell you if a spot IS IN or IS ON any of my other graphic objects, where ON means ""on the edge of"". The IN deciders are exact, and include the edges. The ON deciders are used by my writer and allow about three pixels of slop so you don't go crazy trying to click on your shapes. You can copy these routines and make ones with no slop if you like."
     end
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
-       "108"
+       "109"
     end
     text -1 0 0 -1 0 0 2160 6210 2520 6570 0 "" "osmosian" 360 "right" 0 0 0 yes
        "X"
@@ -9401,7 +9416,7 @@ ream cal-3024
        "Furthermore, you can concatenate strings with strings — and other kinds of data — using the infix THEN operator. See the topic on ""Expressions"" for a description of the clever way my creators implemented this."
     end
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
-       "109"
+       "110"
     end
     text 0 0 0 -1 0 0 2160 3960 3600 4320 90 "" "osmosian" 360 "center" 0 0 0 yes
        "16"
@@ -9517,7 +9532,7 @@ ream cal-3024
        "The primary use of substrings, however, is in ""riders"", which are discussed in this glossary under the topic of the same name."
     end
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
-       "110"
+       "111"
     end
     text 0 0 0 -1 0 0 2160 4320 3600 4680 90 "" "osmosian" 360 "center" 0 0 0 yes
        "16"
@@ -9639,7 +9654,7 @@ ream cal-3024
        "Now I know this sounds complicated, and it is. But you don't have to think about any of this, just like you don't have to think about nouns and verbs to speak proper English. Type in what you're thinking and let me do the rest."
     end
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
-       "111"
+       "112"
     end
   end
   page 12240 15840 1 1440
@@ -9672,7 +9687,7 @@ ream cal-3024
        "You should initialize your text's box, pen, font, alignment, margin, and flags after you create it. And you'll have to pass any events related to your text box down to me, of course, so I can take care of all the hard stuff for you. My text event handlers are documented on the following two pages."
     end
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
-       "112"
+       "113"
     end
   end
   page 12240 15840 1 1440
@@ -9706,7 +9721,7 @@ ream cal-3024
        "See what I mean? You're in control. So you have to issue the orders."
     end
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
-       "113"
+       "114"
     end
   end
   page 12240 15840 1 1440
@@ -9742,7 +9757,7 @@ ream cal-3024
        "Now to get started with text, I suggest you go play with my ""console"" a while, then check out the console code in my noodle. After that, you might want to take a look at my editor. But if you really want to see text in action, look in the writer. Finally, spend a few minutes with the dialog stuff in my desktop."
     end
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
-       "114"
+       "115"
     end
   end
   page 12240 15840 1 1440
@@ -9781,7 +9796,7 @@ ream cal-3024
        ""
     end
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
-       "115"
+       "116"
     end
   end
   page 12240 15840 1 1440
@@ -9812,7 +9827,7 @@ ream cal-3024
        "There is a function in my noodle that will get you ""a timer's string"" anytime you need it — even while it is running — and you can also concatenate timers and strings for display at any time using the infix THEN operator."
     end
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
-       "116"
+       "117"
     end
   end
   page 12240 15840 1 1440
@@ -9841,7 +9856,7 @@ ream cal-3024
        ""
     end
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
-       "117"
+       "118"
     end
   end
   page 12240 15840 1 1440
@@ -9867,7 +9882,7 @@ ream cal-3024
        "Other units of measure you will find in my noodle are: milliseconds, seconds, minutes, and hours; inches and feet; kilobytes, megabytes, and gigabytes; and ""percent"", which I usually convert to a ratio with 100 in the denominator."
     end
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
-       "118"
+       "119"
     end
     group
       text -1 0 0 -1 0 0 2160 7200 2520 7560 0 "" "osmosian" 360 "center" 0 0 0 yes
@@ -10074,7 +10089,7 @@ ream cal-3024
        ""
     end
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
-       "120"
+       "121"
     end
     text -1 0 0 -1 0 0 2160 2880 5040 13680 0 "" "osmosian" 240 "left" 0 0 0 yes
        "alt-tab, 5, 21, 23, 56"
