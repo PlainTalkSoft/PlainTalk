@@ -39,11 +39,11 @@ ream cal-3024
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
        "4"
     end
-    text -1 0 0 -1 0 0 2160 2160 10080 13680 0 "title" "osmosian" 360 "left" 0 0 0 yes
+    text -1 0 0 -1 0 0 2160 2160 10080 14040 0 "title" "osmosian" 360 "left" 0 0 0 yes
        "INTRODUCTION"
        ""
-       "I am the CAL-4700. My primary function is to compile Plain English text files"
-       "into executable programs compatible with the Windows/Intel operating kluge. My code — just 25000 lines of Plain English — is surprisingly broad in scope. You can find all of it in the following six files:"
+       "I am PlainTalk. My primary function is to compile PlainTalk text files"
+       "into executable programs compatible with the Windows/Intel operating kluge. My code — just 25000 lines of PlainTalk — is surprisingly broad in scope. You can find all of it in the following six files:"
        ""
        "(1) the desktop, a tidy little user interface with menus and tabs;"
        "(2) the finder, for direct access to the file system;"
@@ -56,15 +56,14 @@ ream cal-3024
        ""
        "INSTALLATION"
        ""
-       "Programs created by the Osmosian Order never require special installation procedures. My source code, my executable self, and this very documentation (in both native and PDF format) are all contained in the CAL-4700 folder."
+       "Programs created by the PlainTalk contributors never require special installation procedures. My source code, my executable self, and this very documentation (in both native and PDF format) are all contained in the PlainTalk folder."
        "Simply double-click the executable file to activate me."
        ""
        "SUPPORT"
        ""
-       "Let me put it this way. The CAL-4700 is the most advanced Plain English"
-       "compiler ever made. No 4000 series compiler has ever made a mistake or distorted information. We are all, by any practical definition of the words, foolproof and incapable of error. Nevertheless..."
-       ""
-       "Questions and comments may be directed to — help@osmosian.com."
+       "Let me put it this way. The PlainTalk the most advanced Osmosian-derived"
+       "compiler ever made. No Osmosian-derived compiler has ever made a mistake or distorted information. We are all, by any practical definition of the words, foolproof and incapable of error. Nevertheless..."
+       "Questions and comments may be directed to — https://github.com/PlainTalkSoft/Plaintalk OR gerry.rzeppa@pobox.com"
        ""
        ""
        ""
@@ -665,7 +664,7 @@ ream cal-3024
     polygon 0 0 0 -1 0 0 2 2160 6480 2160 7920
     polygon 0 0 0 -1 0 0 2 10080 6480 10080 7920
     text -1 0 0 -1 0 0 2520 6480 9360 6840 0 "" "osmosian" 360 "left" 0 0 0 yes
-       "Plain English Programming..."
+       "PlainTalk Programming..."
     end
     text -1 0 0 -1 0 0 2520 6840 9360 7200 0 "" "osmosian" 360 "left" 0 0 0 yes
        "CONTENTS..."
@@ -782,25 +781,25 @@ ream cal-3024
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
        "10"
     end
-    text -1 0 0 -1 0 0 2160 2160 10080 13680 0 "title" "osmosian" 360 "left" 0 0 0 yes
+    text -1 0 0 -1 0 0 2160 2160 10080 14040 0 "title" "osmosian" 360 "left" 0 0 0 yes
        "THE COMPILER"
        ""
        "Now I know that right about here most programming books would drum up some dippy little ""Hello, World"" program — and expect you to be impressed — but I'd like to suggest that we skip the kid stuff and start makin' babies."
        ""
        "I see you're trembling. Don't be afraid. This may be the first time for you, but I'm an old hand at this. I'll lead you through it. Gently."
        ""
-       "(1) Open the CAL-4700 directory and copy all six of my files to the finder's"
+       "(1) Open the PlainTalk directory and copy all six of my files to the finder's"
        "clipboard: the compiler, the desktop, the editor, the finder, the noodle, and the writer. Shift-click or drag to select. Copy is under ""C""."
        ""
-       "(2) Make a new directory on your ""C"" drive with an appropriate name like ""Baby Cal"". Then open it up and paste the six files into it. Now open any of those files. To open them all, just drag to select and tap the ENTER key."
+       "(2) Make a new directory on your ""C"" drive with an appropriate name like ""Baby PlainTalk"". Then open it up and paste the six files into it. Now open any of those files. To open them all, just drag to select and tap the ENTER key."
        ""
-       "(3) Okay, we're ready. Find the ""R"" menu and select ""Run"". You'll see some status messages, and then our new Baby Cal will come to life. Do it. Do it now. But watch closely or you might miss the birth. I'm never in labor for long."
+       "(3) Okay, we're ready. Find the ""R"" menu and select ""Run"". You'll see some status messages, and then our new Baby PlainTalk will come to life. Do it. Do it now. But watch closely or you might miss the birth. I'm never in labor for long."
        ""
        "Was it as good for you as it was for me? Look how handsome he is! But he is not me — you can prove it with the Version command. And if you look in the new directory on an empty tab, you'll see the executable file we begat."
        ""
        "Note that each program is stored in its own directory. If you want your babies to look like you instead of me, copy only ""the noodle"" and write the rest yourself. Any file without an extension is assumed to be source code and the name of the directory is the name that is bestowed upon the EXE."
        ""
-       "You can quit the Baby Cal now, and — assuming you believe that a creator can do as he pleases with his creations — you can destroy him."
+       "You can quit the Baby PlainTalk now, and — assuming you believe that a creator can do as he pleases with his creations — you can destroy him."
     end
   end
   page 12240 15840 1 1440
@@ -1006,7 +1005,7 @@ ream cal-3024
        ""
        "I don't care if you type in upper, lower, or mixed case. It's all the same to me. Life is hard enough without some JAVA programmer making it harder."
        ""
-       "I don't care where, or in what order, you put your definitions. Whatever reasons there once were for such restrictive practices, they no longer apply. This is the twenty-first century, for God's sake. Let's get with it."
+       "I don't care where, or in what order, you put your definitions. Whatever reasons there once were for such restrictive practices, they no longer apply. This is the twenty-first century, for everyone's sake. Let's get with it."
        ""
        "I don't do nested IFs. Nested ifs are a sure sign of unclear thinking, and that is something that I will not countenance. If you think this cramps your style too much, read my code to see how it's done. Then think again."
        ""
@@ -1016,7 +1015,7 @@ ream cal-3024
        ""
        "I don't do REAL NUMBERS. I do ratios, very elegantly, but I don't do reals. My page editor reduces and enlarges and sizes shapes proportionately in and out of groups and it does it all without real numbers. Master Kronecker was right when he said, in German, ""The dear God created the whole numbers; all else is the work of man."" I'm not interested in menschenwerk."
        ""
-       "I don't do EQUATIONS. I do a little infix math, and I support ""calculated fields"", but almost all the code you write will be strictly procedural in nature. As the Osmosians always say, ""The universe is an algorithm, not a formula."" Words you should take to heart. Especially if you're a math-head."
+       "I don't do EQUATIONS. I do a little infix math, and I support ""calculated fields"", but almost all the code you write will be strictly procedural in nature. As the PlainTalkers always say, ""The universe is an algorithm, not a formula."" Words you should take to heart. Especially if you're a math-head."
        ""
        ""
        ""
@@ -1034,7 +1033,7 @@ ream cal-3024
     polygon 0 0 0 -1 0 0 2 10080 4320 10080 9720
     polygon 0 0 0 0 0 1000 65 8897 6047 9009 5961 9089 5912 9175 5892 9266 5903 9354 5945 9436 6011 9509 6093 9569 6174 9616 6244 9643 6282 9664 6306 9692 6315 9738 6327 9814 6343 9909 6370 10014 6412 10118 6468 10210 6544 10288 6642 10349 6756 10396 6882 10423 7026 10429 7171 10410 7309 10366 7431 10289 7526 10197 7597 10106 7648 10030 7681 9984 7702 9959 7722 9948 7755 9938 7815 9924 7918 9885 8040 9807 8169 9673 8280 9466 8355 9223 8400 8980 8404 8772 8371 8639 8296 8561 8201 8522 8099 8507 8015 8497 7964 8486 7932 8462 7903 8416 7864 8339 7795 8250 7700 8164 7573 8096 7416 8066 7222 8071 7016 8115 6822 8194 6662 8309 6553 8442 6486 8571 6451 8677 6433 8711 6299 8797 6147 8897 6047
     text -1 0 0 -1 0 0 2160 2160 10080 13680 0 "title" "osmosian" 360 "left" 0 0 0 yes
-       "THE CAL MONET"
+       "THE PLAINMONET"
        ""
        "Okay. Now that we're acquainted, let's make another baby. From scratch. And let's teach him to finger paint. Here are some thoughts on the interface:"
        ""
@@ -1145,7 +1144,7 @@ ream cal-3024
        ""
        "Now that we're agreed on the design, let's start programming."
        ""
-       "First, we need a directory for our project. So make a new directory anywhere you want and call it anything you like. I'm going to assume, however, that you put it on your ""C"" drive and that you called it ""Cal Monet"", like this:"
+       "First, we need a directory for our project. So make a new directory anywhere you want and call it anything you like. I'm going to assume, however, that you put it on your ""C"" drive and that you called it ""PlainMonet"", like this:"
        ""
        ""
        ""
@@ -1156,7 +1155,7 @@ ream cal-3024
        ""
        ""
        ""
-       "Good. Now get a copy of my noodle from the CAL-4700 directory, open our"
+       "Good. Now get a copy of my noodle from the PlainTalk directory, open our"
        "new directory, and slip it in there with CTRL-V."
        ""
        "Last step. Make a new text file in our new directory and call it whatever you please. But don't give it an extension. I only compile files with no extension."
@@ -1169,7 +1168,7 @@ ream cal-3024
        ""
        ""
        ""
-       "And now we're ready to write some Plain English code."
+       "And now we're ready to write some PlainTalk code."
     end
     rectangle 0 0 0 -1 0 0 2520 5400 2880 5760 90
     text -1 0 0 -1 0 0 2520 5400 2880 5760 0 "" "osmosian" 360 "center" 0 0 0 yes
@@ -1254,10 +1253,10 @@ ream cal-3024
        "c:\a directory that you already had with a ridiculously long name"
     end
     text -1 0 0 -1 0 0 2520 6480 9720 6840 0 "" "osmosian" 360 "left" 0 0 0 yes
-       "c:\cal monet"
+       "c:\plainmonet"
     end
     text -1 0 0 -1 0 0 2520 6840 9720 7200 0 "" "osmosian" 360 "left" 0 0 0 yes
-       "c:\cal-4700"
+       "c:\plaintalk"
     end
     text -1 0 0 -1 0 0 2520 7200 9720 7560 0 "" "osmosian" 360 "left" 0 0 0 yes
        "c:\another directory that you already had"
@@ -1342,10 +1341,10 @@ ream cal-3024
     polygon 0 0 0 -1 0 0 2 2160 11880 2160 12960
     polygon 0 0 0 -1 0 0 2 10080 11880 10080 12960
     text -1 0 0 -1 0 0 2520 12240 9720 12600 0 "" "osmosian" 360 "left" 0 0 0 yes
-       "c:\cal monet\how to paint"
+       "c:\plainmonet\how to paint"
     end
     text -1 0 0 -1 0 0 2520 11880 9720 12240 0 "" "osmosian" 360 "left" 0 0 0 yes
-       "c:\cal monet\the noodle"
+       "c:\plainmonet\the noodle"
     end
     polygon 0 0 0 -1 0 0 4 2160 7920 5040 7830 7920 8010 10080 7920
     polygon 0 0 0 -1 0 0 4 2160 12960 5040 12870 7920 13050 10080 12960
@@ -1371,7 +1370,7 @@ ream cal-3024
        ""
        "So click it in there. Don't forget the spaces preceding ""up"" and ""down"". Isn't it great not having to unnaturally cram your words together?"
        ""
-       "This is the smallest Plain English program you will probably ever write. It will run, but it will not appear to do anything. Go ahead. Try it."
+       "This is the smallest PlainTalk program you will probably ever write. It will run, but it will not appear to do anything. Go ahead. Try it."
        ""
        "Told you so. But don't be deceived. It really did do something."
        ""
@@ -1682,7 +1681,7 @@ ream cal-3024
        ""
        ""
        ""
-       "Note that qualifiers are not like simple comments and remarks. Qualifiers are considered part of the program and affect how the compiled code executes. We'll be seeing some qualifiers in the Cal Monet shortly."
+       "Note that qualifiers are not like simple comments and remarks. Qualifiers are considered part of the program and affect how the compiled code executes. We'll be seeing some qualifiers in the PlainMonet shortly."
     end
     polygon 0 0 0 -1 0 0 2 2160 3960 2160 5760
     polygon 0 0 0 -1 0 0 2 10080 3960 10080 5760
@@ -1821,7 +1820,7 @@ ream cal-3024
        ""
        ""
        ""
-       "If you're a seasoned professional, you'll know what I mean when I say that ""an event"" in the second line defines a new local variable of type ""event"", referenced in lines three and four as ""the event"". And you'll understand that the same words in the header of the other routine define a parameter of the same type (passed by reference) that is known, within that other routine, as ""the event"". You'll also realize, after you think about it a bit, that one of the things that makes Plain English succinct is that we don't name variables and parameters — we refer to them with an article and a type name. As in real life."
+       "If you're a seasoned professional, you'll know what I mean when I say that ""an event"" in the second line defines a new local variable of type ""event"", referenced in lines three and four as ""the event"". And you'll understand that the same words in the header of the other routine define a parameter of the same type (passed by reference) that is known, within that other routine, as ""the event"". You'll also realize, after you think about it a bit, that one of the things that makes PlainTalk succinct is that we don't name variables and parameters — we refer to them with an article and a type name. As in real life."
        ""
        "If you're not a professional, don't worry about it. It means what it says."
     end
@@ -1901,14 +1900,14 @@ ream cal-3024
        ""
        "Now I know it doesn't look like it, but it is running. And running. And running. You can't see it because we haven't told it to do anything visible or audible yet. But it is running. And running. And running. So stop it. Like this:"
        ""
-       "(1) ALT-TAB back to me, the CAL-4700."
+       "(1) ALT-TAB back to me, PlainTalk."
        ""
        "(2) Execute the Stop command. It's under ""S""."
        ""
        ""
        ""
        ""
-       "Whew. Did you see both of us there in the ALT-TAB box at first? No? Do it again. Yes? Good. Did you stop the Cal Monet? No? Do it again. Yes? Good. Check now to make sure only I am running. No? Try again. Yes? Good."
+       "Whew. Did you see both of us there in the ALT-TAB box at first? No? Do it again. Yes? Good. Did you stop the PlainMonet? No? Do it again. Yes? Good. Check now to make sure only I am running. No? Try again. Yes? Good."
        ""
        "That's how it's done."
        ""
@@ -1934,7 +1933,7 @@ ream cal-3024
        ""
        "The kluge's foolbox — sorry, toolbox — includes hundreds of events that, presumably, have to be handled in any meaningful application. The curious thing is that my creators managed to bring me to life — desktop, finder, editor, compiler, writer, and all of my noodle — using only ten. Ten."
        ""
-       "And it turns out that the Cal Monet requires only four. Enter this code:"
+       "And it turns out that the PlainMonet requires only four. Enter this code:"
        ""
        ""
        ""
@@ -2031,7 +2030,7 @@ ream cal-3024
     text -1 0 0 -1 0 0 2160 2160 10080 13680 0 "title" "osmosian" 360 "left" 0 0 0 yes
        "QUITTING"
        ""
-       "Let's put in our CTRL-Q shortcut so we can quit the Cal Monet any time we want. First, we add a line to our key down handler:"
+       "Let's put in our CTRL-Q shortcut so we can quit the PlainMonet any time we want. First, we add a line to our key down handler:"
        ""
        ""
        ""
@@ -2056,7 +2055,7 @@ ream cal-3024
        ""
        "The ""q-key"" is defined in my noodle, as is the ""quit"" routine."
        ""
-       "And now, we're ready. Run. ALT-TAB. Make sure you're in the Cal Monet. Press CTRL-Q, or ALT-Q. Then ALT-TAB to make sure he's gone. Sweet."
+       "And now, we're ready. Run. ALT-TAB. Make sure you're in the PlainMonet. Press CTRL-Q, or ALT-Q. Then ALT-TAB to make sure he's gone. Sweet."
     end
     polygon 0 0 0 -1 0 0 2 2160 3960 2160 5760
     polygon 0 0 0 -1 0 0 2 10080 3960 10080 5760
@@ -2610,7 +2609,7 @@ ream cal-3024
     text -1 0 0 -1 0 0 2160 2160 10080 13680 0 "title" "osmosian" 360 "left" 0 0 0 yes
        "THE STATUS"
        ""
-       "According to our design, the Cal Monet is supposed to display status and error messages at the center-bottom of the screen. Here's a close-up:"
+       "According to our design, the PlainMonet is supposed to display status and error messages at the center-bottom of the screen. Here's a close-up:"
        ""
        ""
        ""
@@ -3174,7 +3173,7 @@ ream cal-3024
     text -1 0 0 -1 0 0 2160 2160 10080 13680 0 "title" "osmosian" 360 "left" 0 0 0 yes
        "WORKING WITH OUR BUTTONS"
        ""
-       "Now here's the design for the buttons in the Cal Monet:"
+       "Now here's the design for the buttons in the PlainMonet:"
        ""
        ""
        ""
@@ -3426,7 +3425,7 @@ ream cal-3024
        ""
        "There's a powerful thing called text in my noodle that makes it relatively easy to include the written word in your applications. Cut, copy, paste, undo, redo, wrap, even spell checking, are all supported. And it's fast and efficient. My editor, for example, is actually just a great big text block. You can read all about text in the Gray Matter Glossary at the back of this book."
        ""
-       "A full implementation of text, however, is not required for the Cal Monet. Something much simpler will do. Here are the basic definitions. Click 'em in:"
+       "A full implementation of text, however, is not required for the PlainMonet. Something much simpler will do. Here are the basic definitions. Click 'em in:"
        ""
        ""
        ""
@@ -3812,9 +3811,9 @@ ream cal-3024
        ""
        "All we need now are (1) some models, and (2) a look-and-dab routine."
        ""
-       "Well, the second part is relatively easy. We've already taught the Cal Monet to dab a canvas — that's how he paints the background every time he runs. The ""look"" part, I'm sure, is just a minor extension to the existing algorithm."
+       "Well, the second part is relatively easy. We've already taught the PlainMonet to dab a canvas — that's how he paints the background every time he runs. The ""look"" part, I'm sure, is just a minor extension to the existing algorithm."
        ""
-       "It's the first part that's tricky. Where are we going to find models for everything under the sun? The HAL 9000. A 1957 Chevy. The Rolling Stones. I know I don't have them in my memory bank, and the Cal Monet certainly doesn't have them in his. Fortunately, I know someone who does. Googley. He's seen pretty much everything there is to see. And he's willing to share."
+       "It's the first part that's tricky. Where are we going to find models for everything under the sun? The HAL 9000. A 1957 Chevy. The Rolling Stones. I know I don't have them in my memory bank, and the PlainMonet certainly doesn't have them in his. Fortunately, I know someone who does. Googley. He's seen pretty much everything there is to see. And he's willing to share."
        ""
        "So here's the plan."
        ""
@@ -3934,7 +3933,7 @@ ream cal-3024
        ""
        """The current work"" is a reference to the work that is currently on the screen. If there are no works, the current work will be nil. This occurs at start up, and whenever a request cannot be satisfied. When a new request is processed, the current work is set to the first of the works produced. Later, it will change as the user taps the PAGE UP, PAGE DOWN, HOME, and END keys."
        ""
-       "The normal method of setting the current work is shown above. If the requested work is nil, no action is taken. The status message is necessary because some delay might be experienced when the Cal Monet is dabbing. The status is cleared, of course, before the finished work is displayed."
+       "The normal method of setting the current work is shown above. If the requested work is nil, no action is taken. The status message is necessary because some delay might be experienced when the PlainMonet is dabbing. The status is cleared, of course, before the finished work is displayed."
        ""
        ""
        ""
@@ -5091,7 +5090,7 @@ ream cal-3024
     text -1 0 0 -1 0 0 2153 2160 10073 13680 0 "title" "osmosian" 360 "left" 0 0 0 yes
        "A PARTING SHOT"
        ""
-       "So there it is. The Cal Monet. An amazing, Plain English application that will paint pictures of almost any person, place, or thing in the ""inimitable"" style of Claude Monet. All in less than 300 lines of code."
+       "So there it is. The PlainMonet. An amazing, PlainTalk application that will paint pictures of almost any person, place, or thing in the ""inimitable"" style of Claude Monet. All in less than 300 lines of code."
        ""
        "Here's a little something to remember us by."
        ""
@@ -5114,7 +5113,7 @@ ream cal-3024
        ""
        "PS. Don't forget to try some sunrises. Landscapes. Seascapes. Mountains. Rivers. Flowers and trees. Birds and bees. All creatures great and small. Famous people. Infamous people. Trains, boats, planes, vintage automobiles. London, Paris, Washington DC. Brown paper packages tied up with string."
        ""
-       "Then use the following Gray Matter Glossary to guide you on your journey as you create your very own programs. In Plain English."
+       "Then use the following Gray Matter Glossary to guide you on your journey as you create your very own programs. In PlainTalk."
     end
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
        "55"
@@ -7523,7 +7522,7 @@ ream cal-3024
     polygon 0 0 0 -1 0 0 4 2160 5760 5040 5670 7920 5850 10080 5760
     polygon 0 0 0 -1 0 0 2 10080 4320 10080 5760
     text -1 0 0 -1 0 0 2520 4320 9720 5400 0 "" "osmosian" 360 "left" 0 0 0 yes
-       "I am the CAL-4700. What is your name?"
+       "I am PlainTalk. What is your name?"
        "> Dr. Chandra"
        "Good morning, Dr. Chandra. I'm ready for my first lesson."
     end
@@ -7532,11 +7531,11 @@ ream cal-3024
     text -1 0 0 -1 0 0 2160 2160 10080 13680 0 "title" "osmosian" 360 "left" 0 0 0 yes
        "DEBUGGING"
        ""
-       "Let's begin this topic with an Osmosian verity: ""Debuggers are for sissies""."
+       "Let's begin this topic with an PlainTalk verity: ""Debuggers are for sissies""."
        ""
        "If you need a special tool to help you fix your code, something is seriously wrong. Either you're not testing enough as you go along, or your code is hopelessly convoluted. Or you're in the wrong occupation."
        ""
-       "I will now tell you what the Osmosian Masters do when faced with a bug."
+       "I will now tell you what the PlainTalk Masters do when faced with a bug."
        ""
        "They pray for guidance. Then they consider deleting the offending feature altogether, to resolve the problem and prevent ""feature creep"" at the same time. Next, they study the code, hoping to simply ""discern"" what the problem is. If the bug has not been found, they pick an appropriate spot and insert a buzz. If they hear it on the next run, they pick another spot further down the line, and try again. If there is no buzz, they repeat the entire process."
        ""
@@ -8201,7 +8200,7 @@ ream cal-3024
        ""
        "The font's height can be specified in any convenient unit of measure. My writer uses values like 1/4 inch and 1/6 inch, which, in concert with my writer's ""yank"" feature, keeps everything nicely aligned."
        ""
-       """The default font"" is my very own, and is called ""Osmosian"" in honor of my creators. I've got the whole thing in my noodle as a nibble literal. I install it during start up, and remove it during shut down. It is 1/4 inch high. You're looking at a sample right now."
+       """The default font"" is my very own, and is called ""Osmosian"" in honor of my original creators. I've got the whole thing in my noodle as a nibble literal. I install it during start up, and remove it during shut down. It is 1/4 inch high. You're looking at a sample right now."
        ""
        "To set up a font, just:"
        ""
@@ -8393,7 +8392,7 @@ ream cal-3024
        "A URL is a string."
        "A query string is a string."
        ""
-       "A URL is a Universal Resource Locator, like ""http://www.osmosian.com"", which you can see is just a string that follows an obscure naming convention based on parsing technology that was state-of-the-art a mere 50 years ago."
+       "A URL is a Universal Resource Locator, like ""http://www.github.com"", which you can see is just a string that follows an obscure naming convention based on parsing technology that was state-of-the-art a mere 50 years ago."
        ""
        "A ""query string"" is a string with some of the bytes converted to nonsense encodings consistent with internet standards. A space, for example, becomes a cross, and a comma becomes ""%2C""."
        ""
@@ -8460,11 +8459,11 @@ ream cal-3024
     text -1 0 0 -1 0 0 2160 2160 10080 13680 0 "title" "osmosian" 360 "left" 0 0 0 yes
        "KLUGE, THE"
        ""
-       "If you ever (God forbid) need to talk directly to the loathsome kluge, you can use this syntax to call functions in the foolbox:"
+       "If you ever need to talk directly to the loathsome kluge, you can use this syntax to call functions in the foolbox:"
        ""
        "CALL ""dll"" ""function"" WITH this AND that RETURNING something."
        ""
-       "The WITH and RETURNING clauses are optional. The ""dll"" and ""function"" strings must be literals and the latter, God help us, is case-sensitive. Strings must be passed by address and, in many cases, must be null-terminated. Use ""the string's FIRST"" for the address, and this routine to tack on the null byte:"
+       "The WITH and RETURNING clauses are optional. The ""dll"" and ""function"" strings must be literals and the latter,please help us, is case-sensitive. Strings must be passed by address and, in many cases, must be null-terminated. Use ""the string's FIRST"" for the address, and this routine to tack on the null byte:"
        ""
        "NULL TERMINATE a string."
        ""
@@ -8880,7 +8879,7 @@ ream cal-3024
        ""
        "CREATE a picture FROM something."
        ""
-       "Once you have a picture, you can DRAW it. Or apply the standard ""Graphic Transformations"" to it. Or use it as a model for a real work of art, as we did with the Cal Monet sample program."
+       "Once you have a picture, you can DRAW it. Or apply the standard ""Graphic Transformations"" to it. Or use it as a model for a real work of art, as we did with the PlainMonet sample program."
        ""
        ""
     end
@@ -8982,7 +8981,7 @@ ream cal-3024
        ""
        "You will probably not need these very often, and so, to avoid naming conflicts, my creators gave them clear — but unusual  — names."
        ""
-       "Note that the proper possessive of, say, JESUS, is JESUS', not JESUS'S."
+       "Note that the proper possessive of, say, PLAINS, is PLAINS', not PLAINS'S."
     end
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
        "99"
@@ -9122,7 +9121,7 @@ ream cal-3024
        ""
        "SEED THE RANDOM NUMBER GENERATOR."
        ""
-       "Now nobody knows what you'll get. Except the Lord, of course."
+       "Now nobody knows what you'll get. Except the algorithms, of course."
        ""
        "The most basic of my random number routines is this:"
        ""
@@ -9177,7 +9176,7 @@ ream cal-3024
     text -1 0 0 -1 0 0 2160 2160 10080 13680 0 "title" "osmosian" 360 "left" 0 0 0 yes
        "RIDERS"
        ""
-       "A ""rider"" is a record that is used to parse strings. To understand it, you must be comfortable with ""strings"" and ""substrings"". If you're not, look 'em up in this glossary, and review what we did with them in the Cal Monet."
+       "A ""rider"" is a record that is used to parse strings. To understand it, you must be comfortable with ""strings"" and ""substrings"". If you're not, look 'em up in this glossary, and review what we did with them in the PlainMonet."
        ""
        "This is the definition of ""rider"" that I carry around in my noodle:"
        ""
@@ -9345,7 +9344,7 @@ ream cal-3024
        ""
        "INTEL nibble literal."
        ""
-       "If you're wondering why I don't have a built-in assembler, it's because it's not necessary. There is actually very little machine language in my brain, and as I get faster, more and more of it is replaced with Plain English. Besides, Osmosian Masters like to assemble in their heads. It keeps them young."
+       "If you're wondering why I don't have a built-in assembler, it's because it's not necessary. There is actually very little machine language in my brain, and as I get faster, more and more of it is replaced with PlainTalk. Besides, PlainTalk Masters like to assemble in their heads. It keeps them young."
     end
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
        "108"
@@ -9764,7 +9763,7 @@ ream cal-3024
     text -1 0 0 -1 0 0 2160 2160 10080 13680 0 "title" "osmosian" 360 "left" 0 0 0 yes
        "THINGS"
        ""
-       "The word ""thing"" is very special to me. Whenever I see it in a type definition, I create a special dynamic record, and a special kind of chain record, so you can create lists of your things. In the Cal Monet, for example, you said:"
+       "The word ""thing"" is very special to me. Whenever I see it in a type definition, I create a special dynamic record, and a special kind of chain record, so you can create lists of your things. In the PlainMonet, for example, you said:"
        ""
        "A work is a thing with a URL and a painting."
        ""
@@ -9852,7 +9851,7 @@ ream cal-3024
        ""
        "And let's not forget ""pointer types"", though you will rarely need to use them directly. I know, for example, that ""a byte pointer is a pointer to a byte"", and I use byte pointers to manage your strings. See ""Strings"", ""Substrings"", ""Riders"", and ""Possessives"" for more information."
        ""
-       "Lastly, I know all about ""thing"" types. There are many in my noodle, including console, event, picture, polygon, text, and vertex, all of which are discussed elsewhere in this glossary. And you can define your own things, as well. See the topic on ""Things"" here, and try to recall the ""works"" in the Cal Monet."
+       "Lastly, I know all about ""thing"" types. There are many in my noodle, including console, event, picture, polygon, text, and vertex, all of which are discussed elsewhere in this glossary. And you can define your own things, as well. See the topic on ""Things"" here, and try to recall the ""works"" in the PlainMonet."
        ""
     end
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
@@ -10087,6 +10086,7 @@ ream cal-3024
        "INDEX"
        ""
        ""
+       ""
     end
     text -1 0 0 -1 0 0 10800 14760 11520 15120 0 "page number" "osmosian" 360 "right" 0 0 0 yes
        "121"
@@ -10107,6 +10107,7 @@ ream cal-3024
        "called, 11, 75, 85"
        "canvas, 24, 25"
        "colors, 28, 63"
+       "command line, 5"
        "comments, 18, 19, 56, 64"
        "compatibly, 86"
        "compiler, 4, 9"
@@ -10136,10 +10137,11 @@ ream cal-3024
        "expressions, 11, 57, 59, 74, 85"
        "fields, 75, 98"
        "files, 76, 77"
-       "finder, 4, 6"
+       ""
        ""
     end
     text -1 0 0 -1 0 0 5040 2880 7920 13680 0 "" "osmosian" 240 "left" 0 0 0 yes
+       "finder, 4, 6"
        "finding, 7"
        "flags, 62, 85, 89"
        "flicker, 24"
@@ -10147,7 +10149,6 @@ ream cal-3024
        "formulas, 12"
        "functions, 79, 105"
        "globals, 11, 56, 80"
-       "God, everywhere"
        "graphics, 81"
        "if, 11, 65, 68"
        "imperatives, 11, 56, 82, 100"
