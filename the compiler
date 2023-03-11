@@ -1,4 +1,5 @@
 \ copyright © 2006, 2017 the osmosian order (4700)
+\ copyright © 2023 the plaintalk contributors (v0.4.0)
 
 \ firstparam=esp+4/ebp+8, secondparam=esp+8/ebp+12, etc...
 
@@ -16,7 +17,7 @@ Put the string into the compiler's abort message.
 Find the compiler's abort path and the compiler's abort row# given the byte pointer.
 If the compiler's abort path is blank, exit.
 Extract a file name from the compiler's abort path.
-Prepend "Error in " then the file name then ". " to the compiler's abort message.
+Prepend "Error in " then the file name then " at line " then the compiler's abort row# then ". " to the compiler's abort message.
 
 To abort with a string and a rider:
 If the rider's token is not blank, abort with the string and the rider's token's first; exit.
@@ -983,66 +984,76 @@ Compile the directory (stop).
 
 To compile a directory (add and compile the built-in startup routine):
 If the compiler's abort flag is set, exit.
-Show status "Adding...".
+Show status "Adding the built-in startup routine...".
 Start the adding built-in startup routine timer.
 Add and compile the initialize before run and run and finalize after run routine.
 Stop the adding built-in startup routine timer.
 
 To compile a directory (add the built-in memory routines):
 If the compiler's abort flag is set, exit.
-Show status "Adding...".
+Show status "Adding the built-in memory routines...".
 Start the adding built-in memory routines timer.
 Add the allocate and deallocate and finalize and destroy routines.
 Stop the adding built-in memory routines timer.
 
 To compile a directory (address):
 If the compiler's abort flag is set, exit.
-Show status "Addressing...".
+If the verbosity level is 0, show status "Addressing...".
 Start the addressing timer.
 Put 4096 into an address.
 Put the address into the import borough's base.
+If the verbosity level is 1, show status "Addressing the imports...".
 Address the imports given the address.
 Put the address minus the import borough's base into the import borough's length.
 Round the address up to the nearest multiple of 4096.
 Put the address into the data borough's base.
+If the verbosity level is 1, show status "Addressing the globals...".
 Address the globals given the address.
+If the verbosity level is 1, show status "Addressing the literals...".
 Address the literals given the address.
 Put the address minus the data borough's base into the data borough's length.
 Round the address up to the nearest multiple of 4096.
 Put the address into the code borough's base.
+If the verbosity level is 1, show status "Addressing the routines...".
 Address the routines given the address.
 Put the address minus the code borough's base into the code borough's length.
 Stop the addressing timer.
 
 To compile a directory (calculate lengths and offsets of types):
 If the compiler's abort flag is set, exit.
-Show status "Calculating...".
+If the verbosity level is 0, show status "Calculating...".
 Start the calculating timer.
+If the verbosity level is 1, show status "Calculating the lengths of the types...".
 Calculate the lengths of the types.
+If the verbosity level is 1, show status "Calculating the offsets of the types...".
 Calculate the offsets in the types.
+If the verbosity level is 1, show status "Calculating the redefinition offsets of the types...".
 Calculate the redefinition offsets in the types.
 Stop the calculating timer.
 
 To compile a directory (compile the bodies of the routines):
 If the compiler's abort flag is set, exit.
-Show status "Compiling...".
+Show status "Compiling the bodies of the routines...".
 Start the compiling routine bodies timer.
 Compile the bodies of the routines.
 Stop the compiling routine bodies timer.
 
 To compile a directory (compile the headers of the routines):
 If the compiler's abort flag is set, exit.
-Show status "Compiling...".
+Show status "Compiling the headers of the routines...".
 Start the compiling routine headers timer.
 Compile the headers of the routines.
 Stop the compiling routine headers  timer.
 
 To compile a directory (index the routines for utility use):
 If the compiler's abort flag is set, exit.
-Show status "Utilitizing...".
+If the verbosity level is 0, show status "Utilitizing...".
 Start the indexing utilities timer.
+If the verbosity level is 1, show status "Indexing the routines...".
 Index the routines for utility use.
+If the verbosity level is 1, show status "Scrubbing the utility index...".
 Scrub the utility index.
+If the verbosity level is 1, show status "Reindexing the utility index...".
 Reindex the utility index.
 Stop the indexing utilities timer.
 
@@ -1055,9 +1066,11 @@ Stop the linking timer.
 
 To compile a directory (offset parameters and variables):
 If the compiler's abort flag is set, exit.
-Show status "Offsetting...".
+If the verbosity level is 0, show status "Offsetting...".
 Start the offsetting timer.
+If the verbosity level is 1, show status "Offsetting the parameters in the routines...".
 Offset the parameters in the routines.
+If the verbosity level is 1, show status "Offsetting the locals in the routines...".
 Offset the locals in the routines.
 Stop the offsetting timer.
 
@@ -1070,18 +1083,22 @@ Stop the loading timer.
 
 To compile a directory (resolve the globals):
 If the compiler's abort flag is set, exit.
-Show status "Resolving...".
+Show status "Resolving the globals...".
 Start the resolving globals timer.
 Resolve the globals.
 Stop the resolving globals timer.
 
 To compile a directory (resolve the types):
 If the compiler's abort flag is set, exit.
-Show status "Resolving...".
+If the verbosity level is 0, show status "Resolving the types...".
 Start the resolving types timer.
+If the verbosity level is 1, show status "Resolving the types (expand things)...".
 Resolve the types (expand things).
+If the verbosity level is 1, show status "Resolving the types (index plurals)...".
 Resolve the types (index plurals).
+If the verbosity level is 1, show status "Resolving the types (base types)...".
 Resolve the types (base types).
+If the verbosity level is 1, show status "Resolving the types (optional info)...".
 Resolve the types (optional info).
 Stop the resolving types timer.
 
@@ -1097,11 +1114,12 @@ Show status "Starting...".
 Finalize the compiler.
 Start the compiler's timer.
 Initialize the compiler given the directory.
+If the verbosity level  is 1, show status "Adding the built-in types...".
 Add the built-in types.
 
 To compile a directory (stop):
 Stop the compiler's timer.
-Show status "".
+Show status "Compilation complete.".
 
 To compile a directory (transmogrify):
 If the compiler's abort flag is set, exit.
@@ -3013,7 +3031,8 @@ Put 0 into the pe header's usermajorversion.
 Put 0 into the pe header's userminorversion.
 Put 4 [$0004] into the pe header's subsystemmajorversion.
 Put 0 [$0000] into the pe header's subsystemminorversion.
-Put 2 [$0002] into the pe header's subsystem.
+If the subsystem is "console", put 3 [$0003] into the pe header's subsystem.
+If the subsystem is "gui", put 2 [$0002] into the pe header's subsystem.
 
 The intel tag is a tag equal to 11.
 

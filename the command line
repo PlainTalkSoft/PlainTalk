@@ -1,0 +1,76 @@
+\ copyright © 2006, 2017 the osmosian order (4700)
+\ copyright © 2023 the plaintalk contributors (v0.4.0)
+
+The major version is 0.
+The minor version is 4.
+The patch version is 0.
+
+To check for command line arguments:
+Put the command line into a string.
+Slap a rider on the string.
+Move the rider (command line rules).
+Move the rider (command line rules). \ skip program name
+Loop.
+If the rider's token is blank, exit.
+If the rider's token is "/c", check for command line arguments given the rider (compile).
+If the rider's token is "/l", check for command line arguments given the rider (list).
+If the rider's token is "/ss", check for command line arguments given the rider (set subsytem).
+If the rider's token is "/v", check for command line arguments given the rider (set verbosity).
+Move the rider (command line rules).
+Repeat.
+
+To check for command line arguments given a rider (compile):
+Move the rider (command line rules).
+Write the crlf string to stdout.
+If the rider's token is blank, write "I'm not sure what to compile." to stdout; exit.
+Put the rider's token into a path.
+If the path starts with """", unquote the path.
+Write "Compiling: " then the path then the crlf string to stdout.
+Compile the path.
+If the compiler's abort flag is set, write the crlf string then the compiler's abort message to stdout.
+Write the crlf string then the compiler's timer's string then " ms" to stdout.
+
+To check for command line arguments given a rider (list):
+Move the rider (command line rules).
+Write the crlf string to stdout.
+If the rider's token is blank, write "I'm not sure what to compile and list." to stdout; exit.
+Put the rider's token into a path.
+Unquote the path.
+Write "Compiling and listing: " then the path then the crlf string to stdout.
+Compile the path.
+Show status "Listing...".
+List.
+If the compiler's abort flag is set, write the crlf string then the compiler's abort message to stdout.
+Write the crlf string then the compiler's timer's string then " ms" to stdout.
+
+To check for command line arguments given a rider (set subsytem):
+Move the rider (command line rules).
+Put the rider's token into the subsystem.
+
+To check for command line arguments given a rider (set verbosity):
+Move the rider (command line rules).
+Convert the rider's token to the verbosity level.
+
+To finalize:
+Finalize the compiler.
+
+To initialize:
+Initialize the compiler.
+Put "gui" into the subsystem.
+Put 0 into the verbosity level.
+
+To run:
+Start up the cgi.
+Write "PlainTalk version " then the major version then "."  then the minor version then "." then the patch version then the crlf string to stdout.
+Initialize.
+Check for command line arguments.
+Finalize.
+Shut down the cgi.
+
+To show error a string;
+To show status a string:
+Write the string then the crlf string to stdout.
+
+The subsystem is a string.
+
+The verbosity level is a number.
