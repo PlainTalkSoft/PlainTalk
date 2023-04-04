@@ -1,5 +1,5 @@
 \ copyright © 2006, 2017 the osmosian order (4700)
-\ copyright © 2023 the plaintalk contributors (v0.4.0)
+\ copyright © 2023 the plaintalk contributors (v0.5.0)
 
 \ firstparam=esp+4/ebp+8, secondparam=esp+8/ebp+12, etc...
 
@@ -536,7 +536,7 @@ Repeat.
 The addressing timer is a timer.
 
 To advance a buffer:
-Append the return byte to the buffer.
+If the carriage return flag is set, append the return byte to the buffer.
 Append the linefeed byte to the buffer.
 
 To advance a buffer (twice):
@@ -1413,6 +1413,7 @@ Repeat.
 
 To compile the next statement given a rider:
 If the compiler's abort flag is set, exit.
+If the rider's token is the start of any directive, scan a directive given the rider; exit.
 If the rider's token is "if", compile the next statement given the rider (if); exit.
 If the rider's token is "loop", compile the next statement given the rider (loop); exit.
 If the rider's token is "privatize", compile the next statement given the rider (privatize); exit.
@@ -1877,6 +1878,7 @@ An abort message,
 An abort path,
 An abort row#,
 A name count,
+A directive count,
 A exe buffer,
 A listing buffer.
 
@@ -2427,6 +2429,10 @@ If the string is "the", say yes.
 If the string is "some", say yes.
 Say no.
 
+To decide if a string is the start of any directive:
+If the string is "#", say yes.
+Say no.
+
 To decide if a string is the start of any expression:
 If the string is any sign, say yes.
 If the string is any indefinite article, say yes.
@@ -2533,7 +2539,16 @@ If the other variable is the variable, repeat.
 If the other variable's name is the variable's name, say yes.
 Repeat.
 
+\ UNUSED
+\ A define is a string thing.
+
+\ UNUSED
+\ The defines are some defines.
+
 The dereference tag is a tag equal to 5.
+
+\ UNUSED
+\ A directive has a string [define keyword].
 
 A dos header is a record with
 A wyrd called signature,
@@ -2612,6 +2627,7 @@ Destroy the literal index.
 Destroy the global index.
 Destroy the type index.
 Destroy the imports.
+\ Destroy the defines.
 Destroy the routines.
 Destroy the literals.
 Destroy the globals.
@@ -2748,7 +2764,7 @@ Put 1 into the row#.
 Loop.
 If the substring is blank, exit.
 If the substring's first is the byte pointer, exit.
-If the substring's first's target is the return byte, add 1 to the row#.
+If the substring's first's target is the linefeed byte, add 1 to the row#.
 Add 1 to the substring's first.
 Repeat.
 
@@ -2944,6 +2960,11 @@ Create the global index with 4027 [buckets].
 Create the literal index with 4027 [buckets].
 Create the routine index with 7919 [buckets].
 Create the utility index with 4027 [buckets].
+\ Initialize the defines.
+
+\ UNUSED
+\ To initialize the defines:
+\ If the carriage return flag is set, add "carriage-return" to the defines.
 
 To initialize a dos header:
 Put 23117 [$5A4D] into the dos header's signature.
@@ -3331,7 +3352,7 @@ a current substring.
 To move a rider (code rules - comment):
 Bump the rider.
 If the rider's source is blank, exit.
-If the rider's source's first's target is not the return byte, repeat.
+If the rider's source's first's target is not the linefeed byte, repeat.
 
 To move a rider (code rules - glom):
 Bump the rider.
@@ -3354,7 +3375,7 @@ If the rider's source starts with "s", bump the rider.
 
 To move a rider (code rules - qualifier):
 If the rider's source is blank, exit.
-If the rider's source's first's target is the return byte, break.
+If the rider's source's first's target is the linefeed byte, break.
 If the rider's source's first's target is the left-paren byte, add 1 to a count.
 If the rider's source's first's target is the right-paren byte, subtract 1 from the count.
 Bump the rider.
@@ -3363,7 +3384,7 @@ Repeat.
 
 To move a rider (code rules - remark):
 If the rider's source is blank, exit.
-If the rider's source's first's target is the return byte, break.
+If the rider's source's first's target is the linefeed byte, break.
 If the rider's source's first's target is the left-bracket byte, add 1 to a count.
 If the rider's source's first's target is the right-bracket byte, subtract 1 from the count.
 Bump the rider.
@@ -3373,7 +3394,7 @@ Repeat.
 To move a rider (code rules - string):
 Bump the rider.
 If the rider's source is blank, exit.
-If the rider's source's first's target is the return byte, exit.
+If the rider's source's first's target is the linefeed byte, exit.
 If the rider is on any nested double-quote, bump the rider; repeat.
 If the rider's source's first's target is the double-quote byte, bump the rider; exit.
 Repeat.
@@ -3919,6 +3940,37 @@ If the rider's token is not any pause, exit.
 Move the rider (compiler rules).
 Repeat.
 
+\ CONTAINS BUGS
+\ To scan a directive given a rider:
+\ Move the rider (compiler rules).
+\ If the rider's token is "if", scan the directive given the rider (if); exit.
+\ If the rider's token is "end", scan the directive given the rider (end); exit.
+\ Abort with "I do not know what to do with this directive." and the rider.
+\ 
+\ To scan a directive given a rider (end):
+\ If the compiler's directive count is 0, abort with "What directive is this end directive for?" and the rider; exit.
+\ Subtract 1 from the compiler's directive count.
+\ Move the rider (compiler rules).
+\ If the rider's token is not ":", abort with "Every directive needs to end with a colon." and the rider; exit.
+\ Move the rider (compiler rules). \ directive done
+\ 
+\ To scan a directive given a rider (if):
+\ Bump the compiler's directive count.
+\ Move the rider (compiler rules).
+\ If the rider's token is ":", abort with "What defines do I need to check in this directive?" and the rider; exit.
+\ Put the rider's token into the directive's string.
+\ Find a define given the directive's string and the defines.
+\ Move the rider (compiler rules).
+\ If the rider's token is not ":", abort with "Every directive needs to end with a colon." and the rider; destroy the define; exit.
+\ If the define is nil, scan the directive given the rider (skip); exit.
+\ Destroy the define.
+\ Move the rider (compiler rules). \ directive done
+\ 
+\ To scan a directive given a rider (skip):
+\ Move the rider (compiler rules).
+\ If the rider's token is not the start of any directive, repeat.
+\ Scan another directive given the rider.
+
 To scan a field given a rider:
 If the compiler's abort flag is set, exit.
 Scan the field given the rider (type part).
@@ -4072,6 +4124,7 @@ Loop.
 If the compiler's abort flag is set, exit.
 If the rider's token is blank, exit.
 Put the rider's token's last into the routine body's last.
+If the rider's token is the start of any directive, scan a directive given the rider; repeat.
 If the rider's token is the colon byte, abort with "You may have forgotten a period somewhere above this. You better check." and the rider; exit.
 If the rider's token is not the period byte, move the rider (compiler rules); repeat.
 Move the rider (compiler rules).
