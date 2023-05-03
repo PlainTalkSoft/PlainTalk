@@ -1,5 +1,6 @@
 \ copyright © 2006, 2017 the osmosian order (4700)
-\ copyright © 2023 the plaintalk contributors (v0.3.0)
+\ copyright © 2023 the plaintalk contributors (v0.6.0)
+\ STAGING VERSION
 
 \ here are the text rules:
 \   in a non-wrapped text, the rows end with a return byte.
@@ -447,10 +448,6 @@ To begin a sheet given a title string:
 Begin a portrait sheet given the title.
 
 The bell byte is a byte equal to 7.
-
-The Bible is a thing with some verses.
-\A verse is a thing with a book abbreviation, a chapter number, a verse number and a string.
-A verse is a thing with a string.
 
 The big-a byte is a byte equal to 65.
 
@@ -1099,14 +1096,6 @@ Call "user32.dll" "ShowWindow" with the main window and 6 [sw_minimize].
 Call "user32.dll" "ShowWindow" with the main window and 9 [sw_restore].
 Put 0 into eax. \ set return value of thread
 
-A console is a thing with 
-A box,
-A border color,
-A fill color,
-A text,
-A grid,
-A reply string.
-
 The context is a context.
 
 A context is a thing with a spot, a box, a heading, a letter height, a color, a number, \ pen width? ***
@@ -1738,26 +1727,6 @@ And the url record's port
 And 0
 Returning the winhttp request's connection.
 If the winhttp request's connection is 0, put "Could not connect." into the i/o error; exit.
-
-To create a console:
-Allocate memory for the console.
-Put the lighter gray color into the console's border.
-Put the lighter gray color into the console's fill.
-Put the screen's box into the console's box.
-Put the screen's box into a box.
-Subtract the default font's height from the box's bottom.
-Put the box's height divided by the default font's height times the default font's height into a height.
-Put the box's top plus the height into the box's bottom.
-Center the box in the screen's box (vertically).
-Put the box's top into the box's left.
-Subtract the box's top from the box's right.
-Create the console's text.
-Put the box into the console's text's box.
-Set the console's text's wrap flag.
-Clear the console's text's horizontal scroll flag.
-Set the console's text's vertical scroll flag.
-Put the default font's height into the console's grid.
-Multiply the console's grid's x by 2.
 
 To create a crypt session with a passphrase string: \ sets i/o error if failure
 Clear the i/o error.
@@ -2896,23 +2865,23 @@ If the bucket is nil, say yes.
 If the bucket's refers are not empty, say no.
 Repeat.
 
-To decide if an input is from windows telling us to refresh the cursor;
-To decide if an input is from windows telling us to set the cursor:
+To decide if an input is from the system telling us to refresh the cursor;
+To decide if an input is from the system telling us to set the cursor:
 If the input is nil, say no.
 If the input's kind is "set cursor", say yes.
 Say no.
 
-To decide if an input is from windows telling us to show all our stuff;
-To decide if an input is from windows telling us to show all of our stuff;
-To decide if an input is from windows telling us to redraw all our stuff;
-To decide if an input is from windows telling us to redraw all of our stuff:
+To decide if an input is from the system telling us to show all our stuff;
+To decide if an input is from the system telling us to show all of our stuff;
+To decide if an input is from the system telling us to redraw all our stuff;
+To decide if an input is from the system telling us to redraw all of our stuff:
 If the input is nil, say no.
 If the input's kind is "refresh", say yes.
 Say no.
 
-To decide if an input is from windows telling us we're done;
-To decide if an input is from windows telling us that we're done;
-To decide if an input is from windows telling us the user has quit:
+To decide if an input is from the system telling us we're done;
+To decide if an input is from the system telling us that we're done;
+To decide if an input is from the system telling us the user has quit:
 If the input is nil, say yes.
 Say no.
 
@@ -3661,7 +3630,7 @@ Get a row given the text's caret row# and the text.
 If the text's caret column# is not the row's string's length, say yes.
 Say no.
 
-To decide if there is text on the windows clipboard:
+To decide if there is text on the system clipboard:
 Call "user32.dll" "IsClipboardFormatAvailable" with 1 [cf_text] returning a number.
 If the number is 0, say no.
 Say yes.
@@ -3790,8 +3759,6 @@ And the length's whereabouts returning a result number.
 If the result number is 0, put "Error decrypting data." into the i/o error; destroy the crypt session; exit.
 Destroy the crypt session.
 Put the hex string into the buffer.
-
-The console is a console.
 
 The default font is a font.
 
@@ -4121,14 +4088,6 @@ Stroke the segment length.
 Turn left 1/48 of the way.
 Add 1 to a count. If the count is 48, break.
 Repeat.
-
-To draw a console:
-If the console is nil, exit.
-Save the current canvas.
-Mask only outside the console's box.
-Draw the console's box with the console's border and the console's fill.
-Draw the console's text.
-Restore the current canvas.
 
 To draw a dot some twips wide on the current spot with a color:
 Make the dot the twips wide.
@@ -6141,7 +6100,7 @@ Put the stack entry's string to the string.
 Remove the stack entry from the stack.
 Destroy the stack entry.
 
-To get a string from the windows clipboard:
+To get a string from the system clipboard:
 Clear the string.
 Call "user32.dll" "OpenClipboard" with the main window.
 Call "user32.dll" "GetClipboardData" with 1 [cf_text] returning a handle.
@@ -6394,84 +6353,17 @@ To handle copy given a text:
 If the text is nil, exit.
 If nothing is selected in the text, exit.
 Extract a string from the text (selected bytes).
-Put the string on the windows clipboard.
+Put the string on the system clipboard.
 
 To handle cut given a text:
 If the text is nil, exit.
 If nothing is selected in the text, exit.
 Remember the text.
 Extract a string from the text (selected bytes).
-Put the string on the windows clipboard.
+Put the string on the system clipboard.
 Remove any selected bytes in the text.
 Wrap the text.
 Scroll the text to the caret.
-
-To handle an event given a console:
-If the console is nil, exit.
-If the event's kind is "key down", handle the event given the console (key down); exit.
-If the event's kind is "refresh", handle the event given the console (refresh); exit.
-If the event's kind is "right click", handle the event given the console (right click); exit.
-If the event's kind is "set cursor", handle the event given the console (set cursor); exit.
-
-To handle an event given a console (backspace key):
-If the console's reply is blank, exit.
-If the event is modified, exit.
-Handle the event given the console's text (backspace key).
-Remove the last byte from the console's reply.
-Show the console.
-
-To handle an event given a console (down-arrow key):
-Scroll the console's text down one line.
-Show the console.
-
-To handle an event given a console (end key):
-Scroll the console's text to the bottom.
-Show the console.
-
-To handle an event given a console (enter key):
-Handle the event given the console's text (enter key).
-Relinquish control.
-
-To handle an event given a console (home key):
-Scroll the console's text to the top.
-Show the console.
-
-To handle an event given a console (key down):
-If the event's key is the backspace key, handle the event given the console (backspace key); exit.
-If the event's key is the down-arrow key, handle the event given the console (down-arrow key); exit.
-If the event's key is the end key, handle the event given the console (end key); exit.
-If the event's key is the enter key, handle the event given the console (enter key); exit.
-If the event's key is the home key, handle the event given the console (home key); exit.
-If the event's key is the page-down key, handle the event given the console (page-down key); exit.
-If the event's key is the page-up key, handle the event given the console (page-up key); exit.
-If the event's key is the up-arrow key, handle the event given the console (up-arrow key); exit.
-If the event's byte is not printable, exit.
-Append the event's byte to the console's reply.
-Handle the event given the console's text (printable key).
-Show the console.
-
-To handle an event given a console (page-down key):
-Scroll the console's text down one page.
-Show the console.
-
-To handle an event given a console (page-up key):
-Scroll the console's text up one page.
-Show the console.
-
-To handle an event given a console (refresh):
-Show the console.
-
-To handle an event given a console (right click):
-Show the hand cursor.
-Scroll the console given the event.
-Refresh the cursor.
-
-To handle an event given a console (set cursor):
-Show the arrow cursor.
-
-To handle an event given a console (up-arrow key):
-Scroll the console's text up one line.
-Show the console.
 
 To handle an event given a terminal:
 If the terminal is nil, exit.
@@ -6618,14 +6510,6 @@ If the event's shift flag is not set, deselect the text.
 Clear the text's last operation.
 Scroll the text to the caret.
 
-To handle events given a console:
-If the console is nil, exit.
-Loop.
-Deque an event.
-If the event is nil, exit.
-Handle the event given the console.
-Repeat.
-
 To handle events given a terminal:
 If the terminal is nil, exit.
 Loop.
@@ -6677,10 +6561,10 @@ Wrap the text.
 
 To handle paste given a text:
 If the text is nil, exit.
-If there is not text on the windows clipboard, exit.
+If there is not text on the system clipboard, exit.
 Remember the text.
 Remove any selected bytes in the text.
-Get a string from the windows clipboard.
+Get a string from the system clipboard.
 Insert the string into the text.
 Wrap the text.
 Scroll the text to the caret.
@@ -10474,7 +10358,7 @@ Append the return byte to the string.
 Convert the string to the text's rows.
 Wrap the text.
 
-To put a string on the windows clipboard:
+To put a string on the system clipboard:
 Call "user32.dll" "OpenClipboard" with the main window.
 Call "user32.dll" "EmptyClipboard".
 Put the string's length plus 1 into a number.
@@ -10717,7 +10601,7 @@ A query string is a string.
 The question-mark byte is a byte equal to 63.
 
 To quit;
-To tell Windows we're done;
+To tell the system we're done;
 To relinquish control:
 Flush the event queue.
 Create an event.
@@ -10762,46 +10646,6 @@ A ratio is a fraction.
 
 A ratio pair is a pair.
 
-To read the bible:
-If the bible is not nil, exit.
-Extract a directory from the module's path.
-Loop.
-If the directory is blank, exit.
-Put the directory then "bible.txt" into a path.
-If the path is in the file system, read the bible given the path; exit.
-Extract the directory from the directory.
-Repeat.
-
-To read the bible given a path:
-If the bible is not nil, exit.
-Read the path into a buffer.
-If the i/o error is not blank, exit.
-Allocate memory for the Bible.
-Slap a rider on the buffer.
-Loop.
-If the rider's source is blank, exit.
-Allocate memory for a verse. Append the verse to the Bible's verses.
-Move the rider (text file rules).
-Put the rider's token into the verse's string.
-Remove any leading noise from the verse's string. 
-Remove any trailing noise from the verse's string.
-Repeat.
-
-To read a byte from a console:
-Read a string from the console.
-If the string is blank, put the null byte into the byte; exit.
-Put the string's first's target into the byte.
-
-To read a console into a string:
-If the console is nil, clear the string; exit.
-Flush all events.
-Clear the console's reply.
-Show the console.
-Handle events given the console.
-Put the console's reply into the string.
-Flush all events.
-Refresh the cursor.
-
 To read a file into a buffer:
 Clear the i/o error.
 Call "kernel32.dll" "GetFileSize" with the file and nil returning a size.
@@ -10809,18 +10653,6 @@ Reassign the buffer's first given the size.
 Put the buffer's first plus the size minus 1 into the buffer's last.
 Call "kernel32.dll" "ReadFile" with the file and the buffer's first and the size and a number's whereabouts and 0 returning a result number.
 If the result number is 0, put "Error reading file." into the i/o error; exit.
-
-To read a flag from a console:
-Read a string from the console.
-Convert the string to the flag.
-
-To read a fraction from a console:
-Read a string from the console.
-Convert the string to the fraction.
-
-To read a number from a console:
-Read a string from the console.
-Convert the string to the number.
 
 To load a path into a buffer;
 To read a path into a buffer:
@@ -10898,8 +10730,9 @@ Call "kernel32.dll" "ReadFile" with the stdin handle and the buffer's first and 
 If the number is not the length, put "Error reading stdin data" into the i/o error; clear the buffer; exit.
 Put the buffer's first plus the length minus 1 into the buffer's last.
 
-To read a string from a console:
-Read the console into the string.
+To read a string from the console:
+Call "user32.dll" "WaitForInputIdle".
+Read stdin into the string.
 
 To read a url into a buffer:
 \ prepare
@@ -11751,19 +11584,6 @@ The screen canvas is a canvas.
 
 The screen has a box, a pixel height and a pixel width.
 
-To scroll a console given an event:
-If the console is nil, exit.
-Find a sector given the console's grid and the event's spot.
-Loop.
-If the mouse's right button is up, exit.
-Find another sector given the console's grid and the mouse's spot.
-Get a difference between the other sector and the sector.
-If the difference is 0, repeat.
-Scroll the console's text given the difference.
-Show the console.
-Add the difference to the sector.
-Repeat.
-
 To scroll a text to the bottom:
 If the text is nil, exit.
 If the text's vertical scroll flag is not set, exit.
@@ -12064,13 +11884,6 @@ The shift-in byte is a byte equal to 15.
 
 The shift-out byte is a byte equal to 14.
 
-To show a console:
-If the console is nil, exit.
-Save the current canvas.
-Draw the console.
-Refresh the screen given the console's box.
-Restore the current canvas.
-
 To show a cursor:
 Call "user32.dll" "SetCursor" with the cursor.
 Call "user32.dll" "ShowCursor" with 1 returning a number.
@@ -12095,10 +11908,9 @@ Subtract the twips from the box's right.
 Subtract the twips from the box's bottom.
 
 To shut down:
-Destroy the bible.
+Finalize the cgi.
 Destroy the stack.
 Destroy the lexicon.
-Destroy the console.
 Destroy the terminal.
 Finalize the context.
 Finalize the canvases.
@@ -12801,7 +12613,7 @@ Initialize the mouse.
 Initialize the canvases.
 Initialize the context.
 Initalize the terminal.
-Create the console.
+Initialize the cgi.
 
 To start up the cgi:
 Initialize winsock.
@@ -14904,7 +14716,7 @@ A w-param is a number.
 
 To wait for an event;
 To deque an event:
-Yield to windows.
+Yield to the system.
 Put the event queue's first into the event.
 If the event is nil, repeat.
 Remove the event from the event queue.
@@ -15119,23 +14931,6 @@ Start at the spot.
 Put the color into the context's color.
 Stroke the string.
 
-To write a string to a console;
-To write a string on a console:
-If the console is nil, exit.
-Insert the string into the console's text.
-Insert the return byte into the console's text.
-Wrap the console's text.
-Scroll the console's text to the caret.
-Show the console.
-
-To write a string to a console without advancing;
-To write a string on a console without advancing:
-If the console is nil, exit.
-Insert the string into the console's text.
-Wrap the console's text.
-Scroll the console's text to the caret.
-Show the console.
-
 To write a string in a box;
 To stroke a string in a box:
 Stroke the string in the box with the context's color.
@@ -15193,6 +14988,12 @@ To stroke a string about a radius from the middle of a box;
 To stroke a string a radius from the middle of a box:
 Stroke the string given the box's center and the radius.
 
+To write a string on the console;
+To write a string to the console:
+Write the string then the linefeed byte to the console without advancing.
+
+To write a string to the console without advancing;
+To write a string on the console without advancing;
 To write a string to stdout:
 Call "kernel32.dll" "WriteFile" with the stdout handle and the string's first and the string's length and a number's whereabouts and nil.
 
@@ -15327,7 +15128,7 @@ The yellow pen is a pen.
 
 The yen-sign byte is a byte equal to 165.
 
-To yield to windows:
+To yield to the system:
 If the event queue is not empty, exit.
 Call "user32.dll" "GetMessageA" with an msg's whereabouts and 0 and 0 and 0 returning a number.
 If the number is 0, exit.

@@ -1,5 +1,6 @@
 \ copyright © 2006, 2017 the osmosian order (4700)
-\ copyright © 2023 the plaintalk contributors (v0.5.0)
+\ copyright © 2023 the plaintalk contributors (v0.6.0)
+\ STAGING VERSION
 
 \ firstparam=esp+4/ebp+8, secondparam=esp+8/ebp+12, etc...
 
@@ -1111,7 +1112,6 @@ Stop the scanning timer.
 
 To compile a directory (start):
 Show status "Starting...".
-Finalize the compiler.
 Start the compiler's timer.
 Initialize the compiler given the directory.
 If the verbosity level  is 1, show status "Adding the built-in types...".
@@ -1120,6 +1120,7 @@ Add the built-in types.
 To compile a directory (stop):
 Stop the compiler's timer.
 Show status "Compilation complete.".
+Finalize the compiler.
 
 To compile a directory (transmogrify):
 If the compiler's abort flag is set, exit.
@@ -2627,7 +2628,6 @@ Destroy the literal index.
 Destroy the global index.
 Destroy the type index.
 Destroy the imports.
-\ Destroy the defines.
 Destroy the routines.
 Destroy the literals.
 Destroy the globals.
@@ -3618,7 +3618,14 @@ The push value tag is a tag equal to 19.
 To put the compiler's exe path into a path:
 Extract a designator from the compiler's directory.
 Remove any trailing backslash from the designator.
-Put the compiler's directory then the designator then ".exe" into the path.
+\ output name handling
+Extract a file name w/o extension from the output name as a path.
+Extract an extension from the output name as a path.
+Put the compiler's directory into the path.
+If the file name w/o extension is blank, append the designator to the path.
+Append the file name w/o extension to the path.
+If the extension is blank, append ".exe" to the path.
+Append the extension to the path.
 
 To put the compiler's exe size into a size:
 Put 4096 [section base] into the size.
