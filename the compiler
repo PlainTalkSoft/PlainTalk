@@ -1,6 +1,5 @@
 \ copyright © 2006, 2017 the osmosian order (4700)
 \ copyright © 2023 the plaintalk contributors (v0.6.0)
-\ STAGING VERSION
 
 \ firstparam=esp+4/ebp+8, secondparam=esp+8/ebp+12, etc...
 
