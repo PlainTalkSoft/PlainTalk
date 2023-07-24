@@ -1,0 +1,285 @@
+\ copyright © 2006, 2017 the osmosian order (4700)
+\ copyright © 2023 the plaintalk contributors (v0.7.0)
+
+To add and compile the initialize before run and run and finalize after run routine (windows):
+If the compiler's abort flag is set, exit.
+Add a routine to the routines given nil.
+Append "~initialize before run and run and finalize after run" to the routine's header string.
+Append "initialize before run. " to the routine's body string.
+Append the global initializers to the routine's body string.
+Append "run. " to the routine's body string.
+Append the global finalizers to the routine's body string.
+Append "finalize after run. " to the routine's body string.
+Append "call ""kernel32.dll"" ""ExitProcess"" with 0. " to the routine's body string.
+Slap the routine's routine header on the routine's header string.
+Slap the routine's routine body on the routine's body string.
+Compile the header of the routine.
+Compile the body of the routine.
+
+To address an entry (x86) (windows):
+Put the current name address into the entry's name address.
+Put the entry's name's length plus 3 into a number.
+Round the number up to the nearest multiple of 2.
+Add the number to the current name address.
+Put the current thunk address into the entry's thunk address.
+Put the image base plus the current thunk address into the entry's address.
+Add 4 to the current thunk address.
+
+To address an import (x86) (windows):
+Put the current name address into the import's name address.
+Put the current header address into the import's header address.
+Put the current name address into the import's Windows import header's name memory address.
+Put the import's name's length plus 1 into a number.
+Round the number up to the nearest multiple of 2.
+Add the number to the current name address.
+Add a Windows import header's magnitude to the current header address.
+Put the current thunk address into the import's Windows import header's first thunk memory address.
+Address the import's entries.
+Add 4 to the current thunk address.
+
+To address some imports given an address (x86) (windows):
+Put the address into the current header address.
+Put the imports' count into a count.
+Add 1 to the count.
+Multiply the count by a Windows import header's magnitude.
+Put the address plus the count into the current thunk address.
+Get another count given the imports (all entries plus markers).
+Multiply the other count by 4.
+Put the current thunk address plus the other count into the current name address.
+Loop.
+Get an import from the imports.
+If the import is nil, break.
+Address the import.
+Repeat.
+Put the current name address minus the address into a number.
+Add the number to the address.
+
+To blurt a dos header into a buffer:
+Blurt bytes given the dos header's whereabouts and the dos header's magnitude and the buffer and 0.
+
+To blurt an entry into a buffer (windows):
+Blurt bytes given the entry's name address's whereabouts and 4 and the buffer and the entry's thunk address.
+Put the entry's name address plus 2 into an address.
+Blurt the entry's name into the buffer at the address.
+
+To blurt a pe header into a buffer:
+Blurt bytes given the pe header's whereabouts and the pe header's magnitude and the buffer and 256.
+
+To compile a directory (address) (x86) (windows):
+If the compiler's abort flag is set, exit.
+If the verbosity level is 0, show status "Addressing...".
+Start the addressing timer.
+Put the section base into an address.
+Put the address into the import borough's base.
+If the verbosity level is 1, show status "Addressing the imports...".
+Address the imports given the address.
+Put the address minus the import borough's base into the import borough's length.
+Round the address up to the nearest multiple of the section base.
+Put the address into the data borough's base.
+If the verbosity level is 1, show status "Addressing the globals...".
+Address the globals given the address.
+If the verbosity level is 1, show status "Addressing the literals...".
+Address the literals given the address.
+Put the address minus the data borough's base into the data borough's length.
+Round the address up to the nearest multiple of the section base.
+Put the address into the code borough's base.
+If the verbosity level is 1, show status "Addressing the routines...".
+Address the routines given the address.
+Put the address minus the code borough's base into the code borough's length.
+Stop the addressing timer.
+
+A dos header is a record with
+A wyrd called signature,
+A wyrd called numberofbytesonlastpage,
+A wyrd called numberofpages,
+A wyrd called relocuss,
+A wyrd called sizeofheaderinparagraphs,
+A wyrd called minimumextraparagraphs,
+A wyrd called maximumextraparagraphs,
+A wyrd called initialrelativess,
+A wyrd called initialsp,
+A wyrd called initialchecksum,
+A wyrd called initialip,
+A wyrd called initialirelativecs,
+A wyrd called addressofrelocationtableinfile,
+A wyrd called overlynumber,
+8 bytes called resveredbytes,
+A wyrd called oemidentifier,
+A wyrd called oeminfo,
+20 bytes called reservedwords,  
+A number called addressofpeheaderinfile.
+
+To get a count given some imports (all entries plus markers) (windows):
+Put 0 into the count.
+Loop.
+Get an import from the imports.
+If the import is nil, exit.
+Add the import's entries' count to the count.
+Add 1 to the count.
+Repeat.
+
+A Windows import header is a record with
+An address called original first thunk,
+A number called timestamp,
+An address called forwarder chain,
+An address called name memory address,
+An address called first thunk memory address.
+
+To initialize a dos header:
+Put 23117 [$5A4D] into the dos header's signature.
+Put 64 [$0040] into the dos header's addressofrelocationtableinfile.
+Put 256 [$00000100] into the dos header's addressofpeheaderinfile.
+
+To initialize a pe header:
+Initialize the pe header (standard header).
+Initialize the pe header (optional header).
+Initialize the pe header (version information).
+Initialize the pe header (directories).
+Initialize the pe header (import section).
+Initialize the pe header (data section).
+Initialize the pe header (code section).
+
+To initialize a pe header (code section):
+Copy bytes from "code  "'s first to the pe header's code section's name's whereabouts for 6.
+Put the code borough's length into the pe header's code section's sizeinbytes.
+Put the code borough's base into the pe header's code section's addressinmemory.
+Put the code borough's length into the pe header's code section's sizeinfile.
+Put the code borough's base into the pe header's code section's addressinfile.
+Put -536870880 [$E0000020] into the pe header's code section's characteristics. \ executable, readable, writable, code object
+
+To initialize a pe header (data section):
+Copy bytes from "data  "'s first to the pe header's data section's name's whereabouts for 6.
+Put the data borough's length into the pe header's data section's sizeinbytes.
+Put the data borough's base into the pe header's data section's addressinmemory.
+Put the data borough's length into the pe header's data section's sizeinfile.
+Put the data borough's base into the pe header's data section's addressinfile.
+Put -1073741760 [$C0000040] into the pe header's data section's characteristics. \ initialized, readable, writable
+
+To initialize a pe header (directories):
+Put 16 [$00000010] into the pe header's numberofdirectories.
+Put the import borough's base into the pe header's imagedirectoryentryimportaddress.
+Put the import borough's length into the pe header's imagedirectoryentryimportsize.
+
+To initialize a pe header (import section):
+Copy bytes from "idata "'s first to the pe header's idata section's name's whereabouts for 6.
+Put the import borough's length into the pe header's idata section's sizeinbytes.
+Put the import borough's base into the pe header's idata section's addressinmemory.
+Put the import borough's length into the pe header's idata section's sizeinfile.
+Put the import borough's base into the pe header's idata section's addressinfile.
+Put -1073741760 [$C0000040] into the pe header's idata section's characteristics. \ initialized, readable, writable
+
+To initialize a pe header (optional header):
+Put 267 [$010B] into the pe header's magicnumber.
+Put the code borough's length into the pe header's sizeofcodeinfile.
+Put the data borough's length into the pe header's sizeofinitializeddatainfile.
+Put 0 into the pe header's sizeofuninitializeddatainfile.
+Find a routine given "~initialize before run and run and finalize after run" and the routine index.
+If the routine is nil, abort with "Internal error: could not find the startup routine"; exit.
+Put the routine's address minus the image base into the pe header's addressofentrypointinmemory.
+Put the code borough's base into the pe header's addressofcodeinmemory.
+Put the data borough's base into the pe header's addressofinitializeddatainmemory.
+Put the image base into the pe header's imagebase.
+Put the section base into the pe header's memoryalignment.
+Put the section base into the pe header's filealignment.
+Put 0 into the pe header's reserved.
+Put the compiler's exe size into the pe header's sizeofimageinmemory.
+Put the section base into the pe header's sizeofallheadersinfile.
+Put 0 into the pe header's checksum.
+Put 0 into the pe header's dllcharacteristics.
+Put 1048576 [$00100000] into the pe header's maxstack.
+Put 16384 [$00004000] into the pe header's minstack.
+Put 1048576 [$00100000] into the pe header's maxheap.
+Put 16384 [$00004000] into the pe header's minheap.
+Put 0 into the pe header's loaderflags.
+
+To initialize a pe header (standard header):
+Put 17744 [$00004550] into the pe header's signature.
+Put 332 [$014C] into the pe header's machinetype.
+Put 3 [$0003] into the pe header's numberofsections.
+Put 0 into the pe header's timestamp.
+Put 0 into the pe header's pointertosymboltable.
+Put 0 into the pe header's numberofsymbols.
+Put 224 [$00E0] into the pe header's sizeofoptionalheaderinbytes.
+Put 33166 [$818E] into the pe header's characteristics.
+
+To initialize a pe header (version information):
+Put 0 into the pe header's majorlinkerversion.
+Put 0 into the pe header's minorlinkerversion.
+Put 4 [$0004] into the pe header's osmajorversion.
+Put 0 [$0000] into the pe header's osminorversion.
+Put 0 into the pe header's usermajorversion.
+Put 0 into the pe header's userminorversion.
+Put 4 [$0004] into the pe header's subsystemmajorversion.
+Put 0 [$0000] into the pe header's subsystemminorversion.
+If the subsystem is "console", put 3 [$0003] into the pe header's subsystem.
+If the subsystem is "gui", put 2 [$0002] into the pe header's subsystem.
+
+To link (windows):
+Round up borough sizes.
+Initialize a dos header.
+Initialize a pe header.
+Fill the compiler's exe with the null byte given the compiler's exe size.
+Blurt the dos header into the compiler's exe.
+Blurt the pe header into the compiler's exe.
+Blurt the imports into the compiler's exe.
+Blurt the globals into the compiler's exe.
+Blurt the literals into the compiler's exe.
+Blurt the routines into the compiler's exe.
+
+A pe header is a record with
+A number called signature,
+A wyrd called machinetype,
+A wyrd called numberofsections,
+A number called timestamp,
+A number called pointertosymboltable,
+A number called numberofsymbols,
+A wyrd called sizeofoptionalheaderinbytes,
+A wyrd called characteristics,
+\ optional header
+A wyrd called magicnumber,
+A byte called majorlinkerversion,
+A byte called minorlinkerversion,
+A number called sizeofcodeinfile,
+A number called sizeofinitializeddatainfile,
+A number called sizeofuninitializeddatainfile,
+A number called addressofentrypointinmemory,
+A number called addressofcodeinmemory,
+A number called addressofinitializeddatainmemory,
+A number called imagebase,
+A number called memoryalignment,
+A number called filealignment,
+A wyrd called osmajorversion,
+A wyrd called osminorversion,
+A wyrd called usermajorversion,
+A wyrd called userminorversion,
+A wyrd called subsystemmajorversion,
+A wyrd called subsystemminorversion,
+A number called reserved,
+A number called sizeofimageinmemory,
+A number called sizeofallheadersinfile,
+A number called checksum,
+A wyrd called subsystem,
+A wyrd called dllcharacteristics,
+A number called maxstack,
+A number called minstack,
+A number called maxheap,
+A number called minheap,
+A number called loaderflags,
+\ directories (16 address and size pairs)
+A number called numberofdirectories,
+8 bytes called directory0,
+A number called imagedirectoryentryimportaddress,
+A number called imagedirectoryentryimportsize,
+112 bytes called directories2-15,
+A pe section header called idata section,
+A pe section header called data section,
+A pe section header called code section.
+
+A pe section header is a record with
+8 bytes called name,
+A number called sizeinbytes,
+A number called addressinmemory,
+A number called sizeinfile,
+A number called addressinfile,
+12 bytes called reserved,
+A number called characteristics.

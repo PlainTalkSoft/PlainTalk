@@ -1,0 +1,25 @@
+Architecture-dependent:
+to add the finalize routine for a type (record)
+to add the finalize routine for a type (string)
+to address a fragment given an address [and its variants]
+to address a routine given an address
+to attach address loading code to a hex string given a variable
+to offset the locals in a routine
+to offset the parameters in a routine
+to transmogrify a fragment [and its variants]
+
+OS-dependent:
+to add and compile the initialize before run and run and finalize after run routine
+to blurt an entry into a buffer
+to get a count given some imports (all entries plus markers)
+to link
+
+Architecture & OS-dependent:
+to address an entry
+to address an import
+to address some imports given an address
+to compile a directory (address)
+
+Constants:
+image base
+section base

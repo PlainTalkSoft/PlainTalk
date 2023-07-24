@@ -1,0 +1,260 @@
+\ copyright © 2006, 2017 the osmosian order (4700)
+\ copyright © 2023 the plaintalk contributors (v0.7.0)
+
+\ firstparam=esp+4/ebp+8, secondparam=esp+8/ebp+12, etc...
+
+To add the finalize routine for a type (record) (x86):
+If the type is nil, exit.
+If the compiler's abort flag is set, exit.
+Add a routine to the routines given nil.
+Append "~finalize a " then the type's name to the routine's header string.
+Append "intel $50. " to the routine's body string. \ push eax
+Loop.
+Get a field from the type's fields.
+If the field is nil, break.
+If the field's type should not be finalized, repeat.
+Append "~finalize the " then the type's name then "'s " then the field's name then ". " to the routine's body string.
+Repeat.
+Append "intel $58." to the routine's body string. \ pop eax
+Slap the routine's routine header on the routine's header string.
+Slap the routine's routine body on the routine's body string.
+Compile the header of the routine.
+
+To add the finalize routine for a type (string) (x86):
+If the type is nil, exit.
+If the compiler's abort flag is set, exit.
+Add a routine to the routines given nil.
+Append "~finalize a " then the type's name to the routine's header string.
+Append "intel $50. " to the routine's body string. \ push eax
+Append "unassign the string's first. " to the routine's body string.
+Append "intel $58." to the routine's body string. \ pop eax
+Slap the routine's routine header on the routine's header string.
+Slap the routine's routine body on the routine's body string.
+Compile the header of the routine.
+
+To address an entry (x86):
+If the operating system is "windows", address the entry (x86) (windows).
+
+To address a fragment given an address (x86):
+If the compiler's abort flag is set, exit.
+If the fragment is nil, exit.
+Put the image base plus the address into the fragment's address.
+If the fragment's tag is the push address tag, add 7 to the address; exit.
+If the fragment's tag is the call internal tag, add 5 to the address; exit.
+If the fragment's tag is the load address tag, add 12 to the address; exit.
+If the fragment's tag is the increment tag, add 10 to the address; exit.
+If the fragment's tag is the dereference tag, add 14 to the address; exit.
+If the fragment's tag is the jump false tag, add 9 to the address; exit.
+If the fragment's tag is the not tag, add 3 to the address; exit.
+If the fragment's tag is the exit tag, add 5 to the address; exit.
+If the fragment's tag is the repeat tag, add 5 to the address; exit.
+If the fragment's tag is the break tag, add 5 to the address; exit.
+If the fragment's tag is the prolog tag, address the fragment given the address (prolog); exit.
+If the fragment's tag is the epilog tag, address the fragment given the address (epilog); exit.
+If the fragment's tag is the intel tag, add the fragment's code's length to the address; exit.
+If the fragment's tag is the push value tag, address the fragment given the address (push value); exit.
+If the fragment's tag is the call external tag, add 6 to the address; exit.
+If the fragment's tag is the load eax tag, add 8 to the address; exit.
+If the fragment's tag is the save eax tag, address the fragment given the address (save eax); exit.
+If the fragment's tag is the call indirect tag, add 8 to the address; exit.
+If the fragment's tag is the routine address tag, add 12 to the address; exit.
+
+To address a fragment given an address (epilog) (x86):
+If the current routine's callback flag is set, add 3 to the address.
+Add 6 to the address.
+
+To address a fragment given an address (prolog) (x86):
+Add 3 to the address.
+If the current routine's local size is not 0, add 10 to the address.
+If the current routine's callback flag is set, add 3 to the address.
+
+To address a fragment given an address (push value) (x86):
+Add 6 to the address.
+If the fragment's variable is nil, abort with "Internal error - address a fragment given an address (push value)"; exit.
+If the fragment's variable's type is nil, abort with "Internal error 2 - address a fragment given an address (push value)"; exit.
+Put the fragment's variable's type's length into a length.
+If the length is 4, add 2 to the address; exit.
+If the length is 2, add 3 to the address; exit.
+If the length is 1, add 4 to the address; exit.
+Abort with "Internal error 3 - address a fragment given an address (push value)".
+
+To address a fragment given an address (save eax) (x86):
+Add 6 to the address.
+If the fragment's variable is nil, abort with "Internal error - address a fragment given an address (push value)"; exit.
+If the fragment's variable's type is nil, abort with "Internal error 2 - address a fragment given an address (push value)"; exit.
+Put the fragment's variable's type's length into a length.
+If the length is 4, add 2 to the address; exit.
+If the length is 2, add 3 to the address; exit.
+If the length is 1, add 2 to the address; exit.
+Abort with "Internal error 3 - address a fragment given an address (push value)".
+
+To address an import (x86):
+If the operating system is "windows", address the import (x86) (windows).
+
+To address some imports given an address (x86):
+If the operating system is "windows", address the imports given the address (x86) (windows).
+
+To address a routine given an address (x86):
+If the compiler's abort flag is set, exit.
+If the routine is nil, exit.
+If the routine's employs moniker is not blank, exit. \ employs are addressed later
+If the routine's compiled flag is not set, exit.
+Put the routine into the current routine.
+Put the image base plus the address into the routine's address.
+Address the routine's fragments given the address.
+Round the address up to the nearest multiple of 4.
+
+To address a variable given an address (x86):
+If the compiler's abort flag is set, exit.
+If the variable is nil, exit.
+If the variable's compiled flag is not set, exit.
+Put the image base plus the address into the variable's address.
+Add the variable's type's length to the address.
+If the variable's type can be reduced to "string", add the variable's data's length plus 1 to the address.
+Round the address up to the nearest multiple of 4.
+
+To attach address loading code to a hex string given a variable (x86): \ loads into edx
+If the variable is nil, attach $C7C200000000 to the hex string; exit. \ mov edx,0
+If the variable's kind is "global", attach $C7C2 and the variable's address to the hex string; exit. \ mov edx,the variable's address
+If the variable's kind is "literal", attach $C7C2 and the variable's address to the hex string; exit. \ mov edx,the variable's address
+If the variable's kind is "local", attach $8D95 and the variable's offset to the hex string; exit. \ lea edx,[ebp+the variable's offset]
+If the variable's kind is "scratch", attach $8B95 and the variable's offset to the hex string; exit. \ mov edx,[ebp+the variable's offset]
+If the variable's kind is not "parameter", abort with "Internal error - attach address loading code to a hex string given a variable"; exit.
+If the variable's by-value flag is set, attach $8D95 and the variable's offset to the hex string; exit. \ lea edx,[ebp+the variable's offset]
+Attach $8B95 and the variable's offset to the hex string. \ mov edx,[ebp+the variable's offset]
+
+To compile a directory (address) (x86):
+If the operating system is "windows", compile the directory (address) (x86) (windows).
+
+To offset the locals in a routine (x86):
+If the routine is nil, exit.
+If the routine's compiled flag is not set, exit.
+Clear the routine's local size.
+Loop.
+If the compiler's abort flag is set, exit.
+Get a local from the routine's locals.
+If the local is nil, exit.
+If the local's previous is not nil, put the local's previous' offset into the local's offset.
+Put the local's type's length into a length.
+If the local's kind is "scratch", put a pointer's magnitude into the length.
+Round the length up to the nearest multiple of 4.
+Subtract the length from the local's offset.
+Add the length to the routine's local size.
+Repeat.
+
+To offset the parameters in a routine (x86):
+If the routine is nil, exit.
+If the routine's compiled flag is not set, exit.
+Clear the routine's parameter size.
+Loop.
+If the compiler's abort flag is set, exit.
+Get a parameter from the routine's parameters.
+If the parameter is nil, exit.
+If the routine's callback flag is set, set the parameter's by-value flag.
+If the parameter's previous is nil, put 8 into the parameter's offset. \ skip the return address and saved ebp
+If the parameter's previous is not nil, put the parameter's previous' offset plus 4 into the parameter's offset. \ all parameters are 4 byte pointers or 4 byte values for callbacks
+Add 4 to the routine's parameter size.
+Repeat.
+
+To transmogrify a fragment (break) (x86):
+Put the repeat tag into a tag.
+Find another fragment given the fragment and the tag.
+If the other fragment is nil, put the finalize tag into the tag. \ for break without a loop or after a loop
+Find a third fragment given the current routine's fragments' last and the tag (backwards).
+If the third fragment is nil, abort with "Internal error - transmogrify a fragment (break)"; exit.
+If the third fragment's next is nil, abort with "Internal error 2 - transmogrify a fragment (break)"; exit.
+Attach $E9 and the third fragment's next's address to the fragment. \ jmp the destination's address
+
+To transmogrify a fragment (call external) (x86):
+Attach $FF15 and the fragment's entry's address to the fragment's code. \ call [the fragment's entry's address]
+
+To transmogrify a fragment (call indirect) (x86):
+Attach address loading code to the fragment's code given the fragment's variable. \ put address into edx
+Attach $FF12 to the fragment's code. \ call [edx]
+
+To transmogrify a fragment (call internal) (x86):
+Get an address given the fragment's routine.
+Attach $E8 and the address to the fragment. \ call the fragment's routine's address
+
+To transmogrify a fragment (dereference) (x86):
+Attach $8B95 and the fragment's variable's offset to the fragment's code. \ mov edx,[ebp+the fragment's variable's offset]
+Attach $8B12 to the fragment's code. \ mov edx,[edx]
+Attach $8995 and the fragment's variable's offset to the fragment's code. \ mov [ebp+the fragment's variable's offset],edx
+
+To transmogrify a fragment (epilog) (x86):
+If the current routine's callback flag is set, attach $5F5E5B to the fragment's code. \ pop edi, esi, ebx
+Attach $8BE5 to the fragment's code. \ mov esp,ebp
+Attach $5D to the fragment's code. \ pop ebp
+Attach $C2 and the current routine's parameter size to the fragment's code. \ ret the current routine's parameter size
+
+To transmogrify a fragment (exit) (x86):
+Find another fragment given the fragment and the finalize tag.
+If the other fragment is nil, abort with "Internal error - transmogrify a fragment (exit)"; exit.
+Attach $E9 and the other fragment's address to the fragment. \ jmp the destination's address
+
+To transmogrify a fragment (increment) (x86):
+If the fragment's variable is nil, abort with "Internal error - transmogrify a fragment (increment)"; exit.
+If the fragment's variable's kind is not "scratch", abort with "Internal error 2 - transmogrify a fragment (increment)"; exit.
+Attach $8185 and the fragment's variable's offset and the fragment's number to the fragment's code. \ add [ebp+the fragment's variable's offset],the fragment's number
+
+To transmogrify a fragment (jump false) (x86):
+Find another fragment given the fragment and the end if tag.
+If the other fragment is nil, abort with "Internal error - transmogrify a fragment (jump false)"; exit.
+Attach $83F800 to the fragment's code. \ cmp eax,0
+Attach $0F84 and the other fragment's address to the fragment. \ je the destination's address
+
+To transmogrify a fragment (load address) (x86):
+Attach address loading code to the fragment's code given the fragment's variable. \ put address into edx
+Attach $8995 and the fragment's other variable's offset to the fragment's code. \ mov [ebp+the fragment's variable's offset],edx
+
+To transmogrify a fragment (load eax) (x86):
+Attach address loading code to the fragment's code given the fragment's variable. \ put address into edx
+If the fragment's variable is nil, abort with "Internal error - transmogrify a fragment (load eax)"; exit.
+If the fragment's variable's type is nil, abort with "Internal error 2 - transmogrify a fragment (load eax)"; exit.
+If the fragment's variable's type's length is not 4, abort with "Internal error 3 - transmogrify a fragment (load eax)"; exit.
+Attach $8B02 to the fragment's code. \ mov eax,[edx]
+
+To transmogrify a fragment (not) (x86):
+Attach $83F001 to the fragment's code. \ xor eax,1
+
+To transmogrify a fragment (prolog) (x86):
+Attach $55 to the fragment's code. \ push ebp
+Attach $8BEC to the fragment's code. \ mov ebp,esp
+Put the current routine's local size divided by 4 into a number.
+If the number is not 0, attach $B9 and the number and $6A004975FB to the fragment's code. \ mov ecx,number; loop: push 0; dec ecx; jnz loop
+If the current routine's callback flag is set, attach $535657 to the fragment's code. \ push ebx, esi, edi
+
+To transmogrify a fragment (push address) (x86):
+Attach address loading code to the fragment's code given the fragment's variable. \ put address into edx
+Attach $52 to the fragment's code. \ push edx
+
+To transmogrify a fragment (push value) (x86):
+Attach address loading code to the fragment's code given the fragment's variable. \ put address into edx
+If the fragment's variable is nil, abort with "Internal error - transmogrify a fragment (push value)"; exit.
+If the fragment's variable's type is nil, abort with "Internal error 2 - transmogrify a fragment (push value)"; exit.
+Put the fragment's variable's type's length into a length.
+If the length is 4, attach $FF32 to the fragment's code; exit. \ push [edx]
+If the length is 2, attach $66FF32 to the fragment's code; exit. \ push word ptr [edx]
+If the length is 1, attach $0FB61252 to the fragment's code; exit. \ movzxb edx,[edx]; push edx
+Abort with "Internal error 3 - transmogrify a fragment (push value)".
+
+To transmogrify a fragment (repeat) (x86):
+Find another fragment given the fragment and the loop tag (backwards).
+If the other fragment is nil, abort with "Internal error - transmogrify a fragment (repeat)"; exit.
+Attach $E9 and the other fragment's address to the fragment. \ jmp the destination's address
+
+To transmogrify a fragment (routine address) (x86):
+Attach address loading code to the fragment's code given the fragment's variable. \ put address into edx
+If the fragment's routine is nil, abort with "Internal error - transmogrify a fragment (routine address)"; exit.
+Get an address given the fragment's routine.
+Attach $C702 and the address to the fragment's code. \ mov [edx],the address
+
+To transmogrify a fragment (save eax) (x86):
+Attach address loading code to the fragment's code given the fragment's variable. \ put address into edx
+If the fragment's variable is nil, abort with "Internal error - transmogrify a fragment (save eax)"; exit.
+If the fragment's variable's type is nil, abort with "Internal error 2 - transmogrify a fragment (save eax)"; exit.
+Put the fragment's variable's type's length into a length.
+If the length is 4, attach $8902 to the fragment's code; exit. \ mov [edx],eax
+If the length is 2, attach $668902 to the fragment's code; exit. \ mov [edx],ax
+If the length is 1, attach $8802 to the fragment's code; exit. \ mov [edx],al
+Abort with "Internal error 3 - transmogrify a fragment (save eax)".

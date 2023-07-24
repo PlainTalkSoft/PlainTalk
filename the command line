@@ -1,9 +1,11 @@
 \ copyright © 2006, 2017 the osmosian order (4700)
-\ copyright © 2023 the plaintalk contributors (v0.6.0)
+\ copyright © 2023 the plaintalk contributors (v0.7.0)
 
 The major version is 0.
-The minor version is 6.
+The minor version is 7.
 The patch version is 0.
+
+The architecture is a string.
 
 The carriage return flag is a flag.
 
@@ -14,11 +16,13 @@ Move the rider (command line rules).
 Move the rider (command line rules). \ skip program name
 Loop.
 If the rider's token is blank, exit.
-If the rider's token is "/?", write the help to stdout.
+If the rider's token is "/?", write the help to the console.
+If the rider's token is "/ar", check for command line arguments given the rider (set architecture).
 If the rider's token is "/c", check for command line arguments given the rider (compile).
 If the rider's token is "/cr", check for command line arguments given the rider (set carriage return).
 If the rider's token is "/l", check for command line arguments given the rider (list).
 If the rider's token is "/o", check for command line arguments given the rider (output name).
+If the rider's token is "/os", check for command line arguments given the rider (set operating system).
 If the rider's token is "/ss", check for command line arguments given the rider (set subsytem).
 If the rider's token is "/v", check for command line arguments given the rider (set verbosity).
 Move the rider (command line rules).
@@ -26,36 +30,44 @@ Repeat.
 
 To check for command line arguments given a rider (compile):
 Move the rider (command line rules).
-Write the linefeed byte to stdout.
-If the rider's token is blank, write "I'm not sure what to compile." to stdout; exit.
+Write the linefeed byte as a string to the console.
+If the rider's token is blank, write "I'm not sure what to compile." to the console; exit.
 Put the rider's token into a path.
 If the path starts with """", unquote the path.
-Write "Compiling: " then the path then the linefeed byte to stdout.
+Write "Compiling: " then the path then the linefeed byte to the console.
 Compile the path.
-If the compiler's abort flag is set, write the linefeed byte then the compiler's abort message to stdout.
-Write the linefeed byte then the compiler's timer's string then " ms" to stdout.
+If the compiler's abort flag is set, write the linefeed byte then the compiler's abort message to the console.
+Write the linefeed byte then the compiler's timer's string then " ms" to the console.
 
 To check for command line arguments given a rider (list):
 Move the rider (command line rules).
-Write the linefeed byte to stdout.
-If the rider's token is blank, write "I'm not sure what to compile and list." to stdout; exit.
+Write the linefeed byte as a string to the console.
+If the rider's token is blank, write "I'm not sure what to compile and list." to the console; exit.
 Put the rider's token into a path.
 Unquote the path.
-Write "Compiling and listing: " then the path then the linefeed byte to stdout.
+Write "Compiling and listing: " then the path then the linefeed byte to the console.
 Compile the path.
 Show status "Listing...".
 List.
-If the compiler's abort flag is set, write the linefeed byte then the compiler's abort message to stdout.
-Write the linefeed byte then the compiler's timer's string then " ms" to stdout.
+If the compiler's abort flag is set, write the linefeed byte then the compiler's abort message to the console.
+Write the linefeed byte then the compiler's timer's string then " ms" to the console.
 
 To check for command line arguments given a rider (output name):
 Move the rider (command line rules).
 Put the rider's token into the output name.
 
+To check for command line arguments given a rider (set architecture):
+Move the rider (command line rules).
+Put the rider's token into the architecture.
+
 To check for command line arguments given a rider (set carriage return):
 Move the rider (command line rules).
 If the rider's token is "yes", set the carriage return flag.
 If the rider's token is "no", clear the carriage return flag.
+
+To check for command line arguments given a rider (set operating system):
+Move the rider (command line rules).
+Put the rider's token into the operating system.
 
 To check for command line arguments given a rider (set subsytem):
 Move the rider (command line rules).
@@ -70,16 +82,20 @@ Finalize the compiler.
 
 To initialize:
 Initialize the compiler.
+Put "x86" into the architecture.
 Clear the carriage return flag.
+Put "windows" into the operating system.
 Put "" into the output name.
 Put "gui" into the subsystem.
 Put 0 into the verbosity level.
+
+The operating system is a string.
 
 The output name is a string.
 
 To run:
 Start up the cgi.
-Write "PlainTalk version " then the major version then "."  then the minor version then "." then the patch version then the linefeed byte to stdout.
+Write "PlainTalk version " then the major version then "."  then the minor version then "." then the patch version then the linefeed byte to the console.
 Initialize.
 Check for command line arguments.
 Finalize.
@@ -87,19 +103,21 @@ Shut down the cgi.
 
 To show error a string;
 To show status a string:
-Write the string then the linefeed byte to stdout.
+Write the string then the linefeed byte to the console.
 
 The subsystem is a string.
 
 The verbosity level is a number.
 
-To write the help to stdout:
+To write the help to the console:
 Write the linefeed byte then
 "/?: Show list of available parameters"      then the linefeed byte then
+"/ar: Set target architecture"               then the linefeed byte then
 "/c: Compile a directory"                    then the linefeed byte then
 "/cr: Use carriage return in newline output" then the linefeed byte then
 "/l: Compile and list a directory"           then the linefeed byte then
 "/o: Set output name for executable"         then the linefeed byte then
+"/os: Set target operating system"           then the linefeed byte then
 "/ss: Set the subsystem"                     then the linefeed byte then
 "/v: Set the verbosity level"                then the linefeed byte
-to stdout.
+to the console.

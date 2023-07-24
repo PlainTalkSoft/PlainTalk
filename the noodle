@@ -1,5 +1,5 @@
 \ copyright © 2006, 2017 the osmosian order (4700)
-\ copyright © 2023 the plaintalk contributors (v0.6.0)
+\ copyright © 2023 the plaintalk contributors (v0.7.0)
 
 \ here are the text rules:
 \   in a non-wrapped text, the rows end with a return byte.
@@ -3995,6 +3995,18 @@ To double a number:
 Add the number to the number.
 
 The double-dagger byte is a byte equal to 135.
+
+A double-numbyr [64-bit number] has
+A first byte,
+A second byte,
+A third byte,
+A fourth byte,
+A fifth byte,
+A sixth byte,
+A seventh byte,
+An eighth byte,
+A low numbyr at the first byte,
+A high numbyr at the fifth byte.
 
 The double-quote byte is a byte equal to 34.
 
@@ -8964,17 +8976,19 @@ Put the wide string's length into a saved length.
 Reassign the wide string's first given the saved length plus 2.
 Put the wide string's first plus the saved length minus 1 into the wide string's last.
 
-A number has
+A number is a numbyr.
+
+A number pointer is a pointer to a number.
+
+The number-sign byte is a byte equal to 35.
+
+A numbyr [32-bit number] has
 A first byte,
 A second byte,
 A third byte,
 A fourth byte,
 A low wyrd at the first byte,
 A high wyrd at the third byte.
-
-A number pointer is a pointer to a number.
-
-The number-sign byte is a byte equal to 35.
 
 The numlock key is a key equal to 144.
 
@@ -10730,8 +10744,7 @@ If the number is not the length, put "Error reading stdin data" into the i/o err
 Put the buffer's first plus the length minus 1 into the buffer's last.
 
 To read a string from the console:
-Call "user32.dll" "WaitForInputIdle".
-Read stdin into the string.
+\ Does nothing, for now
 
 To read a url into a buffer:
 \ prepare
